@@ -23,3 +23,7 @@ GitHub Pages ignores folders starting with `_`, so `_build/` is not published.
 4. Price "vanaf €125" is the Belgian price; check it is right for the Netherlands.
 5. No company address or company number on the site yet (owner removed the Antwerp address). Dutch consumers and the law expect company details; decide what to show.
 6. No tracking tags yet. Adding Google Ads / Analytics tags needs a cookie banner first.
+
+## Duplicate-content check
+
+Run `perl _build/check_similarity.pl` after adding or changing city pages. On 2026-10-10 every city page shared at most 26-37% of its text with any other city page. A new city page should stay under about 40%; give it its own ROADS, LOCAL and FAQ text.

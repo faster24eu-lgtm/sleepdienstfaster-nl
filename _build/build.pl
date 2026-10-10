@@ -120,7 +120,7 @@ sub city_seo {
   $p->{h1b} //= 'snel ter plaatse, 24/7.';
   $p->{eyebrow} //= "Auto slepen &middot; pechhulp &middot; $n";
   $p->{sub} //= "Auto stuk in $n? Wij staan dag en nacht voor u klaar.";
-  $p->{intro} //= "Faster sleept uw auto of bestelbus in $n en omgeving naar uw garage, naar huis of naar elk ander adres. Bij spoed zijn we vaak binnen 30 minuten bij u. U hoort vooraf een vaste, scherpe prijs, vanaf &euro;$PRICE. Geen abonnement, geen verrassingen achteraf.";
+  $p->{intro} //= "Wij slepen uw auto of bestelbus naar uw garage, naar huis of naar een ander adres. Vaste, scherpe prijs vooraf en geen abonnement.";
 }
 
 # ---------------------------------------------------------------- helpers
@@ -183,7 +183,8 @@ sub hero_html {
   my $img = $p->{img} // 'faster-road-transport.jpg';
   my $alt = $p->{imgalt} // 'Sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel';
   my $h1b = $p->{h1b} ? qq{<br><span>$p->{h1b}</span>} : '';
-  my $slides = join '', map { review_card($REVIEWS[$_], $_ == 0 ? ' is-active' : '') } 0..$#REVIEWS;
+  my @idx = ($p->{kind} // "") eq "city" ? map { (($p->{reviews} // 0) + $_) % @REVIEWS } 0..2 : 0..$#REVIEWS;
+  my $slides = join "", map { review_card($REVIEWS[$idx[$_]], $_ == 0 ? " is-active" : "") } 0..$#idx;
   return <<"H";
 <section class="hero"><div class="container hero-grid">
 <div class="hero-copy"><span class="eyebrow">$p->{eyebrow}</span>
@@ -264,6 +265,10 @@ sub form_html {
 H
 }
 
+sub svc_links {
+  join " &middot; ", map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) } grep { ($_->{kind} // "") eq "dienst" } values %P;
+}
+
 sub price_card {
   my $what = shift;
   qq{<div class="price-card"><span>$what</span><strong>vanaf &euro;{{PRICE}}</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>};
@@ -281,16 +286,12 @@ sub city_main {
   my $pc = price_card("Sleepdienst $n");
   return <<"H";
 {{HERO}}
-{{USPS}}
 <section class="section"><div class="container two-col"><div class="prose">
 <h2>Sleepdienst $n: wegen en knelpunten</h2>$p->{roads}
 <h2>Auto slepen in $n: goed om te weten</h2>$p->{local}
 $near
+<p class="svc-links"><strong>Wat wij doen in $n:</strong> {{SVCLINKS}}</p>
 </div><aside class="side">$pc</aside></div></section>
-<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Onze diensten in $n</span><h2>Waarvoor kunt u ons bellen?</h2></div><p>Wij zijn in de eerste plaats een sleepdienst. Kan het ter plaatse opgelost worden, dan doen we dat ook.</p></div>{{LIST:dienst}}</div></section>
-{{STEPS}}
-{{GALLERY}}
-{{REVIEWS}}
 H
 }
 
@@ -352,13 +353,12 @@ for my $out (sort keys %P) {
            : $p->{template} eq 'raw'  ? $p->{main}
            : page_main($p);
   my @faq = faq_items($p->{faq});
-  @faq = city_faq($p) if !@faq && $p->{template} eq 'city';
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
 
   my ($crumb_html, $crumb_ld) = crumbs($p);
   my $faq_ld = @faq ? '<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' . join(',', map { qq{{"\@type":"Question","name":"} . jstr($_->[0]) . qq{","acceptedAnswer":{"\@type":"Answer","text":"} . jstr($_->[1]) . qq{"}}} } @faq) . ']}</script>' : '';
-  my $biz = ($p->{url} eq '' || ($p->{kind} // '') eq 'city' || $p->{url} eq 'contact/') ? business_ld($p) : '';
+  my $biz = ($p->{url} eq "" || $p->{url} eq "contact/") ? business_ld($p) : '';
   my $robots = $PREVIEW || ($p->{robots} // '') eq 'noindex' ? '<meta name="robots" content="noindex, nofollow">' : '';
   my $canon = "$BASE/$p->{url}";
   my $title = esc($p->{title});
@@ -422,6 +422,7 @@ H
     $html =~ s/\{\{LIST:(\w+)\}\}/list_html($1)/ge;
     $html =~ s/\{\{REVIEWS\}\}/reviews_html($p->{reviews} \/\/ 0)/ge;
     $html =~ s/\{\{USPS\}\}/$USPS/g;
+    $html =~ s/\{\{SVCLINKS\}\}/svc_links()/ge;
     $html =~ s/\{\{STEPS\}\}/$STEPS/g;
     $html =~ s/\{\{GALLERY\}\}/$GALLERY/g;
     $html =~ s/\{\{SAFETY\}\}/$SAFETY/g;
