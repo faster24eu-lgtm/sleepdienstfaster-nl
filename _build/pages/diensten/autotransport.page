@@ -1,23 +1,48 @@
-title: Autotransport: auto laten vervoeren op een plateau | Faster
-description: Auto gekocht die niet rijdt, een auto naar de sloop, de APK of een nieuwe eigenaar? Faster vervoert uw auto op een plateauwagen. Vraag een prijs.
+title: Autotransport op een plateau, ook als de auto niet rijdt | Faster
+description: Auto gekocht, verkocht, naar de sloop of naar de APK? Faster vervoert uw auto op een plateauwagen, ook zonder APK of kenteken. Vaste prijs vooraf, vanaf €125.
 label: Autotransport
 kind: dienst
 order: 6
-card: Een auto gekocht, verkocht of naar de sloop? We vervoeren hem op afspraak, ook als hij niet rijdt.
+card: Auto gekocht, verkocht of naar de sloop? We vervoeren hem op afspraak, ook als hij niet rijdt of geen APK heeft.
 crumbs: Diensten|diensten/
 h1: Autotransport op afspraak
-lead: <p>Niet elke rit is spoed. Soms moet een auto gewoon van A naar B: een gekochte occasion zonder kenteken of APK, een auto naar de sloop, of een project dat al jaren in de schuur staat. Wij vervoeren hem op een plateauwagen, op een moment dat u uitkomt.</p>
+h1b: ook als de auto niet rijdt
+lead: <p>Niet elke rit is spoed. Soms moet een auto gewoon van A naar B: een occasion die u net gekocht heeft, een auto die u verkocht heeft, of een auto die naar de sloop gaat. Wij vervoeren hem op een plateauwagen, op een moment dat u uitkomt, met een vaste prijs vooraf.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
-<h2>Waarvoor kunt u ons inschakelen?</h2>
-<ul>
-<li><strong>Auto gekocht</strong> die niet rijdt, of die nog niet op uw naam staat.</li>
-<li><strong>Auto verkocht</strong> en de koper wil hem thuis afgeleverd hebben.</li>
-<li><strong>Naar de sloop</strong> of een demontagebedrijf.</li>
-<li><strong>Naar de keuring of de APK</strong>, als de auto niet de weg op mag.</li>
-<li><strong>Klassieker of project</strong> uit de schuur of de garage.</li>
-<li><strong>Verhuizing</strong> naar een andere stad of provincie.</li>
-</ul>
+<h2>Auto gekocht die niet rijdt of nog geen APK heeft</h2>
+<p>U heeft een auto gekocht bij een particulier of een handelaar, maar hij rijdt niet, heeft geen geldige APK of staat nog niet op uw naam. Dan mag u er niet zelf mee de weg op. Op een plateau is dat geen probleem: de auto rijdt dan niet zelf over de weg, hij wordt vervoerd.</p>
+<p>Wij halen de auto op bij de verkoper en brengen hem naar uw huis of naar uw garage. Spreek met de verkoper af wie er bij het ophalen is en waar de sleutels liggen.</p>
+<h2>Auto verkocht en de koper wil hem thuis hebben</h2>
+<p>Heeft u een auto verkocht die niet meer rijdt, of woont de koper ver weg? Dan kunnen wij hem afleveren. Maak met de koper duidelijke afspraken over wie het transport betaalt en wanneer de auto overgaat. De overschrijving bij de RDW regelt u zelf, bijvoorbeeld bij het postkantoor of online.</p>
+<h2>Naar de sloop of een demontagebedrijf</h2>
+<p>Wilt u van een oude auto af? Breng hem dan naar een demontagebedrijf dat door de RDW erkend is. Daar krijgt u een vrijwaringsbewijs, zodat u niet meer aansprakelijk bent voor de auto en geen belasting of verzekering meer hoeft te betalen. Wij brengen de auto naar het bedrijf dat u kiest.</p>
+<h2>Naar de APK, de garage of de keuring</h2>
+<p>Is de APK verlopen, of is de auto afgekeurd? Dan mag hij niet op eigen kracht naar de garage. Wij brengen hem erheen en, als dat nodig is, na de reparatie weer terug.</p>
+<h2>Klassieker of project uit de schuur</h2>
+<p>Een auto die al jaren stilstaat, heeft vaak lege banden, vastzittende remmen of een stuur dat zwaar gaat. Zeg het ons vooraf. Met de lier trekken we de auto rustig op het plateau en zetten hem vast met spanbanden, zonder dat hij zelf hoeft te rijden.</p>
+<h2>Verhuizing</h2>
+<p>Verhuist u naar een andere stad of provincie en heeft u een auto die niet rijdt, of een tweede auto zonder bestuurder? Wij brengen hem naar uw nieuwe adres.</p>
+<h2>Wat kost autotransport?</h2>
+<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt vooral af van de afstand, het voertuig en of de auto nog rolt en stuurt. Bij een geplande rit kiest u samen met ons het moment. U hoort de prijs altijd vooraf, en dat is de prijs die u betaalt. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 <h2>Zo vraagt u een prijs</h2>
-<p>Stuur een WhatsApp of vul het formulier in met de ophaalplaats, de bestemming, het merk en model, en of de auto rijdt, stuurt en remt. Dan krijgt u een prijs en plannen we een moment.</p>
+<p>Stuur een WhatsApp of vul het formulier in met:</p>
+<ul>
+<li>het ophaaladres en het afleveradres,</li>
+<li>merk, model en bouwjaar,</li>
+<li>of de auto rijdt, stuurt en remt, en of de banden opgepompt zijn,</li>
+<li>wanneer de auto weg moet, en wie er bij ophalen en afleveren is.</li>
+</ul>
+<p>Een foto van de auto en van de plek waar hij staat helpt ons om de rit goed in te schatten.</p>
 </div><div>{{FORM}}</div></div></section>
+===FAQ===
+V: Mag een auto zonder APK of zonder kenteken op een plateau vervoerd worden?
+A: Ja. Een auto op een plateau rijdt niet zelf op de openbare weg, hij wordt vervoerd. Daarvoor zijn geen APK en geen kentekenregistratie op uw naam nodig.
+V: Moet ik zelf aanwezig zijn bij het ophalen?
+A: Er moet iemand zijn die de auto overdraagt en de sleutels geeft, of u spreekt vooraf af waar de sleutels liggen. Bij het afleveren geldt hetzelfde.
+V: Kunnen jullie een auto ophalen die al jaren stilstaat?
+A: Ja. Zeg vooraf of de banden lek zijn, de remmen vastzitten of het stuur vastzit. Dan nemen we het juiste materiaal mee.
+V: Kan ik een tijd afspreken?
+A: Ja. Bij autotransport kiest u samen met ons een moment dat u uitkomt. Moet het snel, bel dan, dan kijken we wat er kan.
+V: Wat kost een auto naar de sloop brengen?
+A: Dat hangt af van de afstand naar het demontagebedrijf. U hoort de vaste prijs vooraf. Een korte rit begint vanaf €125.
