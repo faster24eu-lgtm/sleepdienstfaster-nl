@@ -1,0 +1,63 @@
+title: Camper en caravan transport, plateau 8,5 meter | 24/7 | Faster
+description: Camper of caravan kapot? Faster vervoert campers tot 3.500 kg en lange, zware caravans veilig op een plateau van 8,5 meter. 24/7, vaste prijs vooraf, vanaf €125.
+label: Camper en caravan transport
+kind: dienst
+order: 5
+card: Camper met motorpech of caravan met een kapotte as? Ook lange campers en zware caravans gaan veilig op ons plateau van 8,5 meter.
+crumbs: Diensten|diensten/
+h1: Camper en caravan transport
+h1b: ook lang en zwaar, op 8,5 meter
+lead: <p>Campers en caravans vervoeren doen we veel. Een camper met motorpech of een caravan met een kapotte as zetten we op ons plateau van 8,5 meter lang en brengen hem naar de garage, de dealer, de stalling of naar huis. Ook de lange en zware exemplaren waar andere sleepdiensten nee tegen zeggen.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Waarom een lang plateau zo belangrijk is</h2>
+<p>Een camper is vaak 7 tot 7,5 meter lang, soms nog langer. Bovendien zit bij veel campers het meeste gewicht achterin: de garage met fietsen of een scooter, de watertank, een vast bed of een badkamer, en dat allemaal ver achter de achteras. Een caravan met de dissel erbij is ook langer dan je denkt.</p>
+<p>Op een gewoon plateau van 6 tot 6,5 meter steekt zo&rsquo;n camper of caravan ver achter uit, en ligt het zwaartepunt achter de as van de sleepwagen. Dan wordt de voorkant van de sleepwagen licht en stuurt hij slecht. Dat is niet veilig, voor u niet en voor de rest van het verkeer niet.</p>
+<p>Ons plateau is <strong>8,5 meter lang</strong> en we laden tot <strong>3.500 kilo</strong>. De camper of caravan staat er helemaal op, met het gewicht goed verdeeld, en wordt vastgezet met spanbanden.</p>
+<h2>Camper kapot</h2>
+<p>De meeste campers zijn gebouwd op een bestelbus, vaak een Fiat Ducato, en hebben dezelfde soort pech: de motor slaat af, de koppeling of de versnellingsbak geeft het op, of er brandt een rood lampje. Met een camper mag u dan niet verder rijden. Wij halen hem op en brengen hem naar een garage die campers repareert, naar de dealer of naar huis.</p>
+<p><strong>Gewicht:</strong> de meeste campers mag u met rijbewijs B rijden en wegen dan hooguit 3.500 kilo. Die kunnen wij laden, ook met de inrichting en de spullen erin. Het toegestane gewicht staat op het kentekenbewijs. Is uw camper zwaarder, zeg het dan bij het bellen.</p>
+<h2>Caravan kapot</h2>
+<p>Een caravan met een kapotte as, een vastgelopen wiellager, een lekke band of een gebroken dissel kan niet meer achter een auto. Ook een caravan die aan een kapotte trekauto hangt, moet ergens heen. Op het plateau draaien de wielen niet mee en rust de caravan niet op zijn eigen as. Zo komt hij zonder extra schade aan.</p>
+<h2>Wanneer bellen mensen ons?</h2>
+<ul>
+<li><strong>Pech op vakantie of onderweg.</strong> Langs de snelweg, op een parkeerplaats of op de camping.</li>
+<li><strong>Schade.</strong> Na een aanrijding, storm of hagel, naar het schadebedrijf.</li>
+<li><strong>Naar de stalling en terug.</strong> In het voorjaar naar de camping, in het najaar de stalling in.</li>
+<li><strong>Gekocht of verkocht.</strong> Ophalen bij een particulier of dealer, of afleveren bij de nieuwe eigenaar.</li>
+<li><strong>Geen trekauto of geen BE-rijbewijs</strong> om de caravan zelf te trekken.</li>
+<li><strong>Naar de werkplaats</strong> voor onderhoud, een vochtcontrole of een reparatie.</li>
+</ul>
+<h2>Zo bereidt u de camper of caravan voor</h2>
+<ul>
+<li>Sluit de ramen, het dakluik en de deuren, en klap de luifel in.</li>
+<li>Draai de gasfles dicht.</li>
+<li>Zet losse spullen binnen vast of leg ze op de vloer. Het plateau gaat schuin bij het opladen.</li>
+<li>Draai steunpoten omhoog, als dat nog kan.</li>
+<li>Een caravan met een mover is handig, maar niet nodig. Wij trekken hem met de lier op het plateau.</li>
+</ul>
+<h2>Wat moeten wij weten?</h2>
+<ul>
+<li>merk, model en de totale lengte (bij een caravan inclusief de dissel),</li>
+<li>het gewicht, zoals op het kentekenbewijs of het typeplaatje,</li>
+<li>wat er kapot is, en of de wielen nog draaien en het stuur nog werkt,</li>
+<li>het ophaaladres en waar hij naartoe moet.</li>
+</ul>
+<p>Een foto van de camper of caravan en de plek waar hij staat helpt ons om de rit goed in te schatten.</p>
+<h2>Wat kost het?</h2>
+<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt af van de afstand, het voertuig en de situatie ter plaatse. U hoort de vaste prijs vooraf. Heeft u een camper- of caravanverzekering met pechhulp? Vraag dan eerst uw verzekeraar of het transport vergoed wordt.</p>
+</div><aside class="side">
+<div class="price-card"><span>Camper en caravan</span><strong>vanaf &euro;{{PRICE}}</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+<section class="section white"><div class="container narrow"><h2>Prijs aanvragen voor een geplande rit</h2><p>Naar de stalling, de dealer of een nieuwe eigenaar? Vul het formulier in met de lengte en het gewicht, dan krijgt u een prijs.</p>{{FORM}}</div></section>
+===FAQ===
+V: Past mijn camper op jullie plateau?
+A: Ons plateau is 8,5 meter lang en we laden tot 3.500 kilo. Daarop passen ook lange campers, waarbij veel gewicht achter de achteras zit. Geef de lengte en het gewicht van het kentekenbewijs door, dan weten we het zeker.
+V: Mijn camper weegt meer dan 3.500 kilo. Kunnen jullie hem meenemen?
+A: Dan past hij niet binnen ons laadvermogen. Zeg het bij het bellen, dan kijken we samen naar een oplossing.
+V: Mijn caravan heeft een kapotte as of een lekke band. Kan hij nog mee?
+A: Ja. Met de lier trekken we de caravan op het plateau, ook als een wiel niet meer draait. Op het plateau rust hij niet op zijn eigen as.
+V: Kunnen jullie de trekauto en de caravan allebei meenemen?
+A: Zeg het bij het bellen. Dan spreken we af hoe we beide het beste ophalen.
+V: Kunnen jullie de camper of caravan naar de stalling brengen?
+A: Ja. Naar de stalling, de camping, de dealer, het schadebedrijf of naar huis. U kiest de bestemming. Bij een stalling of camping vragen we de beheerder of we het terrein op mogen.
