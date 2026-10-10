@@ -1,24 +1,50 @@
-title: Bestelbus laten slepen, 24/7 | Faster sleepdienst
-description: Bestelbus stuk? Faster sleept bestelbussen en busjes naar uw garage of bedrijf, ook buiten kantooruren. Prijs vooraf, geen abonnement.
+title: Bestelbus slepen, ook L5 en Maxi | 24/7 vanaf €125 | Faster
+description: Bestelbus stuk? Faster sleept elke bestelbus, ook de langste L5 en Maxi, tot 3.500 kg. Plateau van 8,5 meter, ook voor caravans. 24/7, vaste prijs vooraf.
 label: Bestelbus slepen
 kind: dienst
 order: 4
-card: Een bestelbus die stilstaat kost geld. We halen de bus op en brengen hem naar uw garage of bedrijf.
+card: Elke bestelbus past erop, ook de langste L5 en Maxi. Plateau van 8,5 meter, tot 3.500 kg.
 crumbs: Diensten|diensten/
-h1: Bestelbus laten slepen
-h1b: ook &rsquo;s avonds en in het weekend
-lead: <p>Voor een ondernemer is een bus die stilstaat een verloren werkdag. Wij halen bestelbussen op bij de klant, op de bouwplaats of langs de weg, en brengen ze naar uw garage of naar uw bedrijf.</p>
+h1: Bestelbus slepen
+h1b: elke bus past, ook L5 en Maxi
+lead: <p>Voor een ondernemer is een bus die stilstaat een verloren werkdag. Wij halen uw bestelbus op bij de klant, op de bouwplaats of langs de snelweg, en brengen hem naar uw garage, de dealer of uw bedrijf. Met een plateau van 8,5 meter lang en een laadvermogen tot 3.500 kilo past elke bestelbus erop, ook de langste.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
-<h2>Ook voor busjes</h2>
-<p>Op de foto ziet u het zelf: een bestelbus op ons plateau. Geef bij het bellen het merk en het model door, en of de bus beladen is. Dan weten we of hij op het plateau past en hoeveel hij weegt.</p>
+<h2>Elke bestelbus past op ons plateau</h2>
+<p>Bestelbussen zijn er in veel lengtes, van een kleine bus tot de extra lange versies die fabrikanten L4, L5 of Maxi noemen. Veel sleepdiensten hebben een plateau van 6 tot 6,5 meter. Daar past een lange bus net niet op, of hij steekt te ver uit. Dan moet er een tweede, grotere wagen komen en verliest u tijd.</p>
+<p>Ons plateau is <strong>8,5 meter lang</strong>. Daarop past elke bestelbus die u met een gewoon rijbewijs mag rijden, ook de langste L5- en Maxi-uitvoeringen. Bijvoorbeeld:</p>
+<ul>
+<li>Mercedes-Benz Sprinter, ook de extra lange versie</li>
+<li>Ford Transit, alle lengtes</li>
+<li>Volkswagen Crafter en MAN TGE</li>
+<li>Fiat Ducato, Peugeot Boxer en Citroën Jumper, ook de Maxi</li>
+<li>Renault Master, Opel Movano en Nissan Interstar</li>
+<li>Iveco Daily tot 3.500 kilo</li>
+</ul>
+<p>Ook bussen met een hoog dak, een bakopbouw of een open laadbak gaan erop. Twijfelt u? Geef het merk, het model en de lengte door, of stuur een foto.</p>
+<h2>Gewicht: tot 3.500 kilo, ook beladen</h2>
+<p>Wij laden tot <strong>3.500 kilo</strong>. Dat is ook het maximale totaalgewicht van een bestelbus waarmee u met rijbewijs B mag rijden. Een bus die volgeladen is met gereedschap of materiaal, kunnen we dus gewoon meenemen, zonder dat de lading eruit hoeft.</p>
+<p>Het totaalgewicht van uw bus staat op het kentekenbewijs en op een plaatje in de deuropening of onder de motorkap. Is de bus zwaarder dan 3.500 kilo, bijvoorbeeld een bus met een rijbewijs-C-gewicht? Zeg het bij het bellen, dan kijken we samen naar een oplossing.</p>
+<h2>Ook caravans, ook de lange en zware</h2>
+<p>Een caravan is vaak langer dan je denkt, en bij veel caravans zit het meeste gewicht achterin. Op een kort plateau van 6,5 meter steekt zo&rsquo;n caravan achter uit en ligt het zwaartepunt verkeerd. Dat is niet veilig. Op ons plateau van 8,5 meter staat de caravan er helemaal op, met het gewicht goed verdeeld. Kapotte as, lekke band of geen trekauto meer? Wij brengen uw caravan naar de stalling, de dealer of uw huis.</p>
 <h2>Lading en gereedschap</h2>
-<p>Zit de bus vol met gereedschap of materiaal? Zeg het ons. Een zware lading kan betekenen dat er eerst iets uit moet. Waardevol gereedschap kunt u ook zelf meenemen.</p>
+<p>De lading mag in de bus blijven, zolang het totaalgewicht onder de 3.500 kilo blijft. Zet losse spullen wel vast, want het plateau gaat schuin bij het opladen. Waardevol gereedschap kunt u ook zelf meenemen.</p>
 <h2>Na werktijd en in het weekend</h2>
-<p>Wij rijden ook &rsquo;s avonds, &rsquo;s nachts en in het weekend. De bus kan dan naar uw bedrijf, zodat hij de volgende ochtend meteen bij de garage kan staan.</p>
-<h2>Meerdere bussen?</h2>
-<p>Heeft u een wagenpark? Bel ons, dan bespreken we hoe we u het beste kunnen helpen.</p>
+<p>Wij rijden ook &rsquo;s avonds, &rsquo;s nachts en in het weekend. Valt uw bus &rsquo;s avonds stil, dan staat hij de volgende ochtend al bij de garage en kunt u de dag erna sneller verder.</p>
+<h2>Zakelijk: factuur op naam van uw bedrijf</h2>
+<p>Bent u ondernemer? U krijgt een factuur op naam van uw bedrijf, met de btw apart vermeld, zodat u de btw kunt terugvragen. Geef bij het bellen de bedrijfsnaam en het adres voor de factuur door. Heeft u meerdere bussen of een wagenpark? Bel ons, dan bespreken we hoe we u het beste kunnen helpen.</p>
 </div><aside class="side">
-<div class="price-card"><span>Bestelbus slepen</span><strong>Bel voor de prijs</strong><p>Geef merk, model en lading door.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
-<figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een gele sleepwagen getrokken" width="1288" height="966" loading="lazy"></figure>
+<div class="price-card"><span>Bestelbus slepen</span><strong>vanaf &euro;{{PRICE}}</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken" width="1288" height="966" loading="lazy"></figure>
 </aside></div></section>
+===FAQ===
+V: Past een Sprinter of Ducato in de langste uitvoering op jullie plateau?
+A: Ja. Ons plateau is 8,5 meter lang. Daarop passen ook de langste bestelbussen, zoals de L5- en Maxi-uitvoeringen.
+V: Mijn bus is volgeladen. Moet de lading eruit?
+A: Nee, zolang het totaalgewicht niet boven de 3.500 kilo komt. Dat is het maximum voor een bus die u met rijbewijs B mag rijden, en dat kunnen wij laden.
+V: Kunnen jullie ook een caravan vervoeren?
+A: Ja. Ook lange caravans waarbij het gewicht achterin zit, passen veilig op ons plateau van 8,5 meter.
+V: Krijg ik een factuur met btw voor mijn bedrijf?
+A: Ja. Geef de bedrijfsnaam en het factuuradres door, dan krijgt u een factuur met de btw apart vermeld.
+V: Wat kost het slepen van een bestelbus?
+A: Een korte rit begint vanaf €125. De prijs hangt af van de afstand, de bus en het tijdstip. U hoort de vaste prijs vooraf.
