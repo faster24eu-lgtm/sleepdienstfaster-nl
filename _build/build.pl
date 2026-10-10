@@ -117,10 +117,10 @@ sub city_seo {
   $p->{title} //= $title;
   $p->{description} //= "Auto stuk in $n? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7, vaste prijs vooraf vanaf €$PRICE, geen abonnement. Bel of WhatsApp nu.";
   $p->{h1}  //= "Sleepdienst $n";
-  $p->{h1b} //= 'snel ter plaatse, 24/7.';
-  $p->{eyebrow} //= "Auto slepen &middot; pechhulp &middot; $n";
-  $p->{sub} //= "Auto stuk in $n? Wij staan dag en nacht voor u klaar.";
-  $p->{intro} //= "Wij slepen uw auto of bestelbus naar uw garage, naar huis of naar een ander adres. Vaste, scherpe prijs vooraf en geen abonnement.";
+  $p->{h1b} //= 'binnen 30 minuten*, prijs vooraf.';
+  $p->{eyebrow} //= "24/7 &middot; geen abonnement &middot; vanaf &euro;$PRICE";
+  $p->{sub} //= "Auto stuk in $n? Bel nu. Een sleepwagen komt naar u toe, en u hoort de prijs voordat iemand vertrekt.";
+  $p->{intro} //= "Geen lidmaatschap, geen verrassing achteraf. Wij laden de auto op het plateau en brengen hem naar uw garage, naar huis of naar het adres dat u noemt.";
 }
 
 # ---------------------------------------------------------------- helpers
