@@ -1,0 +1,27 @@
+title: Elektrische auto slepen: altijd op een plateau | Faster
+description: Elektrische auto of hybride kapot? Faster sleept EV's altijd met alle wielen van de grond, op een plateauwagen. Prijs vooraf, 24/7.
+label: Elektrische auto slepen
+kind: dienst
+order: 5
+card: Een elektrische auto mag niet met de wielen over de weg gesleept worden. Wij vervoeren hem altijd op het plateau.
+crumbs: Diensten|diensten/
+h1: Elektrische auto slepen
+lead: <p>Een elektrische auto sleept u niet aan een touw of een stang. De wielen zitten vast aan de elektromotor, en die gaat stroom opwekken als de wielen draaien. Daarom vervoeren wij elektrische auto&rsquo;s altijd met alle vier de wielen op het plateau.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Waarom niet gewoon slepen?</h2>
+<p>Bij de meeste elektrische auto&rsquo;s staat in het instructieboekje dat ze niet met de aangedreven wielen op de grond gesleept mogen worden, of hooguit een paar meter. Draaiende wielen laten de motor draaien, en dat kan de motor, de omvormer of de accu beschadigen. Op een plateau gebeurt dat niet.</p>
+<h2>Accu leeg?</h2>
+<p>Een elektrische auto met een lege accu kan meestal niet even bijgeladen worden langs de weg. Wij brengen hem naar een laadpaal, naar huis of naar de dealer. Zeg bij het bellen wat er op het scherm staat.</p>
+<h2>Transportstand</h2>
+<p>Veel elektrische auto&rsquo;s hebben een transport- of sleepmodus die de parkeerrem lost. Weet u niet hoe die werkt bij uw auto? Geen probleem, dat zoeken we ter plaatse samen uit.</p>
+<h2>Na een ongeval</h2>
+<p>Heeft de onderkant of de accu van de auto een klap gehad, rook of een vreemde geur? Ga op afstand staan en bel 112. Een beschadigde accu kan later nog warm worden. Zeg het ons ook als de auto al stilstaat: dan zetten we hem niet in een afgesloten ruimte.</p>
+</div><aside class="side">
+<div class="price-card"><span>Elektrische auto</span><strong>vanaf &euro;{{PRICE}}</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Kan een hybride wel gesleept worden?
+A: Dat verschilt per model. Kijk in het instructieboekje, of laat ons hem gewoon op het plateau zetten. Dan is het altijd goed.
+V: Slepen jullie ook Tesla's?
+A: Ja. Elke elektrische auto gaat bij ons op het plateau, ongeacht het merk.

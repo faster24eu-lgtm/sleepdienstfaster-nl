@@ -1,0 +1,61 @@
+title: Sleepdienst 24/7 in heel Nederland | Vanaf €125 | Faster
+description: Auto kapot of na een ongeval? Faster sleept uw auto of bestelbus 24/7 naar uw garage, huis of naar België. Prijs vooraf, geen abonnement nodig. Bel of WhatsApp.
+label: Home
+template: raw
+reviews: 0
+===MAIN===
+<section class="hero"><div class="container hero-grid">
+<div><span class="eyebrow">Sleepdienst &middot; dag en nacht</span>
+<h1>Auto kapot? Wij slepen hem waar u wilt.</h1>
+<div class="lead"><p>Faster is een sleepdienst voor auto&rsquo;s en bestelbussen. U belt of stuurt een WhatsApp, u hoort vooraf wat het kost, en wij brengen uw auto naar uw garage, uw huis of elk ander adres. Ook over de grens naar België.</p></div>
+<div class="hero-actions"><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
+<ul class="usp"><li>Vaste prijs vooraf</li><li>Geen abonnement</li><li>24/7, ook in het weekend</li></ul>
+<div class="proof"><div><strong>vanaf &euro;{{PRICE}}</strong><span>prijs vooraf bekend</span></div><div><strong>24/7</strong><span>ook &rsquo;s nachts</span></div><div><strong>NL &harr; BE</strong><span>over de grens</span></div><div><strong>Auto &amp; bus</strong><span>ook elektrisch</span></div></div>
+</div>
+<figure class="hero-media"><img src="{{R}}assets/img/faster-road-transport.jpg" alt="Gele sleepwagen van Faster met een Mini op het plateau en een bestelbus aan de takel" width="1600" height="1200" loading="eager"></figure>
+</div></section>
+
+<section class="section"><div class="container"><div class="section-head"><h2>Waarvoor kunt u ons bellen?</h2><p>Wij zijn in de eerste plaats een sleepdienst. Kan het ter plaatse simpel opgelost worden, dan doen we dat ook.</p></div>
+{{LIST:dienst}}
+</div></section>
+
+{{STEPS}}
+
+<section class="section white"><div class="container two-col"><div class="prose">
+<h2>Waarom Faster?</h2>
+<p><strong>U weet vooraf wat u betaalt.</strong> Veel sleepdiensten noemen pas een bedrag als de wagen er al staat. Bij ons hoort u de prijs aan de telefoon of in WhatsApp, voordat er iemand gaat rijden. Een korte rit begint vanaf &euro;{{PRICE}}. Hoe de prijs is opgebouwd, leest u op de pagina <a href="{{R}}tarieven/">tarieven</a>.</p>
+<p><strong>U heeft geen abonnement nodig.</strong> Geen lidmaatschap, geen pechhulppas. U betaalt per rit, alleen als u ons nodig heeft.</p>
+<p><strong>U kiest zelf waar de auto naartoe gaat.</strong> Naar uw eigen garage, naar huis, naar de dealer of naar een schadebedrijf. Wij slepen niet automatisch naar een terrein waar u daarna opnieuw voor moet betalen.</p>
+<p><strong>Over de grens is voor ons gewoon.</strong> Faster komt uit Antwerpen. Een auto van Breda naar Antwerpen of van Antwerpen naar Rotterdam is voor ons een normale rit. Lees meer over <a href="{{R}}diensten/auto-naar-belgie/">slepen tussen Nederland en België</a>.</p>
+</div><aside class="side">
+<div class="price-card"><span>Sleepdienst</span><strong>vanaf &euro;{{PRICE}}</strong><p>De prijs die u vooraf hoort, is de prijs die u betaalt.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<figure class="hero-media" style="aspect-ratio:3/4"><img src="{{R}}assets/img/faster-warehouse.jpg" alt="Sleepwagen van Faster met een auto op het plateau en een aanhangwagen in een loods" width="738" height="1156" loading="lazy"></figure>
+</aside></div></section>
+
+<section class="section"><div class="container"><div class="section-head"><h2>Pech op de snelweg?</h2><p>Eerst uw veiligheid, dan de auto.</p></div>
+<div class="note"><p><strong>Staat u op een rijstrook of op een onveilige plek?</strong> Bel 112 bij direct gevaar, of Rijkswaterstaat op 0800-8002. Zij sturen een weginspecteur of berger die de auto naar een veilige plek brengt. Daarna kunnen wij de auto verder slepen, naar uw garage of naar huis.</p></div>
+<p>Staat u veilig op de vluchtstrook of in een pechhaven? Ga achter de vangrail staan en bel ons met het nummer van het hectometerpaaltje. <a href="{{R}}kennisbank/pech-op-de-snelweg/">Lees wat u moet doen bij pech op de snelweg &rarr;</a></p>
+</div></section>
+
+{{REVIEWS}}
+
+<section class="section"><div class="container"><div class="section-head"><h2>Waar komen wij?</h2><p>In heel Nederland. Hieronder de plaatsen met een eigen pagina. Staat uw plaats er niet bij? Bel gewoon.</p></div>
+{{LIST:city}}
+</div></section>
+
+<section class="section white"><div class="container two-col"><div class="prose">
+<h2>Prijs aanvragen voor een geplande rit</h2>
+<p>Moet een auto die niet meer rijdt naar de garage, de sloop of een nieuwe eigenaar? Dan hoeft het niet meteen. Vul het formulier in, dan krijgt u een prijs.</p>
+<p>Voor spoed: bel of stuur een WhatsApp. Dat is altijd sneller.</p>
+</div><div>{{FORM}}</div></div></section>
+===FAQ===
+V: Heb ik een abonnement of lidmaatschap nodig?
+A: Nee. U betaalt per rit. U belt ons alleen als u ons nodig heeft, zonder pechhulppas of contract.
+V: Wat kost een sleepdienst bij Faster?
+A: Een korte rit begint vanaf €125, inclusief btw. De precieze prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort de prijs altijd vooraf, voordat de sleepwagen vertrekt.
+V: Waar brengen jullie mijn auto naartoe?
+A: Waar u wilt: uw eigen garage, uw huis, de dealer, een schadebedrijf of een adres in België. U kiest de bestemming.
+V: Kunnen jullie ook een bestelbus slepen?
+A: Ja. Wij slepen personenauto&#39;s en bestelbussen, ook elektrische auto's.
+V: Kan ik pinnen?
+A: Vraag bij het bellen naar de betaalmogelijkheden voor uw rit.

@@ -1,0 +1,15 @@
+title: Contact: bel of WhatsApp de sleepdienst | Faster
+description: Bel Faster 24/7 of stuur een WhatsApp met uw locatie. Voor een geplande rit kunt u ook het formulier invullen.
+label: Contact
+h1: Contact
+lead: <p>Voor spoed: bel of stuur een WhatsApp. Dag en nacht. Zet uw locatie in WhatsApp, dan weten we meteen waar u staat.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Bellen of WhatsApp</h2>
+<p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></p>
+<p><strong>Uw locatie delen in WhatsApp:</strong> tik op het paperclipje of het plusje, kies &lsquo;Locatie&rsquo; en dan &lsquo;Huidige locatie verzenden&rsquo;.</p>
+<p><strong>Op de snelweg?</strong> Geef het nummer van het hectometerpaaltje door: het kleine bordje langs de weg met een getal, bijvoorbeeld 45,3. Daarmee vinden we u op de meter.</p>
+<h2>Gegevens</h2>
+<p>Faster<br>De Bosschaertstraat 248<br>2020 Antwerpen, België<br><a href="mailto:faster@takeldienstfaster.be">faster@takeldienstfaster.be</a></p>
+<p>In België: <a href="https://takeldienstfaster.be/">takeldienstfaster.be</a></p>
+</div><div><h2>Prijs aanvragen</h2>{{FORM}}</div></div></section>

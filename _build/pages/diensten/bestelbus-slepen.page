@@ -1,0 +1,23 @@
+title: Bestelbus laten slepen, 24/7 | Faster sleepdienst
+description: Bestelbus kapot? Faster sleept bestelbussen en busjes naar uw garage of bedrijf, ook buiten kantooruren. Prijs vooraf, geen abonnement.
+label: Bestelbus slepen
+kind: dienst
+order: 4
+card: Een bestelbus die stilstaat kost geld. We halen de bus op en brengen hem naar uw garage of bedrijf.
+crumbs: Diensten|diensten/
+h1: Bestelbus laten slepen
+lead: <p>Voor een ondernemer is een bus die stilstaat een verloren werkdag. Wij halen bestelbussen op bij de klant, op de bouwplaats of langs de weg, en brengen ze naar uw garage of naar uw bedrijf.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Ook voor busjes</h2>
+<p>Op de foto ziet u het zelf: een bestelbus op ons plateau. Geef bij het bellen het merk en het model door, en of de bus beladen is. Dan weten we of hij op het plateau past en hoeveel hij weegt.</p>
+<h2>Lading en gereedschap</h2>
+<p>Zit de bus vol met gereedschap of materiaal? Zeg het ons. Een zware lading kan betekenen dat er eerst iets uit moet. Waardevol gereedschap kunt u ook zelf meenemen.</p>
+<h2>Na werktijd en in het weekend</h2>
+<p>Wij rijden ook &rsquo;s avonds, &rsquo;s nachts en in het weekend. De bus kan dan naar uw bedrijf, zodat hij de volgende ochtend meteen bij de garage kan staan.</p>
+<h2>Meerdere bussen?</h2>
+<p>Heeft u een wagenpark? Bel ons, dan bespreken we hoe we u het beste kunnen helpen.</p>
+</div><aside class="side">
+<div class="price-card"><span>Bestelbus slepen</span><strong>Bel voor de prijs</strong><p>Geef merk, model en lading door.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een gele sleepwagen getrokken" width="1288" height="966" loading="lazy"></figure>
+</aside></div></section>

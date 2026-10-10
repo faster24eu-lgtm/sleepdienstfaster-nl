@@ -1,0 +1,8 @@
+title: Pagina niet gevonden | Faster
+description: Deze pagina bestaat niet.
+label: Pagina niet gevonden
+h1: Deze pagina bestaat niet
+crumbs: none
+robots: noindex
+===MAIN===
+<section class="section"><div class="container narrow"><p>Heeft u een sleepdienst nodig? Bel of stuur een WhatsApp.</p><p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></p><p><a href="{{R}}">Naar de homepage</a> &middot; <a href="{{R}}sleepdienst/">Werkgebied</a></p></div></section>

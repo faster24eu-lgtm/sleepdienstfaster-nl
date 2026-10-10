@@ -1,0 +1,36 @@
+title: Wat kost een sleepdienst? Zo is de prijs opgebouwd | Faster
+description: Wat kost auto slepen in Nederland? Uitleg over starttarief, kilometers en toeslagen, en welke vragen u moet stellen voordat de sleepwagen komt.
+label: Wat kost een sleepdienst?
+kind: gids
+order: 2
+card: Starttarief, kilometers, nachttoeslag: zo is de prijs opgebouwd, en dit vraagt u vooraf.
+crumbs: Kennisbank|kennisbank/
+h1: Wat kost een sleepdienst?
+lead: <p>Een sleepdienst zonder abonnement rekent meestal een starttarief plus een bedrag per kilometer. Daarbovenop kunnen toeslagen komen voor de nacht, het weekend of een lastige situatie. Hieronder leest u hoe het werkt, en welke vragen u moet stellen voordat u ja zegt.</p>
+===MAIN===
+<section class="section"><div class="container narrow prose">
+<h2>Waaruit bestaat de prijs?</h2>
+<ul>
+<li><strong>Starttarief of voorrijkosten.</strong> Het bedrag om de sleepwagen te laten komen en de auto op te laden.</li>
+<li><strong>Kilometers.</strong> De afstand naar de bestemming, en soms ook de afstand die de sleepwagen naar u toe moet rijden.</li>
+<li><strong>Toeslagen.</strong> Voor de avond, de nacht, het weekend of een feestdag. Of voor extra werk: een auto uit een parkeergarage, de berm of de modder halen.</li>
+<li><strong>Stalling.</strong> Gaat de auto naar het terrein van de sleepdienst, dan kan er per dag stallingsgeld bij komen.</li>
+</ul>
+<h2>Vijf vragen om vooraf te stellen</h2>
+<ol>
+<li>Wat is de totaalprijs, inclusief btw?</li>
+<li>Zitten de voorrijkosten en de kilometers erin?</li>
+<li>Komt er een toeslag bij voor de nacht of het weekend?</li>
+<li>Mag ik zelf kiezen waar de auto naartoe gaat?</li>
+<li>Komen er stallingskosten bij als de auto niet meteen naar de garage kan?</li>
+</ol>
+<p>Krijgt u geen duidelijk antwoord? Dan weet u genoeg.</p>
+<h2>Wat kost het bij Faster?</h2>
+<p>Bij Faster begint een korte rit vanaf &euro;{{PRICE}}. U hoort vooraf de prijs voor uw rit, en dat is de prijs die u betaalt. U kiest zelf de bestemming. Lees meer op de pagina <a href="{{R}}tarieven/">tarieven</a>.</p>
+<h2>Kan het goedkoper?</h2>
+<ul>
+<li>Kijk of uw autoverzekering, lease of creditcard pechhulp dekt. Dan is het slepen soms gratis.</li>
+<li>Laat de auto naar een garage in de buurt brengen, in plaats van een lange rit.</li>
+<li>Is er geen haast? Plan de rit overdag in plaats van &rsquo;s nachts.</li>
+</ul>
+</div></section>

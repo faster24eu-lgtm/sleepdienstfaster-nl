@@ -1,0 +1,17 @@
+title: Over Faster: sleepdienst uit Antwerpen | Faster
+description: Faster is een takeldienst uit Antwerpen en sleept ook in Nederland en over de grens. Eerlijke prijzen vooraf, geen abonnement.
+label: Over ons
+h1: Over Faster
+lead: <p>Faster is een takeldienst uit Antwerpen. In België werken we als <a href="https://takeldienstfaster.be/">takeldienstfaster.be</a>. Met sleepdienstfaster.nl helpen we nu ook automobilisten in Nederland.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Waar we voor staan</h2>
+<p><strong>Een prijs vooraf.</strong> Wie met pech langs de weg staat, moet weten waar hij aan toe is. U hoort de prijs voordat de sleepwagen rijdt.</p>
+<p><strong>De slimste oplossing, niet de duurste.</strong> Kan een auto zonder kraan of zwaar materieel weg, dan doen we het zo. Kan het ter plaatse opgelost worden, dan slepen we niet voor niets.</p>
+<p><strong>U kiest de bestemming.</strong> Naar uw garage, uw huis of over de grens.</p>
+<h2>Waarom ook in Nederland?</h2>
+<p>Antwerpen ligt vlak bij de grens. Voor mensen in West-Brabant en Zeeland zijn we dichtbij, en een rit tussen Nederland en België is voor ons gewoon werk. Een Google-review van een klant: &ldquo;Op zondag pech gehad in Breda en meteen geholpen.&rdquo;</p>
+</div><aside class="side">
+<figure class="hero-media" style="aspect-ratio:3/4"><img src="{{R}}assets/img/faster-warehouse.jpg" alt="Sleepwagen van Faster in een loods met een auto op het plateau" width="738" height="1156" loading="lazy"></figure>
+</aside></div></section>
+{{REVIEWS}}

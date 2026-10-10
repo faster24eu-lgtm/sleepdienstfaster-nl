@@ -1,0 +1,31 @@
+title: Pechhulp zonder abonnement, 24/7 | Faster
+description: Lege accu, lekke band of startproblemen? Faster helpt ter plaatse als dat kan en sleept uw auto als het moet. Zonder abonnement, prijs vooraf.
+label: Pechhulp
+kind: dienst
+order: 2
+card: Lege accu of lekke band? Als het ter plaatse kan, lossen we het op. Lukt dat niet, dan slepen we.
+crumbs: Diensten|diensten/
+h1: Pechhulp zonder abonnement
+lead: <p>Niet elke pech betekent dat de auto weg moet. Een lege accu of een lekke band met een goed reservewiel is vaak ter plaatse op te lossen. Lukt dat niet, dan gaat de auto meteen op het plateau. U hoeft niet twee keer te bellen.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Wat kunnen we ter plaatse doen?</h2>
+<ul>
+<li><strong>Starthulp bij een lege accu.</strong> Vaak gebeurt dit na een koude nacht, of als de lichten zijn blijven branden.</li>
+<li><strong>Wiel wisselen.</strong> Als er een reservewiel of thuiskomer in de auto ligt.</li>
+<li><strong>Auto verplaatsen</strong> van een gevaarlijke of lastige plek, bijvoorbeeld uit een parkeergarage of een smalle straat.</li>
+</ul>
+<p>Lukt het niet ter plaatse, dan slepen we de auto naar uw garage of naar huis.</p>
+<h2>Geen abonnement? Geen probleem</h2>
+<p>Bij veel pechhulpdiensten moet u lid zijn. Bij ons niet. U betaalt per keer, en u weet vooraf wat het kost.</p>
+<p>Heeft u wel pechhulp via uw autoverzekering of uw lease? Bel dan eerst hen. Sommige verzekeringen vergoeden alleen hulp die zij zelf regelen. Lees meer in <a href="{{R}}kennisbank/sleepdienst-zonder-abonnement/">sleepdienst zonder abonnement</a>.</p>
+<h2>Verkeerd getankt?</h2>
+<p>Start de motor niet. Heeft u de motor al gestart, zet hem dan zo snel mogelijk uit. Een auto met de verkeerde brandstof in de tank moet naar een garage die de tank kan leegmaken. Wij brengen hem erheen.</p>
+</div><aside class="side">
+<div class="price-card"><span>Pechhulp</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Komen jullie ook voor alleen een lege accu?
+A: Ja. Bel ons en vertel wat er gebeurt als u de sleutel omdraait. Dan horen we of starthulp waarschijnlijk werkt.
+V: Wat als de auto na starthulp niet blijft lopen?
+A: Dan is er meer aan de hand dan een lege accu. Wij kunnen de auto dan meteen naar uw garage slepen.

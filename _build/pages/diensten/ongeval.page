@@ -1,0 +1,30 @@
+title: Auto wegslepen na een ongeval | Faster sleepdienst
+description: Auto beschadigd na een aanrijding? Faster sleept hem naar het schadebedrijf of de garage die u kiest. Tips voor het schadeformulier en uw verzekering.
+label: Slepen na een ongeval
+kind: dienst
+order: 3
+card: Na een aanrijding brengen we de auto naar het schadebedrijf of de garage die u zelf kiest.
+crumbs: Diensten|diensten/
+h1: Auto wegslepen na een ongeval
+lead: <p>Na een aanrijding wilt u maar één ding: dat de auto weg is en dat u verder kunt. Wij brengen de beschadigde auto naar het schadebedrijf, de garage of het adres dat u kiest.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Eerst dit</h2>
+<ul>
+<li>Is er iemand gewond, of is de situatie gevaarlijk? Bel 112.</li>
+<li>Gebeurde het op de snelweg en staat de auto op een rijstrook? Dan stuurt Rijkswaterstaat zelf een berger. Wij kunnen de auto daarna verder slepen. Lees <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>.</li>
+<li>Vul samen met de andere bestuurder het Europees schadeformulier in, op papier of in de app van uw verzekeraar.</li>
+<li>Maak foto&rsquo;s van de schade, de plek en de kentekens.</li>
+</ul>
+<h2>Bel uw verzekeraar</h2>
+<p>Bel uw verzekeraar zo snel mogelijk. Vraag of zij een vaste sleepdienst of een eigen schadehersteller hebben. Soms vergoeden ze het slepen alleen als het via hen loopt. Mag u zelf kiezen, of heeft u geen dekking? Bel ons dan. U krijgt een factuur die u kunt indienen.</p>
+<h2>Waar gaat de auto heen?</h2>
+<p>Naar het schadebedrijf dat uw verzekeraar aanwijst, naar uw eigen garage of eerst naar huis, als u nog moet uitzoeken waar de auto gerepareerd wordt. De auto gaat op het plateau en wordt vastgezet, ook als er een wiel niet meer goed staat.</p>
+</div><aside class="side">
+<div class="price-card"><span>Na een ongeval</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf, factuur voor uw verzekeraar.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Betaalt mijn verzekering het slepen?
+A: Dat hangt af van uw polis. Met een pechhulpdekking of een allriskverzekering wordt slepen na een ongeval vaak vergoed. Bel uw verzekeraar voordat u een sleepdienst inschakelt.
+V: Krijg ik een factuur?
+A: Ja. U krijgt een factuur met de ophaalplaats, de bestemming en het bedrag. Die kunt u bij uw verzekeraar indienen.

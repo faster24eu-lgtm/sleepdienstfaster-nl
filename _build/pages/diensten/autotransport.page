@@ -1,0 +1,23 @@
+title: Autotransport: auto laten vervoeren op een plateau | Faster
+description: Auto gekocht die niet rijdt, een auto naar de sloop, de APK of een nieuwe eigenaar? Faster vervoert uw auto op een plateauwagen. Vraag een prijs.
+label: Autotransport
+kind: dienst
+order: 6
+card: Een auto gekocht, verkocht of naar de sloop? We vervoeren hem op afspraak, ook als hij niet rijdt.
+crumbs: Diensten|diensten/
+h1: Autotransport op afspraak
+lead: <p>Niet elke rit is spoed. Soms moet een auto gewoon van A naar B: een gekochte occasion zonder kenteken of APK, een auto naar de sloop, of een project dat al jaren in de schuur staat. Wij vervoeren hem op een plateauwagen, op een moment dat u uitkomt.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Waarvoor kunt u ons inschakelen?</h2>
+<ul>
+<li><strong>Auto gekocht</strong> die niet rijdt, of die nog niet op uw naam staat.</li>
+<li><strong>Auto verkocht</strong> en de koper wil hem thuis afgeleverd hebben.</li>
+<li><strong>Naar de sloop</strong> of een demontagebedrijf.</li>
+<li><strong>Naar de keuring of de APK</strong>, als de auto niet de weg op mag.</li>
+<li><strong>Klassieker of project</strong> uit de schuur of de garage.</li>
+<li><strong>Verhuizing</strong> van Nederland naar België of andersom.</li>
+</ul>
+<h2>Zo vraagt u een prijs</h2>
+<p>Stuur een WhatsApp of vul het formulier in met de ophaalplaats, de bestemming, het merk en model, en of de auto rijdt, stuurt en remt. Dan krijgt u een prijs en plannen we een moment.</p>
+</div><div>{{FORM}}</div></div></section>

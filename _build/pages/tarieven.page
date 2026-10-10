@@ -1,0 +1,35 @@
+title: Tarieven sleepdienst: wat kost auto slepen? | Faster
+description: Wat kost een sleepdienst bij Faster? Een korte rit vanaf €125. Lees hoe de prijs is opgebouwd en waarom u hem altijd vooraf hoort.
+label: Tarieven
+h1: Wat kost een sleepdienst bij Faster?
+lead: <p>Een korte rit begint vanaf &euro;{{PRICE}}. Wat u precies betaalt, hoort u vooraf aan de telefoon of in WhatsApp. Pas als u akkoord bent, gaat de sleepwagen rijden.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Waar hangt de prijs van af?</h2>
+<div class="table-wrap"><table>
+<tr><th>Wat</th><th>Waarom het uitmaakt</th></tr>
+<tr><td>Afstand</td><td>Van de plek waar de auto staat naar de bestemming. Een paar kilometer naar de garage om de hoek is goedkoper dan een rit naar een andere provincie of naar België.</td></tr>
+<tr><td>Voertuig</td><td>Een kleine auto is anders dan een grote SUV of een beladen bestelbus.</td></tr>
+<tr><td>Situatie</td><td>Rijdt, stuurt en remt de auto nog? Staat hij in een parkeergarage, in de berm of in de modder? Dan kost het meer tijd.</td></tr>
+<tr><td>Tijdstip</td><td>&rsquo;s Nachts, in het weekend of op een feestdag kan de prijs hoger zijn. Dat hoort u dan vooraf.</td></tr>
+</table></div>
+<h2>Waarom vooraf?</h2>
+<p>Iemand met pech staat langs de weg en heeft weinig keus. Daarom vinden wij dat u de prijs moet kennen voordat er iemand rijdt. Geen &lsquo;we zien het wel ter plaatse&rsquo;, geen voorrijkosten die achteraf op de rekening komen.</p>
+<h2>Wat heeft u nodig voor een goede prijs?</h2>
+<ul>
+<li>De plek waar de auto staat: adres, plaats of op de snelweg het nummer van het hectometerpaaltje.</li>
+<li>Waar de auto naartoe moet.</li>
+<li>Merk en model.</li>
+<li>Wat er aan de hand is, en of de auto nog rolt en stuurt.</li>
+</ul>
+<p>Stuur gerust een foto in WhatsApp. Dan weten we sneller wat er nodig is.</p>
+<h2>Vergoedt de verzekering het?</h2>
+<p>Soms wel. Heeft u pechhulp via uw autoverzekering, lease of creditcard, bel dan eerst hen. Lees meer in <a href="{{R}}kennisbank/wat-kost-een-sleepdienst/">wat kost een sleepdienst</a> en <a href="{{R}}kennisbank/sleepdienst-zonder-abonnement/">sleepdienst zonder abonnement</a>.</p>
+</div><aside class="side">
+<div class="price-card"><span>Korte rit</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf. Bel of WhatsApp de ophaalplaats en de bestemming.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Zijn de prijzen inclusief btw?
+A: Ja, de prijzen voor particulieren zijn inclusief btw.
+V: Wat als de auto ter plaatse toch weer start?
+A: Dan hoeft hij niet gesleept te worden. Wat u dan betaalt, spreken we vooraf af.

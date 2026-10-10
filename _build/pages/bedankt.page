@@ -1,0 +1,9 @@
+title: Bedankt voor uw aanvraag | Faster
+description: Uw aanvraag is verstuurd.
+label: Bedankt
+h1: Bedankt, uw aanvraag is verstuurd
+lead: <p>We nemen zo snel mogelijk contact met u op. Is het dringend? Bel of stuur een WhatsApp, dat is sneller.</p>
+robots: noindex
+sitemap: no
+===MAIN===
+<section class="section"><div class="container narrow"><p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></p><p><a href="{{R}}">Terug naar de homepage</a></p></div></section>

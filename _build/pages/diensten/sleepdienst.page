@@ -1,0 +1,39 @@
+title: Auto laten slepen? Sleepdienst 24/7 vanaf €125 | Faster
+description: Auto laten slepen naar uw garage, huis of de dealer. Faster sleept 24/7 op een plateauwagen, met een vaste prijs vooraf. Geen abonnement nodig.
+label: Auto slepen
+kind: dienst
+order: 1
+card: Uw auto rijdt niet meer? Wij zetten hem op het plateau en brengen hem naar het adres dat u kiest.
+crumbs: Diensten|diensten/
+h1: Auto laten slepen
+lead: <p>Start uw auto niet meer, maakt hij een geluid dat niet goed is, of brandt er een rood lampje? Rijd dan niet verder. Wij halen de auto op en brengen hem naar uw garage, naar huis of naar een ander adres.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Altijd op een plateau</h2>
+<p>Wij slepen met een plateauwagen. De auto staat dan met alle wielen op de wagen en wordt vastgezet met spanbanden. Er draait niets mee, de versnellingsbak en de aandrijving worden niet belast. Dat is veiliger voor automaten, vierwielaangedreven auto&rsquo;s en elektrische auto&rsquo;s, en voor een auto met schade aan de wielophanging.</p>
+<h2>Wanneer moet u de auto laten slepen?</h2>
+<ul>
+<li>De motor start niet en starthulp helpt niet.</li>
+<li>Er brandt een rood waarschuwingslampje voor olie, temperatuur of remmen.</li>
+<li>U heeft verkeerd getankt en de motor al gestart.</li>
+<li>De koppeling of de versnellingsbak doet het niet meer.</li>
+<li>Een band is kapot en er is geen reservewiel of het wiel zit vast.</li>
+<li>De auto heeft schade na een aanrijding en is niet meer veilig.</li>
+</ul>
+<p>Twijfelt u? Bel ons en vertel wat u ziet en hoort. Soms is slepen niet nodig.</p>
+<h2>Waar brengen we de auto naartoe?</h2>
+<p>U kiest. Vaak is dat uw eigen garage. Is die dicht, &rsquo;s nachts of in het weekend, dan kan de auto naar uw huis of naar een ander adres. Wij zetten hem daar veilig neer. Wilt u de auto naar een garage in België brengen? Ook dat kan, lees meer over <a href="{{R}}diensten/auto-naar-belgie/">slepen naar België</a>.</p>
+<h2>Wat kost het?</h2>
+<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort hem vooraf. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
+</div><aside class="side">
+<div class="price-card"><span>Auto slepen</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf, geen abonnement.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Sleepwagen van Faster laadt een witte bestelbus op het plateau" width="1288" height="966" loading="lazy"></figure>
+</aside></div></section>
+{{STEPS}}
+===FAQ===
+V: Kan de auto naar mijn huis als de garage dicht is?
+A: Ja. Wij zetten de auto bij u voor de deur of op een ander adres. Op een later moment kunnen we hem alsnog naar de garage brengen.
+V: Hoe lang duurt het voordat de sleepwagen er is?
+A: Dat hangt af van waar u staat en hoe druk het is. Bij het bellen hoort u hoe lang het ongeveer duurt.
+V: Moet ik bij de auto blijven?
+A: Bij voorkeur wel, of spreek af waar de sleutel ligt. Op de snelweg mag u de auto niet onbeheerd laten staan.
