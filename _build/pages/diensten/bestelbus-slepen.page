@@ -1,11 +1,12 @@
 title: Bestelbus laten slepen, 24/7 | Faster sleepdienst
-description: Bestelbus kapot? Faster sleept bestelbussen en busjes naar uw garage of bedrijf, ook buiten kantooruren. Prijs vooraf, geen abonnement.
+description: Bestelbus stuk? Faster sleept bestelbussen en busjes naar uw garage of bedrijf, ook buiten kantooruren. Prijs vooraf, geen abonnement.
 label: Bestelbus slepen
 kind: dienst
 order: 4
 card: Een bestelbus die stilstaat kost geld. We halen de bus op en brengen hem naar uw garage of bedrijf.
 crumbs: Diensten|diensten/
 h1: Bestelbus laten slepen
+h1b: ook &rsquo;s avonds en in het weekend
 lead: <p>Voor een ondernemer is een bus die stilstaat een verloren werkdag. Wij halen bestelbussen op bij de klant, op de bouwplaats of langs de weg, en brengen ze naar uw garage of naar uw bedrijf.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">

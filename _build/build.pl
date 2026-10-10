@@ -4,36 +4,36 @@
 #   perl _build/build.pl
 #
 # Reads every _build/pages/**/*.page file and writes the matching page:
-#   index.page            -> index.html
-#   404.page              -> 404.html
+#   index.page             -> index.html
+#   404.page               -> 404.html
 #   sleepdienst/breda.page -> sleepdienst/breda/index.html
 # wrapped in the shared head, header, breadcrumbs, footer and scripts.
 # Also writes sitemap.xml and robots.txt, and reports broken internal links.
 #
 # .page format: "key: value" lines, then sections that start with a line
 # "===NAME===". Every section becomes a field (lower case name).
-#   title, description   meta tags (title is used as-is)
-#   h1                    page heading (template city/page)
+#   title, description   meta tags (city pages: generated, see city_seo)
+#   h1, h1b               heading; h1b is the yellow second line (optional)
 #   label                 breadcrumb label and link text in lists
 #   crumbs                "Label|path/ > Label|path/" between Home and this page
-#   template              city | page | raw (raw: MAIN is the whole <main>)
+#   template              city | page | raw   (raw: MAIN is the whole <main>)
 #   card                  one-line summary for hub lists
 #   kind                  city | dienst | gids   (used by {{LIST:kind}})
-#   province              city pages: grouping in the werkgebied list
-#   near                  city pages: slugs of nearby city pages, comma separated
+#   province, near        city pages: grouping, and slugs of nearby cities
 #   sitemap: no           leave out of sitemap
-# Sections: MAIN (page body), FAQ ("V: ..." / "A: ..." lines), and for city
-# pages LEAD, ROADS, LOCAL, ROUTE.
+# Sections: MAIN, FAQ ("V: ..." / "A: ..." lines), and for city pages
+# LEAD (first paragraph of the info block), ROADS, LOCAL.
 #
-# Placeholders: {{R}} (relative path to the site root), {{PHONE}},
-# {{PHONE_HREF}}, {{WA_HREF}}, {{PRICE}}, {{LIST:kind}}, {{FORM}},
-# {{REVIEWS}}, {{STEPS}}, {{CTA}}
+# Placeholders: {{R}} {{PHONE}} {{PHONE_HREF}} {{WA_HREF}} {{PRICE}}
+# {{HERO}} {{USPS}} {{STEPS}} {{GALLERY}} {{SAFETY}} {{REVIEWS}} {{CTA}}
+# {{FORM}} {{LIST:kind}}
 use strict;
 use warnings;
 use utf8;
 use File::Find;
 use File::Path qw(make_path);
 use File::Basename qw(dirname);
+binmode STDOUT, ":encoding(UTF-8)";
 
 # ---------------------------------------------------------------- settings
 # PREVIEW = 1: every page gets noindex and robots.txt blocks crawling.
@@ -60,14 +60,19 @@ my @NAV = (
 my @FOOT_CITIES = qw(rotterdam amsterdam den-haag utrecht eindhoven breda tilburg den-bosch);
 my @FOOT_INFO = (['Tarieven','tarieven/'],['Kennisbank','kennisbank/'],['Over ons','over-ons/'],['Contact','contact/'],['Privacy','privacy/']);
 
+# Real Google reviews of Faster: [name, text, tag]
 my @REVIEWS = (
-  ['Portsurmer', 'Op zondag pech gehad in Breda en meteen geholpen. Snelle, professionele en vriendelijke takeldienst. Bedankt!!'],
-  ['TheRealM', 'Super snel opkomen dagen en de prijs was zoals afgesproken, geen gefoefel.'],
-  ['nabil Choukair', 'Perfecte service. Staat zelf klaar om 1u \'s nachts. Was binnen de 20 min aanwezig. En nog voor een goede prijs.'],
-  ['Karen Vardanyan', 'Iemand die zijn job goed kent, zeer vriendelijke chauffeur, professioneel geholpen, bedankt om snel te zijn'],
-  ['Marko Gheis', 'Ik stond stil op de snelweg, het was zeer gevaarlijk met mijn vrouw en kinderen. Was heel snel ter plaatse en de goedkoopste die er was op dat moment.'],
-  ['Alattim Tokmak', 'Zeer tevreden, binnen de 15 minuten waren ze al aanwezig en qua prijs is dit gewoon de max!!! Zeker een aanrader!!!'],
+  ['Alattim Tokmak', 'Zeer tevreden, binnen de 15 minuten waren ze al aanwezig en qua prijs is dit gewoon de max!!! Zeker een aanrader!!!', 'Goede prijs'],
+  ['nabil Choukair', 'Perfecte service. Staat zelf klaar om 1u &rsquo;s nachts. Was binnen de 20 min aanwezig. En nog voor een goede prijs.', ''],
+  ['Portsurmer', 'Op zondag pech gehad in Breda en meteen geholpen. Snelle, professionele en vriendelijke takeldienst. Bedankt!!', ''],
+  ['Marko Gheis', 'Ik stond stil op de snelweg, het was zeer gevaarlijk met mijn vrouw en kinderen. Was heel snel ter plaatse en de goedkoopste die er was op dat moment.', ''],
+  ['Вит Ше', 'Ik was absoluut perfect geholpen door een uiterst vriendelijke en aangename chauffeur. Het was ook zeer goed door dispatch georganiseerd en de prijs viel ook mee.', 'Redelijke prijs'],
+  ['TheRealM', 'Super snel opkomen dagen en de prijs was zoals afgesproken, geen gefoefel.', ''],
+  ['Karen Vardanyan', 'Iemand die zijn job goed kent, zeer vriendelijke chauffeur, professioneel geholpen, bedankt om snel te zijn 👍', 'Goede prijs'],
+  ['Chayden Van Harneveldt', 'Zeer tevreden, zeer goede service.', ''],
 );
+
+my $GOOGLE_G = '<svg class="g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.5 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.5 0 20.1 0 24s1 7.5 2.7 10.7l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.8l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>';
 
 # ---------------------------------------------------------------- read pages
 my $root = dirname(dirname(__FILE__));
@@ -91,18 +96,36 @@ find(sub {
   my %p = (src => $src, out => $out, url => $url, slug => (split m{/}, $rel)[-1]);
   for (split /\n/, shift @parts) { $p{$1} = $2 if /^(\w+):\s*(.*?)\s*$/ }
   while (@parts) { my ($k, $v) = splice @parts, 0, 2; $v =~ s/\s+$//; $p{lc $k} = $v }
-  $p{template} //= ($p{kind} // "") eq "city" ? "city" : "page";
-  $p{crumbs} //= "Werkgebied|sleepdienst/" if ($p{kind} // "") eq "city";
+  if (($p{kind} // '') eq 'city') { $p{template} //= 'city'; $p{crumbs} //= 'Werkgebied|sleepdienst/'; city_seo(\%p) }
+  $p{template} //= 'page';
   for (qw(title description label)) { warn "$src: no $_\n" unless $p{$_} }
   $P{$out} = \%p;
 }, '_build/pages');
 
-my %BYSLUG;   # "sleepdienst/breda" style keys for near links
+my %BYSLUG;
 for my $p (values %P) { (my $k = $p->{url}) =~ s{/$}{}; $BYSLUG{$k} = $p }
+
+# City pages share one title / description / hero formula so every page
+# targets "sleepdienst <plaats>" the same way. "tlabel" is a shorter name
+# for the title when the label is long.
+sub city_seo {
+  my $p = shift;
+  my $n = $p->{label};
+  my $t = $p->{tlabel} // $n;
+  my $title = "Sleepdienst $t 24/7 | Snel ter plaatse, vanaf €$PRICE";
+  $title = "Sleepdienst $t 24/7 | Vanaf €$PRICE" if length $title > 62;
+  $p->{title} //= $title;
+  $p->{description} //= "Auto stuk in $n? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7, vaste prijs vooraf vanaf €$PRICE, geen abonnement. Bel of WhatsApp nu.";
+  $p->{h1}  //= "Sleepdienst $n";
+  $p->{h1b} //= 'snel ter plaatse, 24/7.';
+  $p->{eyebrow} //= "Auto slepen &middot; pechhulp &middot; $n";
+  $p->{sub} //= "Auto stuk in $n? Wij staan dag en nacht voor u klaar.";
+  $p->{intro} //= "Faster sleept uw auto of bestelbus in $n en omgeving naar uw garage, naar huis of naar elk ander adres. Bij spoed zijn we vaak binnen 30 minuten bij u. U hoort vooraf een vaste, scherpe prijs, vanaf &euro;$PRICE. Geen abonnement, geen verrassingen achteraf.";
+}
 
 # ---------------------------------------------------------------- helpers
 sub esc { my $s = shift // ''; $s =~ s/&(?!\w+;|#\d+;)/&amp;/g; $s =~ s/</&lt;/g; $s =~ s/>/&gt;/g; $s =~ s/"/&quot;/g; $s }
-sub jstr { my $s = shift // ''; $s =~ s/<[^>]+>//g; $s =~ s/&nbsp;/ /g; $s =~ s/&amp;/&/g; $s =~ s/&euro;/€/g; $s =~ s/\\/\\\\/g; $s =~ s/"/\\"/g; $s =~ s/\n/ /g; $s }
+sub jstr { my $s = shift // ''; $s =~ s/<[^>]+>//g; $s =~ s/&nbsp;/ /g; $s =~ s/&amp;/&/g; $s =~ s/&euro;/€/g; $s =~ s/&rsquo;/’/g; $s =~ s/&#39;/'/g; $s =~ s/\\/\\\\/g; $s =~ s/"/\\"/g; $s =~ s/\n/ /g; $s }
 
 sub faq_items {
   my $f = shift // return ();
@@ -119,7 +142,7 @@ sub faq_items {
 sub faq_html {
   my @f = @_;
   return '' unless @f;
-  my $h = qq{<section class="section"><div class="container narrow"><h2>Veelgestelde vragen</h2><div class="faq">};
+  my $h = qq{<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Veelgestelde vragen</span><h2>Antwoorden voordat u belt</h2></div></div><div class="faq">};
   $h .= qq{<details><summary>$_->[0]</summary><div class="faq-a"><p>$_->[1]</p></div></details>} for @f;
   $h . qq{</div></div></section>};
 }
@@ -137,33 +160,89 @@ sub list_html {
     }
     return "$h</div>";
   }
-  my $h = '<div class="card-grid">';
-  $h .= qq{<a class="card" href="{{R}}$_->{url}"><h3>$_->{label}</h3><p>} . ($_->{card} // '') . qq{</p><span class="more">Lees meer &rarr;</span></a>} for @ps;
+  my $h = '<div class="card-grid">'; my $i = 0;
+  for (@ps) { $i++; $h .= sprintf qq{<a class="card" href="{{R}}$_->{url}"><span class="num">%02d</span><h3>$_->{label}</h3><p>%s</p><span class="more">Meer info &rarr;</span></a>}, $i, $_->{card} // '' }
   "$h</div>";
+}
+
+sub review_card {
+  my ($r, $cls) = @_;
+  my $tag = $r->[2] ? " &middot; $r->[2]" : '';
+  qq{<figure class="review$cls"><div class="review-top">$GOOGLE_G<span class="stars" aria-label="5 sterren">★★★★★</span></div><blockquote>&ldquo;$r->[1]&rdquo;</blockquote><figcaption><strong>$r->[0]</strong><span>Google review$tag</span></figcaption></figure>};
 }
 
 sub reviews_html {
   my ($start) = @_; $start //= 0;
-  my $h = qq{<section class="section grey"><div class="container"><div class="section-head"><h2>Wat klanten zeggen</h2><p>Echte Google-reviews van klanten van Faster.</p></div><div class="review-grid">};
-  for my $i (0..2) {
-    my $r = $REVIEWS[($start + $i) % @REVIEWS];
-    $h .= qq{<figure class="review"><div class="stars" aria-label="5 sterren">★★★★★</div><blockquote>&ldquo;$r->[1]&rdquo;</blockquote><figcaption>$r->[0] &middot; Google review</figcaption></figure>};
-  }
+  my $h = qq{<section class="section grey"><div class="container"><div class="section-head"><div><span class="eyebrow">Klantenbeoordelingen</span><h2>Wat klanten over Faster zeggen</h2></div><p>Echte Google-reviews, geen verzonnen teksten.</p></div><div class="review-grid">};
+  $h .= review_card($REVIEWS[($start + $_) % @REVIEWS], '') for 0..5;
   $h . '</div></div></section>';
 }
 
+sub hero_html {
+  my $p = shift;
+  my $img = $p->{img} // 'faster-road-transport.jpg';
+  my $alt = $p->{imgalt} // 'Sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel';
+  my $h1b = $p->{h1b} ? qq{<br><span>$p->{h1b}</span>} : '';
+  my $slides = join '', map { review_card($REVIEWS[$_], $_ == 0 ? ' is-active' : '') } 0..$#REVIEWS;
+  return <<"H";
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><span class="eyebrow">$p->{eyebrow}</span>
+<h1>$p->{h1}$h1b</h1>
+<p class="hero-sub">$p->{sub}</p>
+<p class="hero-intro">$p->{intro}</p>
+<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel direct: {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
+<div class="proof">
+<div><strong>&plusmn; 30 min*</strong><span>vaak snel ter plaatse</span></div>
+<div><strong>vanaf &euro;{{PRICE}}</strong><span>vaste prijs vooraf</span></div>
+<div><strong>24/7</strong><span>ook &rsquo;s nachts en in het weekend</span></div>
+</div>
+<div class="review-slider" aria-label="Google reviews">$slides</div>
+</div>
+<figure class="hero-media"><img src="{{R}}assets/img/$img" alt="$alt" width="1600" height="1200" loading="eager" fetchpriority="high"><figcaption>Eigen materieel &middot; echte opdrachten</figcaption></figure>
+</div>
+<div class="container"><p class="footnote">* Bij dringende oproepen vaak mogelijk, afhankelijk van uw locatie en het verkeer. U hoort bij het bellen hoe snel we er kunnen zijn.</p></div>
+</section>
+H
+}
+
+my $USPS = <<'H';
+<section class="usp-band"><div class="container usp-grid">
+<div><strong>Snel bij u</strong><span>Bij spoed vaak binnen 30 minuten ter plaatse.</span></div>
+<div><strong>Scherpe vaste prijs</strong><span>Vanaf &euro;{{PRICE}}. U hoort de prijs vooraf, geen verrassingen.</span></div>
+<div><strong>Geen abonnement</strong><span>Geen lidmaatschap of pechhulppas nodig. U betaalt per rit.</span></div>
+<div><strong>U kiest de bestemming</strong><span>Uw garage, uw huis, de dealer of een schadebedrijf.</span></div>
+</div></section>
+H
+
 my $STEPS = <<'H';
-<section class="section"><div class="container"><div class="section-head"><h2>Zo werkt het</h2><p>Geen abonnement, geen lidmaatschap. U betaalt alleen voor de rit die u nodig heeft.</p></div>
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Zo werkt het</span><h2>In drie stappen geholpen</h2></div><p>Geen ingewikkelde procedure. Eén telefoontje of WhatsApp is genoeg.</p></div>
 <ol class="steps">
-<li><strong>Bel of WhatsApp</strong><span>Vertel waar de auto staat, wat er aan de hand is en waar hij naartoe moet.</span></li>
-<li><strong>Prijs vooraf</strong><span>U hoort vooraf wat de rit kost. Pas als u akkoord bent, gaat de sleepwagen rijden.</span></li>
-<li><strong>Ophalen</strong><span>De auto gaat op het plateau en wordt vastgezet.</span></li>
-<li><strong>Afleveren</strong><span>Naar uw garage, uw huis of een ander adres dat u kiest.</span></li>
+<li><strong>Bel of WhatsApp</strong><span>Vertel waar de auto staat, wat er aan de hand is en waar hij naartoe moet. Deel uw locatie in WhatsApp, dan vinden we u meteen.</span></li>
+<li><strong>Vaste prijs vooraf</strong><span>U hoort direct wat de rit kost. Pas als u akkoord bent, vertrekt de sleepwagen.</span></li>
+<li><strong>Wij slepen, u rijdt mee</strong><span>De auto gaat veilig op het plateau en wordt vastgezet. Wij brengen hem naar het adres dat u kiest.</span></li>
 </ol></div></section>
 H
 
+my $GALLERY = <<'H';
+<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk</span><h2>Geen stockfoto&rsquo;s, eigen sleepwagens</h2></div><p>Dit is ons materieel en dit zijn echte opdrachten.</p></div>
+<div class="gallery">
+<figure class="g-large"><img src="{{R}}assets/img/faster-road-transport.jpg" alt="Gele sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel" width="1600" height="1200" loading="lazy"><figcaption>Twee voertuigen in één rit</figcaption></figure>
+<figure><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken" width="1288" height="966" loading="lazy"><figcaption>Bestelbus opladen</figcaption></figure>
+<figure><img src="{{R}}assets/img/faster-warehouse.jpg" alt="Sleepwagen van Faster met een auto op het plateau in een loods" width="738" height="1156" loading="lazy"><figcaption>Veilig vastgezet</figcaption></figure>
+</div></div></section>
+H
+
+my $SAFETY = <<'H';
+<section class="section safety"><div class="container safety-grid">
+<div><span class="eyebrow">Staat u stil langs de weg?</span><h2>Eerst veiligheid,<br>dan Faster.</h2><p>Pech is vervelend, maar hulp is onderweg. Let tot die tijd op uw eigen veiligheid en die van uw passagiers.</p>
+<ol class="safety-list"><li>Zet de alarmlichten aan.</li><li>Trek een veiligheidshesje aan.</li><li>Stap uit aan de kant van de vangrail.</li><li>Wacht achter de vangrail, niet bij de auto.</li></ol>
+<p class="safety-note">Staat de auto op de snelweg op een rijstrook? Bel eerst 112 of Rijkswaterstaat (0800-8002). <a href="{{R}}kennisbank/pech-op-de-snelweg/">Lees wat u moet doen bij pech op de snelweg</a>.</p></div>
+<div class="quote-box"><strong>&ldquo;Voor elk probleem is een oplossing.&rdquo;</strong><p>Niet elke situatie is makkelijk, maar de duurste oplossing is niet altijd de beste. Wij kijken eerst wat er echt nodig is.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
+</div></section>
+H
+
 my $CTA = <<'H';
-<section class="cta-band"><div class="container cta-inner"><div><h2>Staat uw auto stil?</h2><p>Bel of stuur een WhatsApp met uw locatie. Dag en nacht bereikbaar.</p></div><div class="cta-actions"><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div></div></section>
+<section class="cta-band"><div class="container cta-inner"><div><h2>Staat uw auto stil?</h2><p>Bel of stuur een WhatsApp met uw locatie. Dag en nacht, ook in het weekend.</p></div><div class="cta-actions"><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div></div></section>
 H
 
 sub form_html {
@@ -179,47 +258,59 @@ sub form_html {
 <label>Waar moet de auto naartoe?<input name="bestemming"></label>
 <label>Merk en model<input name="voertuig"></label>
 <label>Wat is er gebeurd?<textarea name="bericht" rows="3"></textarea></label>
-<button class="btn" type="submit">Vraag een prijs aan</button>
+<button class="btn btn-call" type="submit">Vraag een vaste prijs aan</button>
 <p class="form-note">Spoed? Bel of WhatsApp ons, dat is sneller dan het formulier.</p>
 </form>
 H
+}
+
+sub price_card {
+  my $what = shift;
+  qq{<div class="price-card"><span>$what</span><strong>vanaf &euro;{{PRICE}}</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>};
 }
 
 # ---------------------------------------------------------------- templates
 sub city_main {
   my $p = shift;
   my $n = $p->{label};
-  $p->{img} //= "faster-road-transport.jpg";
-  $p->{imgalt} //= "Gele sleepwagen van Faster met een auto op het plateau";
   my $near = '';
   if ($p->{near}) {
-    my @l = map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">$q->{label}</a>} : do { warn "$p->{src}: near $_ unknown\n"; () } } split /\s*,\s*/, $p->{near};
-    $near = '<p class="near">In de buurt: ' . join(' &middot; ', @l) . '</p>' if @l;
+    my @l = map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">Sleepdienst $q->{label}</a>} : do { warn "$p->{src}: near $_ unknown\n"; () } } split /\s*,\s*/, $p->{near};
+    $near = '<div class="near"><strong>Ook in de buurt:</strong> ' . join('', @l) . qq{<a href="{{R}}sleepdienst/">Alle plaatsen &rarr;</a></div>} if @l;
   }
+  my $pc = price_card("Sleepdienst $n");
   return <<"H";
-<section class="hero hero-sub"><div class="container hero-grid">
-<div><span class="eyebrow">Sleepdienst $n &middot; 24/7</span><h1>$p->{h1}</h1><div class="lead">$p->{lead}</div>
-<div class="hero-actions"><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
-<ul class="usp"><li>Prijs vooraf, vanaf &euro;{{PRICE}}</li><li>Geen abonnement nodig</li><li>Naar elk adres dat u kiest</li></ul></div>
-<figure class="hero-media"><img src="{{R}}assets/img/$p->{img}" alt="$p->{imgalt}" width="1600" height="1200" loading="eager"></figure>
-</div></section>
+{{HERO}}
+{{USPS}}
 <section class="section"><div class="container two-col"><div class="prose">
-<h2>Wegen en knelpunten rond $n</h2>$p->{roads}
-<h2>Goed om te weten in $n</h2>$p->{local}
-</div><aside class="side">
-<div class="price-card"><span>Sleepdienst $n</span><strong>vanaf &euro;{{PRICE}}</strong><p>De vaste prijs hoort u vooraf aan de telefoon. Daarna geen verrassingen.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
-</aside></div></section>
+<h2>Sleepdienst $n: wegen en knelpunten</h2>$p->{roads}
+<h2>Auto slepen in $n: goed om te weten</h2>$p->{local}
+$near
+</div><aside class="side">$pc</aside></div></section>
+<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Onze diensten in $n</span><h2>Waarvoor kunt u ons bellen?</h2></div><p>Wij zijn in de eerste plaats een sleepdienst. Kan het ter plaatse opgelost worden, dan doen we dat ook.</p></div>{{LIST:dienst}}</div></section>
 {{STEPS}}
+{{GALLERY}}
 {{REVIEWS}}
-<section class="section"><div class="container narrow">$near<p><a href="{{R}}sleepdienst/">Bekijk het hele werkgebied &rarr;</a></p></div></section>
 H
+}
+
+sub city_faq {
+  my $p = shift;
+  my $n = $p->{label};
+  return (
+    ["Hoe snel is de sleepdienst in $n er?", "Bij spoed zijn we vaak binnen 30 minuten bij u, afhankelijk van waar u staat en het verkeer. Bij het bellen hoort u hoe snel we er kunnen zijn."],
+    ["Wat kost een sleepdienst in $n?", "Een korte rit begint vanaf €$PRICE. De vaste prijs hangt af van de afstand, het voertuig en het tijdstip, en u hoort hem vooraf."],
+    ["Heb ik een abonnement nodig?", "Nee. U betaalt per rit, zonder lidmaatschap of pechhulppas."],
+    ["Waar brengen jullie mijn auto naartoe?", "Waar u wilt: uw eigen garage, uw huis, de dealer of een schadebedrijf."],
+  );
 }
 
 sub page_main {
   my $p = shift;
   my $intro = $p->{lead} ? qq{<div class="lead">$p->{lead}</div>} : '';
+  my $h1b = $p->{h1b} ? qq{ <span>$p->{h1b}</span>} : '';
   return <<"H";
-<section class="page-head"><div class="container narrow"><h1>$p->{h1}</h1>$intro</div></section>
+<section class="page-head"><div class="container narrow"><h1>$p->{h1}$h1b</h1>$intro<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div></div></section>
 $p->{main}
 H
 }
@@ -227,7 +318,7 @@ H
 # ---------------------------------------------------------------- layout
 sub nav_html {
   my $p = shift;
-  join '', map { my $cur = index($p->{url}, $_->[1]) == 0 ? ' aria-current="page"' : ''; qq{<a href="{{R}}$_->[1]"$cur>$_->[0]</a>} } @NAV;
+  join '', map { my $cur = $p->{url} ne '' && index($p->{url}, $_->[1]) == 0 ? ' aria-current="page"' : ''; qq{<a href="{{R}}$_->[1]"$cur>$_->[0]</a>} } @NAV;
 }
 
 sub crumbs {
@@ -244,9 +335,11 @@ sub crumbs {
 
 sub business_ld {
   my $p = shift;
-  my $area = $p->{kind} && $p->{kind} eq 'city' ? qq{{"\@type":"City","name":"} . jstr($p->{label}) . qq{"}} : '{"@type":"Country","name":"Nederland"}';
+  my $area = ($p->{kind} // '') eq 'city' ? qq{{"\@type":"City","name":"} . jstr($p->{label}) . qq{"}} : '{"@type":"Country","name":"Nederland"}';
   return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"vanaf €$PRICE","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
+
+my $LOGO = '<a class="brand" href="{{R}}" aria-label="Sleepdienst Faster, naar de homepage"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
 
 my $year = 1900 + (localtime)[5];
 my @written;
@@ -259,6 +352,7 @@ for my $out (sort keys %P) {
            : $p->{template} eq 'raw'  ? $p->{main}
            : page_main($p);
   my @faq = faq_items($p->{faq});
+  @faq = city_faq($p) if !@faq && $p->{template} eq 'city';
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
 
@@ -284,6 +378,7 @@ for my $out (sort keys %P) {
 <meta name="description" content="$desc">
 $robots
 <link rel="canonical" href="$canon">
+<meta name="theme-color" content="#f6c400">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="$NAME">
@@ -298,34 +393,38 @@ $robots
 $biz$crumb_ld$faq_ld
 </head>
 <body>
+<div class="topbar"><div class="container topbar-inner"><span><b>24/7 bereikbaar</b> &middot; ook &rsquo;s nachts en in het weekend</span><span class="topbar-right">Vaste prijs vooraf &middot; vanaf &euro;{{PRICE}} &middot; geen abonnement</span></div></div>
 <header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="{{R}}"><span class="brand-mark">F</span><span class="brand-text"><strong>FASTER</strong><small>SLEEPDIENST 24/7</small></span></a>
+$LOGO
 <nav class="main-nav" id="main-nav" aria-label="Hoofdmenu">$nav</nav>
-<div class="nav-actions"><a class="btn btn-wa btn-small" href="{{WA_HREF}}">WhatsApp</a><a class="btn btn-small" href="{{PHONE_HREF}}">Bel 24/7</a><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button></div>
+<div class="nav-actions"><a class="btn btn-wa btn-small" href="{{WA_HREF}}">WhatsApp</a><a class="btn btn-call btn-small" href="{{PHONE_HREF}}">Bel 24/7</a><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button></div>
 </div></header>
 $crumb_html
 <main>
 $main
 </main>
 <footer class="site-footer"><div class="container footer-grid">
-<div><a class="brand" href="{{R}}"><span class="brand-mark">F</span><span class="brand-text"><strong>FASTER</strong><small>SLEEPDIENST 24/7</small></span></a>
-<p>Sleepdienst en autotransport in heel Nederland. Dag en nacht bereikbaar.</p>
-<p><a href="{{PHONE_HREF}}">{{PHONE}}</a><a href="{{WA_HREF}}">WhatsApp</a></p></div>
+<div>$LOGO
+<p>Sleepdienst voor auto&rsquo;s en bestelbussen in heel Nederland. Dag en nacht bereikbaar, vaste prijs vooraf, geen abonnement.</p>
+<p><a class="foot-call" href="{{PHONE_HREF}}">{{PHONE}}</a><a href="{{WA_HREF}}">WhatsApp</a></p></div>
 <div><h3>Werkgebied</h3>$foot_cities<a href="{{R}}sleepdienst/">Alle plaatsen</a></div>
 <div><h3>Diensten</h3>$foot_dien</div>
 <div><h3>Informatie</h3>$foot_info</div>
-</div><div class="container footer-bottom"><span>&copy; $year Faster</span><span>Prijzen inclusief btw, tenzij anders vermeld.</span></div></footer>
+</div><div class="container footer-bottom"><span>&copy; $year Sleepdienst Faster</span><span>Prijzen inclusief btw, tenzij anders vermeld.</span></div></footer>
 <div class="mobile-bar"><a href="{{PHONE_HREF}}">Bel nu</a><a class="wa" href="{{WA_HREF}}">WhatsApp</a></div>
 <script src="{{R}}assets/js/main.js" defer></script>
 </body>
 </html>
 H
 
-  # placeholders (repeat: inserted blocks contain placeholders too)
   for (1..3) {
+    $html =~ s/\{\{HERO\}\}/hero_html($p)/ge;
     $html =~ s/\{\{LIST:(\w+)\}\}/list_html($1)/ge;
     $html =~ s/\{\{REVIEWS\}\}/reviews_html($p->{reviews} \/\/ 0)/ge;
+    $html =~ s/\{\{USPS\}\}/$USPS/g;
     $html =~ s/\{\{STEPS\}\}/$STEPS/g;
+    $html =~ s/\{\{GALLERY\}\}/$GALLERY/g;
+    $html =~ s/\{\{SAFETY\}\}/$SAFETY/g;
     $html =~ s/\{\{CTA\}\}/$CTA/g;
     $html =~ s/\{\{FORM\}\}/form_html()/ge;
   }
@@ -356,7 +455,7 @@ open my $rb, '>', 'robots.txt' or die;
 print $rb $PREVIEW ? "User-agent: *\nDisallow: /\n" : "User-agent: *\nAllow: /\n\nSitemap: $BASE/sitemap.xml\n";
 close $rb;
 
-# ---------------------------------------------------------------- link check
+# ---------------------------------------------------------------- checks
 my $bad = 0;
 for my $out (@written) {
   open my $fh, '<:encoding(UTF-8)', $out or die; local $/; my $h = <$fh>; close $fh;
@@ -369,5 +468,8 @@ for my $out (@written) {
     $t .= 'index.html' if $t eq '' || $t =~ m{/$};
     unless (-e $t) { print "BROKEN in $out: $l\n"; $bad++ }
   }
+  my ($t) = $h =~ m{<title>(.*?)</title>};
+  printf "LONG TITLE (%d) %s: %s\n", length $t, $out, $t if length($t) > 65;
+  print "H1 COUNT in $out\n" if (() = $h =~ /<h1/g) != 1;
 }
 printf "%d pages, %d broken links%s\n", scalar @written, $bad, $PREVIEW ? ' (PREVIEW: noindex on)' : '';

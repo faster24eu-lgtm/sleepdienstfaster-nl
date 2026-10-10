@@ -6,6 +6,7 @@ order: 1
 card: Uw auto rijdt niet meer? Wij zetten hem op het plateau en brengen hem naar het adres dat u kiest.
 crumbs: Diensten|diensten/
 h1: Auto laten slepen
+h1b: snel, veilig en voor een vaste prijs
 lead: <p>Start uw auto niet meer, maakt hij een geluid dat niet goed is, of brandt er een rood lampje? Rijd dan niet verder. Wij halen de auto op en brengen hem naar uw garage, naar huis of naar een ander adres.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
@@ -17,7 +18,7 @@ lead: <p>Start uw auto niet meer, maakt hij een geluid dat niet goed is, of bran
 <li>Er brandt een rood waarschuwingslampje voor olie, temperatuur of remmen.</li>
 <li>U heeft verkeerd getankt en de motor al gestart.</li>
 <li>De koppeling of de versnellingsbak doet het niet meer.</li>
-<li>Een band is kapot en er is geen reservewiel of het wiel zit vast.</li>
+<li>Een band is lek of stuk en er is geen reservewiel of het wiel zit vast.</li>
 <li>De auto heeft schade na een aanrijding en is niet meer veilig.</li>
 </ul>
 <p>Twijfelt u? Bel ons en vertel wat u ziet en hoort. Soms is slepen niet nodig.</p>
