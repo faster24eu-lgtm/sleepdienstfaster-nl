@@ -19,7 +19,7 @@ GitHub Pages ignores folders starting with `_`, so `_build/` is not published.
 
 1. `$PREVIEW = 1` in `build.pl` puts noindex on every page and blocks crawling in robots.txt. Set it to 0 and rebuild only when the site runs on sleepdienstfaster.nl.
 2. Add a `CNAME` file containing `sleepdienstfaster.nl` once the domain's DNS points to GitHub Pages (not before, or the github.io preview link stops working).
-3. Phone and WhatsApp are the Belgian number (+32 3 375 67 37) until there is a Dutch one.
+3. Phone and WhatsApp are the Belgian number (+32 3 375 67 37) until there is a Dutch one. Owner decision 2026-10-10: Belgium is not mentioned anywhere on this site (no address, no .be links, no cross-border service); the +32 number is the only Belgian trace left.
 4. Price "vanaf €125" is the Belgian price; check it is right for the Netherlands.
-5. Add the company number (KBO/ondernemingsnummer) and VAT number to the footer.
+5. No company address or company number on the site yet (owner removed the Antwerp address). Dutch consumers and the law expect company details; decide what to show.
 6. No tracking tags yet. Adding Google Ads / Analytics tags needs a cookie banner first.

@@ -8,7 +8,7 @@ lead: <p>Een korte rit begint vanaf &euro;{{PRICE}}. Wat u precies betaalt, hoor
 <h2>Waar hangt de prijs van af?</h2>
 <div class="table-wrap"><table>
 <tr><th>Wat</th><th>Waarom het uitmaakt</th></tr>
-<tr><td>Afstand</td><td>Van de plek waar de auto staat naar de bestemming. Een paar kilometer naar de garage om de hoek is goedkoper dan een rit naar een andere provincie of naar België.</td></tr>
+<tr><td>Afstand</td><td>Van de plek waar de auto staat naar de bestemming. Een paar kilometer naar de garage om de hoek is goedkoper dan een rit naar een andere provincie.</td></tr>
 <tr><td>Voertuig</td><td>Een kleine auto is anders dan een grote SUV of een beladen bestelbus.</td></tr>
 <tr><td>Situatie</td><td>Rijdt, stuurt en remt de auto nog? Staat hij in een parkeergarage, in de berm of in de modder? Dan kost het meer tijd.</td></tr>
 <tr><td>Tijdstip</td><td>&rsquo;s Nachts, in het weekend of op een feestdag kan de prijs hoger zijn. Dat hoort u dan vooraf.</td></tr>

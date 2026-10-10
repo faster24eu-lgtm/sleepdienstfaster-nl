@@ -46,10 +46,8 @@ my $PHONE_HREF = 'tel:+3233756737';
 my $WA_NUM     = '3233756737';
 my $WA_TEXT    = 'Hallo%20Faster%2C%20ik%20heb%20een%20sleepdienst%20nodig.%20Mijn%20locatie%3A%20';
 my $WA_HREF    = "https://wa.me/$WA_NUM?text=$WA_TEXT";
-my $EMAIL      = 'faster@takeldienstfaster.be';
 my $FORM_TO    = 'faster24eu@gmail.com';     # formsubmit.co, same as takeldienstfaster.be
 my $PRICE      = '125';
-my $ADDRESS    = 'De Bosschaertstraat 248, 2020 Antwerpen, België';
 
 my @NAV = (
   ['Werkgebied',          'sleepdienst/'],
@@ -160,7 +158,7 @@ my $STEPS = <<'H';
 <li><strong>Bel of WhatsApp</strong><span>Vertel waar de auto staat, wat er aan de hand is en waar hij naartoe moet.</span></li>
 <li><strong>Prijs vooraf</strong><span>U hoort vooraf wat de rit kost. Pas als u akkoord bent, gaat de sleepwagen rijden.</span></li>
 <li><strong>Ophalen</strong><span>De auto gaat op het plateau en wordt vastgezet.</span></li>
-<li><strong>Afleveren</strong><span>Naar uw garage, uw huis of een ander adres dat u kiest, ook in België.</span></li>
+<li><strong>Afleveren</strong><span>Naar uw garage, uw huis of een ander adres dat u kiest.</span></li>
 </ol></div></section>
 H
 
@@ -198,12 +196,11 @@ sub city_main {
     my @l = map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">$q->{label}</a>} : do { warn "$p->{src}: near $_ unknown\n"; () } } split /\s*,\s*/, $p->{near};
     $near = '<p class="near">In de buurt: ' . join(' &middot; ', @l) . '</p>' if @l;
   }
-  my $route = $p->{route} ? qq{<div class="box"><h2>Naar huis of naar België</h2>$p->{route}</div>} : '';
   return <<"H";
 <section class="hero hero-sub"><div class="container hero-grid">
 <div><span class="eyebrow">Sleepdienst $n &middot; 24/7</span><h1>$p->{h1}</h1><div class="lead">$p->{lead}</div>
 <div class="hero-actions"><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
-<ul class="usp"><li>Prijs vooraf, vanaf &euro;{{PRICE}}</li><li>Geen abonnement nodig</li><li>Naar elk adres, ook in België</li></ul></div>
+<ul class="usp"><li>Prijs vooraf, vanaf &euro;{{PRICE}}</li><li>Geen abonnement nodig</li><li>Naar elk adres dat u kiest</li></ul></div>
 <figure class="hero-media"><img src="{{R}}assets/img/$p->{img}" alt="$p->{imgalt}" width="1600" height="1200" loading="eager"></figure>
 </div></section>
 <section class="section"><div class="container two-col"><div class="prose">
@@ -211,7 +208,6 @@ sub city_main {
 <h2>Goed om te weten in $n</h2>$p->{local}
 </div><aside class="side">
 <div class="price-card"><span>Sleepdienst $n</span><strong>vanaf &euro;{{PRICE}}</strong><p>De vaste prijs hoort u vooraf aan de telefoon. Daarna geen verrassingen.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
-$route
 </aside></div></section>
 {{STEPS}}
 {{REVIEWS}}
@@ -249,7 +245,7 @@ sub crumbs {
 sub business_ld {
   my $p = shift;
   my $area = $p->{kind} && $p->{kind} eq 'city' ? qq{{"\@type":"City","name":"} . jstr($p->{label}) . qq{"}} : '{"@type":"Country","name":"Nederland"}';
-  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","email":"$EMAIL","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"vanaf €$PRICE","openingHours":"Mo-Su 00:00-23:59","address":{"\@type":"PostalAddress","streetAddress":"De Bosschaertstraat 248","postalCode":"2020","addressLocality":"Antwerpen","addressCountry":"BE"},"areaServed":$area}</script>};
+  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"vanaf €$PRICE","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
 my $year = 1900 + (localtime)[5];
@@ -313,9 +309,8 @@ $main
 </main>
 <footer class="site-footer"><div class="container footer-grid">
 <div><a class="brand" href="{{R}}"><span class="brand-mark">F</span><span class="brand-text"><strong>FASTER</strong><small>SLEEPDIENST 24/7</small></span></a>
-<p>Sleepdienst en autotransport in Nederland en tussen Nederland en België. Dag en nacht bereikbaar.</p>
-<p><a href="{{PHONE_HREF}}">{{PHONE}}</a><a href="{{WA_HREF}}">WhatsApp</a><a href="mailto:$EMAIL">$EMAIL</a></p>
-<p>Faster &middot; $ADDRESS</p></div>
+<p>Sleepdienst en autotransport in heel Nederland. Dag en nacht bereikbaar.</p>
+<p><a href="{{PHONE_HREF}}">{{PHONE}}</a><a href="{{WA_HREF}}">WhatsApp</a></p></div>
 <div><h3>Werkgebied</h3>$foot_cities<a href="{{R}}sleepdienst/">Alle plaatsen</a></div>
 <div><h3>Diensten</h3>$foot_dien</div>
 <div><h3>Informatie</h3>$foot_info</div>
