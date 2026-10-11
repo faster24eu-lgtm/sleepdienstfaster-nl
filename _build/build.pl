@@ -38,7 +38,7 @@ binmode STDOUT, ":encoding(UTF-8)";
 # ---------------------------------------------------------------- settings
 # PREVIEW = 1: every page gets noindex and robots.txt blocks crawling.
 # Set to 0 only when the site runs on its own domain and is ready to launch.
-my $PREVIEW    = 1;
+my $PREVIEW    = 0;
 my $BASE       = 'https://sleepdienstfaster.nl';
 my $NAME       = 'Sleepdienst Faster';
 my $PHONE      = '+32 3 375 67 37';
