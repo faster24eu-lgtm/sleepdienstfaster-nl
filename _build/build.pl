@@ -410,7 +410,7 @@ $main
 <div><h3>Werkgebied</h3>$foot_cities<a href="{{R}}sleepdienst/">Alle plaatsen</a></div>
 <div><h3>Diensten</h3>$foot_dien</div>
 <div><h3>Informatie</h3>$foot_info</div>
-</div><div class="container footer-bottom"><span>&copy; $year Sleepdienst Faster</span><span>Prijzen inclusief btw, tenzij anders vermeld.</span></div></footer>
+</div><div class="container footer-bottom"><span>&copy; $year Sleepdienst Faster</span><span>Prijzen inclusief btw, tenzij anders vermeld.</span></div><div class="faster-network" style="max-width:1200px;margin:0 auto;padding:14px 20px;font-size:13px;line-height:1.6;opacity:.85;display:flex;flex-wrap:wrap;gap:4px 16px"><span>Faster in Europa:</span> <a href="https://takeldienst-depannage.com/" hreflang="nl-BE" style="color:inherit;text-decoration:underline">Belgi&euml; &ndash; Takeldienst</a> <a href="https://abschleppdienst-faster.de/" hreflang="de-DE" style="color:inherit;text-decoration:underline">Deutschland &ndash; Abschleppdienst</a> <a href="https://fasterbreakdownrecovery.co.uk/" hreflang="en-GB" style="color:inherit;text-decoration:underline">United Kingdom &ndash; Breakdown recovery</a> <a href="https://depannageplusvite.fr/" hreflang="fr-FR" style="color:inherit;text-decoration:underline">France &ndash; D&eacute;pannage</a></div></footer>
 <div class="mobile-bar"><a href="{{PHONE_HREF}}">Bel nu</a><a class="wa" href="{{WA_HREF}}">WhatsApp</a></div>
 <script src="{{R}}assets/js/main.js" defer></script>
 </body>
