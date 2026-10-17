@@ -41,9 +41,9 @@ binmode STDOUT, ":encoding(UTF-8)";
 my $PREVIEW    = 0;
 my $BASE       = 'https://sleepdienstfaster.nl';
 my $NAME       = 'Sleepdienst Faster';
-my $PHONE      = '+32 3 375 67 37';
-my $PHONE_HREF = 'tel:+3233756737';
-my $WA_NUM     = '3233756737';
+my $PHONE      = '+31 97 010229095';
+my $PHONE_HREF = 'tel:+3197010229095';
+my $WA_NUM     = '3197010229095';
 my $WA_TEXT    = 'Hallo%20Faster%2C%20ik%20heb%20een%20sleepdienst%20nodig.%20Mijn%20locatie%3A%20';
 my $WA_HREF    = "https://wa.me/$WA_NUM?text=$WA_TEXT";
 my $FORM_TO    = 'faster24eu@gmail.com';     # formsubmit.co, same as takeldienstfaster.be
