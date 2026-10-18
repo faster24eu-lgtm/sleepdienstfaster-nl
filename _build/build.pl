@@ -436,11 +436,72 @@ H
   $html =~ s/\{\{PRICE\}\}/$PRICE/g;
   $html =~ s/\n{2,}/\n/g;
   warn "$p->{src}: unreplaced $1\n" while $html =~ /(\{\{[A-Z_:a-z]+\}\})/g;
+  $html = link_mentions($p, $html, $R);
 
   make_path(dirname($out)) if $out =~ m{/};
   open my $fh, '>:encoding(UTF-8)', $out or die "$out: $!";
   print $fh $html; close $fh;
   push @written, $out;
+}
+
+# Contextual links from words that are already in the text: the first unlinked mention of a place
+# ("Breda") or guide topic ("pech op de snelweg") in a <p>/<li> of the page body becomes a link.
+# The visible text never changes (checked). Skips targets the body already links (the "Ook in de
+# buurt" block does not count) and list items that are already links. At most 3 per page,
+# targets with the fewest such links go first.
+my %MENTION_IN;
+my %GUIDE_PHRASES;   # filled in BEGIN because the page loop above runs before this point
+BEGIN { %GUIDE_PHRASES = (
+  'kennisbank/pech-op-de-snelweg/'           => ['pech op de snelweg', 'pech langs de snelweg'],
+  'kennisbank/sleepdienst-zonder-abonnement/' => ['zonder abonnement', 'geen abonnement'],
+  'kennisbank/wat-kost-een-sleepdienst/'     => ['wat een sleepdienst kost', 'kosten van een sleepdienst'],
+  'kennisbank/verkeerd-getankt/'             => ['verkeerd getankt'],
+  'kennisbank/accu-leeg/'                    => ['accu leeg', 'lege accu'],
+  'kennisbank/na-een-aanrijding/'            => ['na een aanrijding'],
+) }
+sub link_mentions {
+  my ($p, $html, $R) = @_;
+  my ($pre, $main, $post) = $html =~ m{^(.*?<main\b[^>]*>)(.*)(</main>.*)$}s or return $html;
+  my $plain = sub { (my $s = shift) =~ s/<[^>]+>//g; $s };
+  my $before = $plain->($main);
+  (my $body = $main) =~ s{<div class="near">.*?</div>}{}s;
+  # set aside what must never get a link: card links that contain paragraphs (no nested <a>),
+  # reviews, and paragraphs that quote a customer
+  my @keep;
+  $main =~ s{(<a\b[^>]*>(?:(?!</a>).)*?<(?:p|li|h3)\b.*?</a>|<figure\b.*?</figure>|<blockquote\b.*?</blockquote>|<p\b[^>]*>[^<]*&ldquo;.*?</p>)}{push @keep, $1; "\x00" . $#keep . "\x00"}gse;
+  my %linked = map { $_ => 1 } $body =~ /href="\Q$R\E([^"#?]*)"/g;
+  my @t;
+  for my $q (values %P) {
+    next if $q->{url} eq $p->{url} || $linked{$q->{url}};
+    my @ph = ($q->{kind} // '') eq 'city' ? (split /\s+en\s+/, $q->{label}) : @{ $GUIDE_PHRASES{$q->{url}} // [] };
+    push @t, [$q, \@ph] if @ph;
+  }
+  @t = sort { ($MENTION_IN{$a->[0]{url}} // 0) <=> ($MENTION_IN{$b->[0]{url}} // 0) || $a->[0]{url} cmp $b->[0]{url} } @t;
+  my $n = 0;
+  for my $t (@t) {
+    last if $n >= 3;
+    my ($q, $ph) = @$t;
+    my $done = 0;
+    for my $name (@$ph) {
+      last if $done;
+      $main =~ s{(<(p|li)\b[^>]*>)(.*?)(</\2>)}{
+        my ($o, $tag, $in, $e) = ($1, $2, $3, $4);
+        unless ($done || ($tag eq 'li' && $in =~ /<a\b/)) {
+          my @parts = split /(<[^>]+>)/, $in; my $ina = 0;
+          for my $x (@parts) {
+            if ($x =~ /^</) { $ina++ if $x =~ /^<a\b/i; $ina-- if $x =~ m{^</a>}i; next }
+            next if $ina || $done;
+            $done = 1 if $x =~ s{(?<![\w\-])(\Q$name\E)(?![\w\-])(?!\s*(?:weg|straat|laan|dijk|baan)\b)}{<a href="$R$q->{url}">$1</a>}i;
+          }
+          $in = join '', @parts;
+        }
+        "$o$in$e" }gse;
+    }
+    if ($done) { $n++; $MENTION_IN{$q->{url}}++ }
+  }
+  $main =~ s/\x00(\d+)\x00/$keep[$1]/g;
+  die "$p->{src}: link_mentions changed the visible text\n" unless $plain->($main) eq $before;
+  return $pre . $main . $post;
 }
 
 # ---------------------------------------------------------------- sitemap, robots
