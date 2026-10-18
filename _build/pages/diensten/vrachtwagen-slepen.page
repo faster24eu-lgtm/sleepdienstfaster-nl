@@ -1,0 +1,57 @@
+title: Vrachtwagen sleepdienst 24/7 | Trucks, bussen | Faster
+description: Vrachtwagen, oplegger of bus met pech? Faster regelt 24/7 pechhulp en slepen vanaf 3,5 ton, ook in de Rotterdamse haven. Eén nummer, prijs vooraf. Bel of WhatsApp.
+label: Vrachtwagen slepen
+kind: dienst
+order: 8
+card: Trucks, opleggers en bussen vanaf 3,5 ton, met vaste partners met zwaar bergingsmaterieel. Eén nummer, prijs vooraf.
+crumbs: Diensten|diensten/
+h1: Vrachtwagen sleepdienst
+h1b: trucks, opleggers en bussen, 24/7
+lead: <p>Een trekker die op een parkeerplaats niet meer start. Een oplegger met een klapband in de haven. Een bus met een kapotte versnellingsbak. Bij een vrachtwagen die stilstaat, tikt de klok voor de chauffeur en voor de planner. U belt één nummer, en wij regelen de pechhulp of het slepen, vanaf 3,5 ton.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Wat wij regelen, vanaf 3,5 ton</h2>
+<p>Elk zwaar voertuig vraagt ander materieel. Een lege trekker slepen is iets anders dan een volgeladen combinatie rechtzetten. Onze eigen sleepwagens laden tot 3.500 kilo. Voor alles wat zwaarder is, werken we samen met vaste partners met zware bergingswagens. U hoeft zelf niemand te zoeken: u belt ons, wij regelen de juiste wagen en houden u op de hoogte.</p>
+<ul>
+<li><strong>Vrachtwagens en trekkers:</strong> motor in noodloop, AdBlue- of turbostoring, lege accu&rsquo;s na een weekend op de parkeerplaats, schade na een aanrijding. De truck gaat naar uw garage, de merkdealer of uw eigen terrein.</li>
+<li><strong>Opleggers en aanhangers:</strong> een oplegger met een kapotte as of remproblemen blijft vaak achter terwijl de trekker verder moet. Hij wordt opgehaald en gebracht waar u wilt, leeg of beladen.</li>
+<li><strong>Bussen en touringcars:</strong> met passagiers aan boord denken we eerst mee over vervangend vervoer, daarna over de bus zelf.</li>
+<li><strong>Kanteling en zware ongevallen:</strong> een truck in de berm of op zijn zij is werk voor zware bergingswagens met kraan. Lading die moet worden overgeladen, regelen we mee in overleg met u en de verzekeraar.</li>
+</ul>
+
+<h2>Vrachtwagen stil in de Rotterdamse haven</h2>
+<p>De haven is een eigen wereld. De A15 is de ader ervan, van de Maasvlakte via Europoort en de Botlek naar Rotterdam, en op de terminals en bedrijfsterreinen geldt vaak een toegangsprocedure. Staat uw truck op de Maasvlakte, in de Botlek, in Pernis of bij een terminal? Geef dan de naam van het terrein en de poort door, en of de chauffeur er mag blijven staan. Dan weet de berger meteen hoe hij binnenkomt. Meer over de stad leest u op <a href="{{R}}sleepdienst/rotterdam/">sleepdienst Rotterdam</a>.</p>
+
+<h2>Van telefoontje tot truck weer op weg</h2>
+<ol>
+<li><strong>Bel of stuur een WhatsApp</strong> met uw live locatie, het kenteken, merk en type, of de truck beladen is en wat er gebeurd is. Een foto zegt vaak meer dan tien minuten uitleg.</li>
+<li><strong>We bekijken wat nodig is.</strong> Soms volstaat hulp ter plaatse: starten, een band, een luchtleiding. Soms moet hij gesleept of opgeladen worden. Dat bepaalt welke wagen er komt.</li>
+<li><strong>Prijs vooraf.</strong> U hoort de prijs voordat er iemand vertrekt. Klopt de informatie die u doorgaf, dan blijft het bij die prijs.</li>
+<li><strong>Slepen en transport</strong> naar de plek die u kiest. We houden u en uw chauffeur op de hoogte tot de truck er staat.</li>
+</ol>
+
+<h2>Stil op de snelweg?</h2>
+<p>Staat de truck op een rijstrook of is er gevaar? Zet de waarschuwingslichten aan, laat de chauffeur achter de vangrail gaan en bel 112, of bel Rijkswaterstaat (0800-8002) bij pech zonder gevaar. Bij ongevallen en blokkades op de snelweg wordt de berging apart geregeld: dan komt de berger die daarvoor is aangewezen. Wij kunnen de truck daarna ophalen en naar uw garage of thuisbasis brengen. Staat de truck op een gewone weg, een parkeerplaats of een bedrijfsterrein, dan kunt u ons meteen bellen. Lees ook <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>.</p>
+
+<h2>Te breed, te hoog of te zwaar</h2>
+<p>Een transport wordt exceptioneel zodra het boven de wettelijke maten uitkomt, bijvoorbeeld breder dan 2,55 meter of hoger dan 4 meter. Een hoge touringcar of een geladen machine gaat daar snel over. Dan zijn een dieplader en een ontheffing van de RDW nodig. Wij kijken mee naar de juiste trailer, de route en de papieren voordat er iets vertrekt.</p>
+
+<h2>Wat kost het slepen van een vrachtwagen?</h2>
+<p>Eén vaste prijs voor elke truck bestaat niet, en wie die zonder vragen belooft, gokt. De prijs hangt af van het gewicht en het type (een lege trekker, een beladen combinatie of een bus), waar het voertuig staat, de afstand, het tijdstip en wat er ter plaatse moet gebeuren: gewoon slepen, opladen of eerst rechtzetten met een kraan. U hoort de prijs altijd vooraf.</p>
+
+<h2>Voor transportbedrijven en planners</h2>
+<p>Uw chauffeur staat langs de kant en uw planner zit met een klant die op zijn lading wacht. Met meerdere trucks kunnen we vaste afspraken maken, zodat de planner bij pech niet eerst hoeft te onderhandelen. U krijgt een factuur op naam van uw bedrijf, met de btw apart vermeld. Voor bestelbussen tot 3.500 kilo kijkt u bij <a href="{{R}}diensten/bestelbus-slepen/">bestelbus slepen</a>.</p>
+</div><aside class="side">
+<div class="price-card"><span>Vrachtwagen slepen</span><strong>prijs vooraf</strong><p>Trucks, opleggers en bussen vanaf 3,5 ton. 24/7, één nummer.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Slepen jullie ook vrachtwagens en bussen?
+A: Ja. Voor alles boven 3,5 ton werken we samen met vaste partners met zware bergingswagens. U belt ons, wij regelen de juiste wagen en houden u op de hoogte.
+V: Kunnen jullie een truck in de Rotterdamse haven ophalen?
+A: Ja, ook op de Maasvlakte, in de Botlek, Europoort en Pernis. Geef de naam van het terrein en de poort door, dan weet de berger hoe hij binnenkomt.
+V: Mijn truck staat stil op de snelweg. Kan ik jullie bellen?
+A: Bij gevaar of op een rijstrook belt u eerst 112. Bij ongevallen en blokkades op de snelweg komt de berger die daarvoor is aangewezen. Daarna kunnen wij de truck ophalen en naar uw garage of thuisbasis brengen.
+V: Wat kost het slepen van een vrachtwagen?
+A: Dat hangt af van het gewicht, de plek, de afstand, het tijdstip en wat er ter plaatse moet gebeuren. U hoort de prijs altijd vooraf.
+V: Kan een beladen oplegger ook worden opgehaald?
+A: Ja, leeg of beladen. Zeg bij het bellen wat er geladen is en hoeveel het weegt, dan komt de juiste wagen.
