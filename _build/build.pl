@@ -330,13 +330,14 @@ sub crumbs {
   push @c, [$p->{label}, $p->{url}];
   my $html = '<nav class="crumbs container" aria-label="Kruimelpad">' . join(' <span>/</span> ', map { $_ == $#c ? "<span>$c[$_][0]</span>" : qq{<a href="{{R}}$c[$_][1]">$c[$_][0]</a>} } 0..$#c) . '</nav>';
   my $i = 0;
-  my $ld = '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[' . join(',', map { $i++; qq{{"\@type":"ListItem","position":$i,"name":"} . jstr($_->[0]) . qq{","item":"$BASE/$_->[1]"}} } @c) . ']}';
+  # Plain concatenation: qq{{...}} with nested braces swallowed the jstr() calls into the string (invalid JSON-LD until 2026-10-19).
+  my $ld = '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[' . join(',', map { $i++; '{"@type":"ListItem","position":' . $i . ',"name":"' . jstr($_->[0]) . '","item":"' . "$BASE/$_->[1]" . '"}' } @c) . ']}';
   return ($html, qq{<script type="application/ld+json">$ld</script>});
 }
 
 sub business_ld {
   my $p = shift;
-  my $area = ($p->{kind} // '') eq 'city' ? qq{{"\@type":"City","name":"} . jstr($p->{label}) . qq{"}} : '{"@type":"Country","name":"Nederland"}';
+  my $area = ($p->{kind} // '') eq 'city' ? '{"@type":"City","name":"' . jstr($p->{label}) . '"}' : '{"@type":"Country","name":"Nederland"}';
   return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"vanaf €$PRICE","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
@@ -357,7 +358,7 @@ for my $out (sort keys %P) {
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
 
   my ($crumb_html, $crumb_ld) = crumbs($p);
-  my $faq_ld = @faq ? '<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' . join(',', map { qq{{"\@type":"Question","name":"} . jstr($_->[0]) . qq{","acceptedAnswer":{"\@type":"Answer","text":"} . jstr($_->[1]) . qq{"}}} } @faq) . ']}</script>' : '';
+  my $faq_ld = @faq ? '<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' . join(',', map { '{"@type":"Question","name":"' . jstr($_->[0]) . '","acceptedAnswer":{"@type":"Answer","text":"' . jstr($_->[1]) . '"}}' } @faq) . ']}</script>' : '';
   my $biz = ($p->{url} eq "" || $p->{url} eq "contact/") ? business_ld($p) : '';
   my $robots = $PREVIEW || ($p->{robots} // '') eq 'noindex' ? '<meta name="robots" content="noindex, nofollow">' : '';
   my $canon = "$BASE/$p->{url}";
