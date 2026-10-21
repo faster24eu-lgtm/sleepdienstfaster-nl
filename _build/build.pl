@@ -459,6 +459,9 @@ BEGIN { %GUIDE_PHRASES = (
   'kennisbank/verkeerd-getankt/'             => ['verkeerd getankt'],
   'kennisbank/accu-leeg/'                    => ['accu leeg', 'lege accu'],
   'kennisbank/na-een-aanrijding/'            => ['na een aanrijding'],
+  'kennisbank/auto-slepen-met-touw/'         => ['slepen met een touw', 'met een touw slepen', 'sleeptouw'],
+  'kennisbank/auto-naar-garage-laten-slepen/' => ['naar de garage laten slepen', 'naar de garage slepen'],
+  'kennisbank/goedkope-sleepdienst/'          => ['goedkope sleepdienst', 'sleepkosten laag'],
 ) }
 sub link_mentions {
   my ($p, $html, $R) = @_;
