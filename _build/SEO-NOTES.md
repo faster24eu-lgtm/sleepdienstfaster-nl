@@ -29,3 +29,8 @@ Added %GUIDE_PHRASES for all three, plus manual links from wat-kost-een-sleepdie
 - Amsterdam: "Sleepdienst Amsterdam: auto slepen 24/7, vanaf €125" (queries auto slepen / auto sleepdienst / auto wegslepen amsterdam at 52–78).
 - Camper/caravan: title and description answer "wat kost caravan transport" (28.4).
 Re-check from ~2026-11-15.
+
+## 2026-10-25 – towns chosen by search volume; indexing is the bottleneck
+Keyword Planner (NL, 12 months, "sleepdienst <plaats>"): Rotterdam 390, Amsterdam 320, Utrecht 320, Den Haag 140, Amersfoort 90, Roermond 90, Barendrecht 90, Almere 70, Breda 70, Eindhoven 70, Arnhem 50, Dordrecht 50, Groningen 50, Tilburg 50, Schiedam 40. Most other towns (incl. 50+ candidates tested: Hoorn, Ede, Oss, Zeist, Gorinchem, Spijkenisse …) are under 10/month.
+- URL inspection: Den Haag, Amersfoort, Roermond, Almere, Eindhoven, Arnhem and Groningen are "Discovered – currently not indexed" (never crawled). Den Bosch and Breda are indexed. These pages need crawling first, not new text.
+- New city pages: Barendrecht (90), Schiedam (40), Purmerend (20), Lelystad (20); max similarity 28 %. Linked from the "near" lists of Rotterdam, Dordrecht, Delft, Amsterdam, Zaandam and Almere.
