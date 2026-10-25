@@ -22,3 +22,10 @@ Queries with impressions but no page of their own (GSC to 2026-10-21):
 - /kennisbank/auto-naar-garage-laten-slepen/ – "auto laten slepen naar garage kosten", "auto slepen naar garage kosten", "kosten auto slepen".
 - /kennisbank/goedkope-sleepdienst/ – "goedkope sleepdienst voor auto's", "sleepkosten auto" (price-shoppers; "goedkope takeldienst" brought clicks on the Belgian site).
 Added %GUIDE_PHRASES for all three, plus manual links from wat-kost-een-sleepdienst, pech-op-de-snelweg, diensten/elektrische-auto-slepen and diensten/sleepdienst. Re-check positions from ~2026-11-12.
+=======
+## 2026-10-25 – titles matched to Search Console queries
+30 days: 1,535 impressions, 3 clicks, avg. position 59; 28 of 74 pages have impressions. Big-city head terms rank 50–80 (authority problem, not on-page). Best positions are niche pages: bestelbus slepen 5.5, elektrische auto slepen 15.6, pech op de snelweg 23.6, caravan transport kosten 28.4, Den Bosch 30.
+- Utrecht: title override "Auto sleepdienst Utrecht 24/7 | Auto slepen vanaf €125" (queries "autosleepdienst utrecht" 69, "auto sleepdienst utrecht" 38).
+- Amsterdam: "Sleepdienst Amsterdam: auto slepen 24/7, vanaf €125" (queries auto slepen / auto sleepdienst / auto wegslepen amsterdam at 52–78).
+- Camper/caravan: title and description answer "wat kost caravan transport" (28.4).
+Re-check from ~2026-11-15.
