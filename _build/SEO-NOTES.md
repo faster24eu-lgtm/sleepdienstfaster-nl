@@ -34,3 +34,12 @@ Re-check from ~2026-11-15.
 Keyword Planner (NL, 12 months, "sleepdienst <plaats>"): Rotterdam 390, Amsterdam 320, Utrecht 320, Den Haag 140, Amersfoort 90, Roermond 90, Barendrecht 90, Almere 70, Breda 70, Eindhoven 70, Arnhem 50, Dordrecht 50, Groningen 50, Tilburg 50, Schiedam 40. Most other towns (incl. 50+ candidates tested: Hoorn, Ede, Oss, Zeist, Gorinchem, Spijkenisse …) are under 10/month.
 - URL inspection: Den Haag, Amersfoort, Roermond, Almere, Eindhoven, Arnhem and Groningen are "Discovered – currently not indexed" (never crawled). Den Bosch and Breda are indexed. These pages need crawling first, not new text.
 - New city pages: Barendrecht (90), Schiedam (40), Purmerend (20), Lelystad (20); max similarity 28 %. Linked from the "near" lists of Rotterdam, Dordrecht, Delft, Amsterdam, Zaandam and Almere.
+
+## 2026-10-28 – cut to cities with demand; truck, EV and snelweg
+Search Console 30 Sep – 27 Oct: 2,424 impressions, 5 clicks, avg. position 52. URL inspection: 47 of 80 indexed, 28 "Discovered – currently not indexed", 5 unknown (incl. Dordrecht).
+- Deleted 21 city pages that were never indexed and have 0–10 searches/month (Keyword Planner NL, 12 months): Den Helder, Deventer, Emmen, Etten-Leur, Goes, Gouda, Hengelo, Hilversum, Hulst, Moerdijk, Oosterhout, Schiphol, Vlissingen-Middelburg, Waalwijk, Weert, Zevenbergen, Assen, Delft, Heerlen, Helmond, Sittard. 62 pages, 60 in the sitemap (resubmitted).
+- Kept the non-indexed cities with demand (Haarlem 40, Dordrecht 50, Zwolle/Zaandam/Venlo/Leiden/Apeldoorn/Alkmaar 30, Maastricht/Leeuwarden/Terneuzen 20). Dordrecht, Haarlem, Leiden and Zwolle added to @FOOT_CITIES, so every page links them; near lists of Den Haag, Amsterdam, Apeldoorn, Lelystad, Enschede, Groningen, Leeuwarden point to them. "sleepdienst leiden" had 58 impressions on the homepage because /sleepdienst/leiden/ is not indexed.
+- Truck searches ("vrachtwagen sleepdienst in botlek rotterdam" etc.) were split: Rotterdam page 40 impr. at pos 40, truck page 6 at pos 12. Truck title now names the Rotterdam port; Rotterdam LOCAL links the truck page.
+- Elektrische auto slepen (pos 15): short answer box, transport mode, FAQ "mag je een elektrische auto slepen met een touw", lege accu.
+- Pech op de snelweg (188 impr., pos 20): short answer box, pechhaven FAQ, link to verkeerd getankt (110 searches/month, not indexed). Fixed FAQ that said rope towing on the motorway is allowed to the first exit; body and the touw guide say it is not.
+Re-check indexing and positions from ~2026-11-15.
