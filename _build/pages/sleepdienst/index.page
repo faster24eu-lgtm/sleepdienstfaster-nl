@@ -2,7 +2,8 @@ title: Werkgebied: sleepdienst in heel Nederland | Faster
 description: Faster sleept auto&#39;s en bestelbussen in heel Nederland. Bekijk de plaatsen met een eigen pagina.
 label: Werkgebied
 h1: Sleepdienst in heel Nederland
-lead: <p>Wij slepen in heel Nederland. Hieronder staan de plaatsen met een eigen pagina, met informatie over de wegen en de situatie ter plaatse. Staat uw plaats er niet bij? Bel gewoon.</p>
+lead: <p>Faster haalt auto&rsquo;s, bestelbussen en vrachtwagens op in heel Nederland, met de prijs vooraf. Hieronder staan de plaatsen met een eigen pagina, per provincie. Daar leest u welke wegen en knelpunten er zijn en wat u het beste doorgeeft als u belt.</p>
 ===MAIN===
+<section class="section white"><div class="container prose"><p><strong>Randstad.</strong> De meeste ritten rijden we rond Rotterdam, Den Haag, Amsterdam en Utrecht. Op de ringwegen A10, A13, A20 en A12 is het druk, dus geef bij pech altijd de afrit of het hectometerpaaltje door.</p><p><strong>Brabant, Zeeland en het zuiden.</strong> Op de A16, A58, A2 en A67 tussen Breda, Tilburg, Eindhoven en Venlo halen we geregeld auto&rsquo;s en bestelbussen op. Ook in Zeeland en Limburg kunt u ons bellen.</p><p><strong>Noord en oost.</strong> In Groningen, Friesland, Overijssel en Gelderland zijn de afstanden groter. Bel ons, dan zeggen we eerlijk hoe lang het duurt en wat het kost.</p></div></section>
 <section class="section"><div class="container">{{LIST:city}}</div></section>
 {{STEPS}}

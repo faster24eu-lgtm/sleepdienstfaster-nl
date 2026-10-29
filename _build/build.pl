@@ -155,7 +155,7 @@ sub list_html {
     my $h = '<div class="province-grid">';
     for my $prov (sort keys %g) {
       $h .= qq{<div class="province"><h3>$prov</h3><ul>};
-      $h .= qq{<li><a href="{{R}}$_->{url}">Sleepdienst $_->{label}</a></li>} for @{ $g{$prov} };
+      $h .= qq{<li><a href="{{R}}$_->{url}">$_->{label}</a></li>} for @{ $g{$prov} };
       $h .= '</ul></div>';
     }
     return "$h</div>";
@@ -365,7 +365,7 @@ for my $out (sort keys %P) {
   my $title = esc($p->{title});
   my $desc = esc($p->{description});
   my $nav = nav_html($p);
-  my $foot_cities = join '', map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">Sleepdienst $q->{label}</a>} : () } @FOOT_CITIES;
+  my $foot_cities = join '', map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">$q->{label}</a>} : () } @FOOT_CITIES;
   my $foot_dien = join '', map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) } grep { ($_->{kind} // '') eq 'dienst' } values %P;
   my $foot_info = join '', map { qq{<a href="{{R}}$_->[1]">$_->[0]</a>} } @FOOT_INFO;
 

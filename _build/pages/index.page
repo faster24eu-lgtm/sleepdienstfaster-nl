@@ -29,8 +29,9 @@ reviews: 2
 </aside></div></section>
 {{GALLERY}}
 {{REVIEWS}}
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Werkgebied</span><h2>Waar heeft u pech?</h2></div><p>Wij slepen in heel Nederland. Hieronder de plaatsen met een eigen pagina. Staat uw plaats er niet bij? Bel gewoon.</p></div>
-{{LIST:city}}
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Werkgebied</span><h2>Waar heeft u pech?</h2></div><p>Wij slepen in heel Nederland. Staat uw plaats er niet bij? Bel gewoon.</p></div>
+<div class="prose"><p>De meeste ritten rijden we in de Randstad: in <a href="{{R}}sleepdienst/rotterdam/">Rotterdam</a> en de haven, <a href="{{R}}sleepdienst/amsterdam/">Amsterdam</a>, <a href="{{R}}sleepdienst/den-haag/">Den Haag</a> en <a href="{{R}}sleepdienst/utrecht/">Utrecht</a>. In Brabant zijn we vaak in <a href="{{R}}sleepdienst/eindhoven/">Eindhoven</a>, <a href="{{R}}sleepdienst/breda/">Breda</a> en <a href="{{R}}sleepdienst/tilburg/">Tilburg</a>. Voor vrachtwagens en bussen is er de <a href="{{R}}diensten/vrachtwagen-slepen/">vrachtwagen sleepdienst</a>.</p>
+<p><a class="btn btn-dark" href="{{R}}sleepdienst/">Alle plaatsen per provincie</a></p></div>
 </div></section>
 <section class="section white"><div class="container two-col"><div class="prose">
 <span class="eyebrow">Geen spoed?</span>

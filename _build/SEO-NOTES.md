@@ -43,3 +43,9 @@ Search Console 30 Sep – 27 Oct: 2,424 impressions, 5 clicks, avg. position 52.
 - Elektrische auto slepen (pos 15): short answer box, transport mode, FAQ "mag je een elektrische auto slepen met een touw", lege accu.
 - Pech op de snelweg (188 impr., pos 20): short answer box, pechhaven FAQ, link to verkeerd getankt (110 searches/month, not indexed). Fixed FAQ that said rope towing on the motorway is allowed to the first exit; body and the touw guide say it is not.
 Re-check indexing and positions from ~2026-11-15.
+
+## 2026-10-29 – Keyword stuffing cut, Amsterdam/Rotterdam expanded (owner approved)
+- City link text in the Werkgebied list and the footer is now the place name only ("Rotterdam", not "Sleepdienst Rotterdam"); the province heading and the Werkgebied heading give the context. Werkgebied page: "sleepdienst" 50 → 5 times.
+- Homepage: the full 33-city list is replaced by one paragraph linking the 7 biggest cities + the truck service and a button to the Werkgebied page ("sleepdienst" 57 → 13). It ranked for "sleepdienst leiden/zwolle/tiel" at 60+ only because of that list.
+- Werkgebied: three regional paragraphs (Randstad, Brabant/Zeeland/zuiden, noord en oost) above the list.
+- Amsterdam (+4 LOCAL paragraphs: Zuidoost events, Zuidas garages, Westpoort, EVs) and Rotterdam (+4: bridges/tunnels, Ahoy/Kuip, Spaanse Polder, airport), each + a price FAQ. Similarity now 25% / 24% max (was 36% between them).
