@@ -1,16 +1,14 @@
 label: Groningen
 kind: city
 province: Groningen
-near: leeuwarden, zwolle
-reviews: 0
-h1b: A7 en de ring, 24/7.
-sub: Auto stuk in Groningen of op de A7 en de ring? Bel nu. Prijs vooraf, ook als de rit langer is dan een stadsrit.
-intro: Groningen ligt ver van de Randstad. U hoort bij het bellen een eerlijke aankomsttijd, niet een standaard halfuur.
+near: leeuwarden
+reviews: 2
 ===ROADS===
 <p>Groningen heeft de A7 als oost-westas en de N7 als zuidelijke ring. Knooppunt Julianaplein en het Euvelgunnetracé zijn de drukke punten. De A28 komt vanuit Assen en Zwolle op de stad uit.</p>
-<p>De ring is op enkele stukken een stadsweg met verkeerslichten, niet een snelweg. Zeg of u op de N7 of al in een wijk staat.</p>
+<p>De ring is op enkele stukken een stadsweg met verkeerslichten, niet een snelweg. Zeg of u op de N7 of al in een wijk staat. Groningen ligt verder van de Randstad; we geven bij het bellen een realistische aankomsttijd.</p>
 ===LOCAL===
-<p><strong>Wijken.</strong> Centrum, Paddepoel, Vinkhuizen, Lewenborg, Helpman en de stationsbuurt. Ook Haren, Hoogezand en Leek.</p>
+<p><strong>Wijken.</strong> Centrum, Paddepoel, Vinkhuizen, Lewenborg, Helpman en de stationsbuurt. Ook Haren, Hoogezand en Leek. Het centrum heeft smalle straten en veel fietsers.</p>
+<p><strong>Parkeergarages.</strong> In het centrum zitten garages onder de grond. Een plateauwagen past daar meestal niet in. De auto moet eerst naar buiten gerold worden.</p>
 <p><strong>Afstand.</strong> Een sleep vanuit het zuiden duurt langer dan in Rotterdam. Wij zeggen bij het bellen hoe laat we er zijn, en de prijs ligt vast voordat we rijden.</p>
 ===FAQ===
 V: Hoe snel kunnen jullie in Groningen zijn?
@@ -20,8 +18,6 @@ A: Zeg de afslag of het hectometerpunt. Staat u dwars op een rijstrook, bel 112.
 V: Ook in Haren en Hoogezand?
 A: Ja.
 ===PECH===
-<p>In Paddepoel, Vinkhuizen, Lewenborg, Beijum en Hoogkerk is er meestal plek om ter plaatse naar de auto te kijken. In de binnenstad mag lang niet overal een auto rijden, dus geef de straat goed door. Ook vanuit Haren, Hoogezand en Leek kunt u bellen.</p>
+<p>In Paddepoel, Vinkhuizen en Lewenborg is starthulp vaak mogelijk. In het centrum is het drukker. Zeg wat er mis is en waar u staat.</p>
 ===TRANSPORT===
-<p>De zuidelijke ringweg, het Julianaplein en het Europaplein zijn de drukke punten rond de stad. Vanaf de A7 en de A28 gaat de auto naar uw eigen garage. Is hij naar een adres ver buiten de provincie nodig, dan hoort u vooraf wat die rit kost.</p>
-===TRUCK===
-<p>Vrachtwagen stil bij Groningen of op het platteland richting Pieterburen en Winschoten? Bel met uw positie en de lading. Vaste partners met zwaar materieel doen de berging, en u houdt één nummer. Meer op de pagina <a href="{{R}}diensten/vrachtwagen-slepen/">vrachtwagen sleepdienst</a>.</p>
+<p>Auto’s uit Groningen brengen we naar uw garage in de regio of naar huis. U hoort de prijs vooraf.</p>
