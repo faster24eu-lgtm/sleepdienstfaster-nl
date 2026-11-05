@@ -38,14 +38,14 @@ cta: no
 <meta property="og:title" content="Sleepdienst nodig in de buurt? 24/7 vanaf €125">
 <meta property="og:description" content="Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. Duidelijke prijs vooraf, geen abonnement nodig.">
 <meta property="og:url" content="https://sleepdienstfaster.nl/sleepdienst-nodig/">
-<meta property="og:image" content="https://sleepdienstfaster.nl/assets/img/faster-warehouse.jpg">
+<meta property="og:image" content="https://sleepdienstfaster.nl/assets/img/faster-road-transport.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AutomotiveBusiness",
   "name": "Sleepdienst Faster",
   "url": "https://sleepdienstfaster.nl/sleepdienst-nodig/",
-  "image": "https://sleepdienstfaster.nl/assets/img/faster-warehouse.jpg",
+  "image": "https://sleepdienstfaster.nl/assets/img/faster-road-transport.jpg",
   "telephone": "+3197010229095",
   "priceRange": "vanaf €125",
   "areaServed": {"@type": "Country", "name": "Nederland"},
@@ -95,7 +95,7 @@ h1{font-size:31px;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-we
 .call svg{width:24px;height:24px;flex:none}
 .note{margin:10px 0 0;font-size:14px;color:var(--muted);text-align:center}
 .photo{margin:18px 0 0}
-.photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 60%;border-radius:8px;border-bottom:5px solid var(--yellow)}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;border-radius:8px;border-bottom:5px solid var(--yellow)}
 .photo figcaption{margin-top:6px;font-size:13px;color:var(--muted);text-align:center}
 section{padding:28px 0}
 .alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -158,8 +158,8 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offse
       </a>
       <p class="note">24/7 bereikbaar. Geen callcenter, direct contact.</p>
       <figure class="photo">
-        <img src="{{R}}assets/img/faster-warehouse.jpg" width="738" height="1156" alt="Gele sleepwagen van Faster met een auto op het plateau in een loods" loading="lazy" decoding="async">
-        <figcaption>Je auto veilig op het plateau, naar je garage, naar huis of een ander adres.</figcaption>
+        <img src="{{R}}assets/img/faster-road-transport.jpg" width="1600" height="1200" alt="Gele sleepwagen van Faster met een blauwe auto op het plateau en een bestelbus aan de takel" loading="lazy" decoding="async">
+        <figcaption>Twee voertuigen in een rit: auto op het plateau, bestelbus aan de takel.</figcaption>
       </figure>
     </div>
   </div>
