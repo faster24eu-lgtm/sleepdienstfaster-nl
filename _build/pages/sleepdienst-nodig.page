@@ -1,5 +1,5 @@
-title: Sleepdienst nodig in de buurt? 24/7 vanaf €125 | Faster
-description: Autopech of ongeval? Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. Slepen vanaf €125, duidelijke prijs vooraf, geen abonnement nodig. Bel nu.
+title: Sleepdienst nodig in de buurt? 24/7, prijs vooraf | Faster
+description: Autopech of ongeval? Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. We spreken de prijs af voordat we vertrekken. Geen abonnement nodig. Bel nu.
 label: Sleepdienst nodig?
 template: raw
 layout: bare
@@ -24,8 +24,8 @@ cta: no
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sleepdienst nodig in de buurt? 24/7 vanaf €125 | Faster</title>
-<meta name="description" content="Autopech of ongeval? Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. Slepen vanaf €125, duidelijke prijs vooraf, geen abonnement nodig. Bel nu.">
+<title>Sleepdienst nodig in de buurt? 24/7, prijs vooraf | Faster</title>
+<meta name="description" content="Autopech of ongeval? Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. We spreken de prijs af voordat we vertrekken. Geen abonnement nodig. Bel nu.">
 <link rel="canonical" href="https://sleepdienstfaster.nl/sleepdienst-nodig/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#f6c400">
@@ -35,7 +35,7 @@ cta: no
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="Sleepdienst Faster">
-<meta property="og:title" content="Sleepdienst nodig in de buurt? 24/7 vanaf €125">
+<meta property="og:title" content="Sleepdienst nodig in de buurt? 24/7, prijs vooraf">
 <meta property="og:description" content="Een lokale sleepwagen uit jouw buurt komt snel ter plaatse. Duidelijke prijs vooraf, geen abonnement nodig.">
 <meta property="og:url" content="https://sleepdienstfaster.nl/sleepdienst-nodig/">
 <meta property="og:image" content="https://sleepdienstfaster.nl/assets/img/faster-road-transport.jpg">
@@ -47,7 +47,6 @@ cta: no
   "url": "https://sleepdienstfaster.nl/sleepdienst-nodig/",
   "image": "https://sleepdienstfaster.nl/assets/img/faster-road-transport.jpg",
   "telephone": "+3197010229095",
-  "priceRange": "vanaf €125",
   "areaServed": {"@type": "Country", "name": "Nederland"},
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -63,7 +62,7 @@ cta: no
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Wat doe ik terwijl ik op de sleepwagen wacht?", "acceptedAnswer": {"@type": "Answer", "text": "Zet je alarmlichten aan en trek een veiligheidshesje aan als je dat hebt. Op de snelweg stap je uit aan de kant van de berm en wacht je achter de vangrail, ver van het verkeer. Sta je op een rijstrook en kun je er niet veilig uit? Bel dan eerst 112."}},
-    {"@type": "Question", "name": "Wat kost een sleepdienst?", "acceptedAnswer": {"@type": "Answer", "text": "Slepen begint vanaf €125. Je hoort aan de telefoon een duidelijke prijs voordat de sleepwagen vertrekt. Geen verrassingen achteraf."}},
+    {"@type": "Question", "name": "Wat kost een sleepdienst?", "acceptedAnswer": {"@type": "Answer", "text": "Je hoort de prijs aan de telefoon en we spreken hem af voordat de sleepwagen vertrekt. Geen verrassingen achteraf."}},
     {"@type": "Question", "name": "Heb ik een abonnement of pechhulppas nodig?", "acceptedAnswer": {"@type": "Answer", "text": "Nee. Geen abonnement, geen lidmaatschap. Je betaalt alleen deze rit, tegen de prijs die we aan de telefoon afspreken."}},
     {"@type": "Question", "name": "Hoe snel is de sleepwagen er?", "acceptedAnswer": {"@type": "Answer", "text": "Vaak binnen 30 minuten. We sturen de dichtstbijzijnde sleepwagen, dag en nacht. Aan de telefoon hoor je hoe snel we er zijn."}},
     {"@type": "Question", "name": "Mijn auto heeft een ongeval gehad. Kunnen jullie helpen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. We slepen auto's en bestelbussen bij autopech en na een ongeval. Bel ons en vertel wat er gebeurd is."}}
@@ -147,7 +146,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offse
       <h1>Sleepdienst nodig in de buurt?</h1>
       <p class="sub">Autopech of ongeval? Een lokale sleepwagen uit jouw buurt komt snel ter plaatse.</p>
       <ul class="facts">
-        <li><b>Vanaf €125</b> duidelijke prijs vooraf</li>
+        <li><b>Prijs vooraf</b> afgesproken voor vertrek</li>
         <li><b>Binnen 30 min</b> vaak ter plaatse</li>
         <li><b>24/7</b> dag en nacht, 7 dagen</li>
         <li><b>Per rit</b> geen abonnement nodig</li>
@@ -167,7 +166,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offse
       <h2>Waarom Faster?</h2>
       <div class="trust">
         <div><strong>Snel ter plaatse</strong><span>Dag en nacht, 7 dagen per week. Vaak binnen 30 minuten bij je.</span></div>
-        <div><strong>Duidelijke prijs vooraf</strong><span>Slepen vanaf €125. Je hoort de prijs voordat de sleepwagen vertrekt.</span></div>
+        <div><strong>Prijs vooraf afgesproken</strong><span>We spreken de prijs met je af voordat de sleepwagen vertrekt.</span></div>
         <div><strong>Sleepwagen in de buurt</strong><span>Lokale chauffeurs die de regio kennen. Snel en eerlijk.</span></div>
         <div><strong>Geen abonnement nodig</strong><span>Geen pechhulppas, geen contract. Je betaalt alleen deze rit.</span></div>
       </div>
@@ -233,7 +232,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offse
       </details>
       <details>
         <summary>Wat kost een sleepdienst?</summary>
-        <p>Slepen begint vanaf €125. Je hoort aan de telefoon een duidelijke prijs voordat de sleepwagen vertrekt. Geen verrassingen achteraf.</p>
+        <p>Je hoort de prijs aan de telefoon en we spreken hem af voordat de sleepwagen vertrekt. Geen verrassingen achteraf.</p>
       </details>
       <details>
         <summary>Heb ik een abonnement of pechhulppas nodig?</summary>
