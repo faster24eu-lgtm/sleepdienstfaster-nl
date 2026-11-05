@@ -39,6 +39,12 @@ reviews: 2
 <p>Moet een auto die niet meer rijdt naar de garage, de sloop of een nieuwe eigenaar? Vul het formulier in, dan krijgt u snel een prijs.</p>
 <p>Voor spoed: bel of stuur een WhatsApp. Dat is altijd sneller.</p>
 </div><div>{{FORM}}</div></div></section>
+
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Meer weten</span><h2>Praktische informatie</h2></div></div>
+<div class="prose">
+<p>Lees meer over specifieke situaties: <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>, <a href="{{R}}kennisbank/accu-leeg/">accu leeg</a>, <a href="{{R}}kennisbank/lekke-band/">lekke band</a>, <a href="{{R}}kennisbank/verkeerd-getankt/">verkeerd getankt</a>, <a href="{{R}}kennisbank/na-een-aanrijding/">na een aanrijding</a> of <a href="{{R}}kennisbank/sleepdienst-zonder-abonnement/">sleepdienst zonder abonnement</a>.</p>
+<p>Ook voor <a href="{{R}}diensten/elektrische-auto-slepen/">elektrische auto’s</a>, <a href="{{R}}diensten/bestelbus-slepen/">bestelbussen</a>, <a href="{{R}}diensten/berging/">berging</a> en <a href="{{R}}diensten/autotransport/">autotransport</a> kunt u bij ons terecht.</p>
+</div></div></section>
 ===FAQ===
 V: Hoe snel is de sleepdienst bij mij?
 A: Bij spoed zijn we vaak binnen 30 minuten ter plaatse. Dat hangt af van waar u staat en van het verkeer. Bij het bellen hoort u hoe snel we er kunnen zijn.
