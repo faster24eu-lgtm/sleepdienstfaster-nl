@@ -1,4 +1,4 @@
-title: Auto laten slepen? Sleepdienst 24/7 vanaf €125 | Faster
+title: Auto laten slepen? Sleepdienst 24/7, prijs vooraf | Faster
 description: Auto laten slepen naar uw garage, huis of de dealer. Faster sleept 24/7 op een plateauwagen, met een vaste prijs vooraf. Geen abonnement nodig.
 label: Auto slepen
 kind: dienst
@@ -25,9 +25,9 @@ lead: <p>Start uw auto niet meer, maakt hij een geluid dat niet goed is, of bran
 <h2>Waar brengen we de auto naartoe?</h2>
 <p>U kiest. Vaak is dat uw eigen garage. Is die dicht, &rsquo;s nachts of in het weekend, dan kan de auto naar uw huis of naar een ander adres. Wij zetten hem daar veilig neer. Zo werkt <a href="{{R}}kennisbank/auto-naar-garage-laten-slepen/">uw auto naar de garage laten slepen</a>.</p>
 <h2>Wat kost het?</h2>
-<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort hem vooraf. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
+<p>De prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort hem vooraf. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 </div><aside class="side">
-<div class="price-card"><span>Auto slepen</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf, geen abonnement.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Auto slepen</span><strong>Prijs vooraf</strong><p>Prijs vooraf, geen abonnement.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 <figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Sleepwagen van Faster laadt een witte bestelbus op het plateau" width="1288" height="966" loading="lazy"></figure>
 </aside></div></section>
 {{STEPS}}

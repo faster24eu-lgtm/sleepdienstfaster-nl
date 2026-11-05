@@ -21,7 +21,7 @@ lead: <p>Na een aanrijding wilt u maar één ding: dat de auto weg is en dat u v
 <h2>Waar gaat de auto heen?</h2>
 <p>Naar het schadebedrijf dat uw verzekeraar aanwijst, naar uw eigen garage of eerst naar huis, als u nog moet uitzoeken waar de auto gerepareerd wordt. De auto gaat op het plateau en wordt vastgezet, ook als er een wiel niet meer goed staat.</p>
 </div><aside class="side">
-<div class="price-card"><span>Na een ongeval</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf, factuur voor uw verzekeraar.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Na een ongeval</span><strong>Prijs vooraf</strong><p>Prijs vooraf, factuur voor uw verzekeraar.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
 ===FAQ===
 V: Betaalt mijn verzekering het slepen?

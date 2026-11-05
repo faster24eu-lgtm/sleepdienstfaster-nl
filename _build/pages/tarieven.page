@@ -1,8 +1,8 @@
 title: Tarieven sleepdienst: wat kost auto slepen? | Faster
-description: Wat kost een sleepdienst bij Faster? Een korte rit vanaf €125. Lees hoe de prijs is opgebouwd en waarom u hem altijd vooraf hoort.
+description: Wat kost een sleepdienst bij Faster? Lees hoe de prijs is opgebouwd en waarom u hem altijd vooraf hoort.
 label: Tarieven
 h1: Wat kost een sleepdienst bij Faster?
-lead: <p>Een korte rit begint vanaf &euro;{{PRICE}}. Wat u precies betaalt, hoort u vooraf aan de telefoon of in WhatsApp. Pas als u akkoord bent, gaat de sleepwagen rijden.</p>
+lead: <p>Wat u precies betaalt, hoort u vooraf aan de telefoon of in WhatsApp. Pas als u akkoord bent, gaat de sleepwagen rijden.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
 <h2>Waar hangt de prijs van af?</h2>
@@ -26,7 +26,7 @@ lead: <p>Een korte rit begint vanaf &euro;{{PRICE}}. Wat u precies betaalt, hoor
 <h2>Vergoedt de verzekering het?</h2>
 <p>Soms wel. Heeft u pechhulp via uw autoverzekering, lease of creditcard, bel dan eerst hen. Lees meer in <a href="{{R}}kennisbank/wat-kost-een-sleepdienst/">wat kost een sleepdienst</a> en <a href="{{R}}kennisbank/sleepdienst-zonder-abonnement/">sleepdienst zonder abonnement</a>.</p>
 </div><aside class="side">
-<div class="price-card"><span>Korte rit</span><strong>vanaf &euro;{{PRICE}}</strong><p>Prijs vooraf. Bel of WhatsApp de ophaalplaats en de bestemming.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Korte rit</span><strong>Prijs vooraf</strong><p>Afgesproken voor vertrek. Bel of WhatsApp de ophaalplaats en de bestemming.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
 ===FAQ===
 V: Zijn de prijzen inclusief btw?

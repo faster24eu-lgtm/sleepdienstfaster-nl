@@ -1,5 +1,5 @@
 title: Caravan en camper transport: kosten en 24/7 hulp | Faster
-description: Wat kost camper of caravan transport? Vanaf €125, vaste prijs vooraf. Campers tot 3.500 kg en lange caravans op een plateau van 8,5 meter, 24/7.
+description: Wat kost camper of caravan transport? U hoort een vaste prijs vooraf. Campers tot 3.500 kg en lange caravans op een plateau van 8,5 meter, 24/7.
 label: Camper en caravan transport
 kind: dienst
 order: 5
@@ -45,9 +45,9 @@ lead: <p>Campers en caravans vervoeren doen we veel. Een camper met motorpech of
 </ul>
 <p>Een foto van de camper of caravan en de plek waar hij staat helpt ons om de rit goed in te schatten.</p>
 <h2>Wat kost het?</h2>
-<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt af van de afstand, het voertuig en de situatie ter plaatse. U hoort de vaste prijs vooraf. Heeft u een camper- of caravanverzekering met pechhulp? Vraag dan eerst uw verzekeraar of het transport vergoed wordt.</p>
+<p>De prijs hangt af van de afstand, het voertuig en de situatie ter plaatse. U hoort de vaste prijs vooraf. Heeft u een camper- of caravanverzekering met pechhulp? Vraag dan eerst uw verzekeraar of het transport vergoed wordt.</p>
 </div><aside class="side">
-<div class="price-card"><span>Camper en caravan</span><strong>vanaf &euro;{{PRICE}}</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Camper en caravan</span><strong>Prijs vooraf</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
 <section class="section white"><div class="container narrow"><h2>Prijs aanvragen voor een geplande rit</h2><p>Naar de stalling, de dealer of een nieuwe eigenaar? Vul het formulier in met de lengte en het gewicht, dan krijgt u een prijs.</p>{{FORM}}</div></section>
 ===FAQ===

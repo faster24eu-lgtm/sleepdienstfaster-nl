@@ -114,13 +114,13 @@ sub city_seo {
   my $p = shift;
   my $n = $p->{label};
   my $t = $p->{tlabel} // $n;
-  my $title = "Sleepdienst $t 24/7 | Snel ter plaatse, vanaf €$PRICE";
-  $title = "Sleepdienst $t 24/7 | Vanaf €$PRICE" if length $title > 62;
+  my $title = "Sleepdienst $t 24/7 | Snel ter plaatse, prijs vooraf";
+  $title = "Sleepdienst $t 24/7 | Prijs vooraf" if length $title > 62;
   $p->{title} //= $title;
-  $p->{description} //= "Auto stuk in $n? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7, vaste prijs vooraf vanaf €$PRICE, geen abonnement. Bel of WhatsApp nu.";
+  $p->{description} //= "Auto stuk in $n? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7, vaste prijs vooraf, geen abonnement. Bel of WhatsApp nu.";
   $p->{h1}  //= "Sleepdienst $n";
   $p->{h1b} //= 'binnen 30 minuten*, prijs vooraf.';
-  $p->{eyebrow} //= "24/7 &middot; geen abonnement &middot; vanaf &euro;$PRICE";
+  $p->{eyebrow} //= "24/7 &middot; geen abonnement &middot; prijs vooraf";
   $p->{sub} //= "Auto stuk in $n? Bel nu. Een sleepwagen komt naar u toe, en u hoort de prijs voordat iemand vertrekt.";
   $p->{intro} //= "Geen lidmaatschap, geen verrassing achteraf. Wij laden de auto op het plateau en brengen hem naar uw garage, naar huis of naar het adres dat u noemt.";
 }
@@ -196,7 +196,7 @@ sub hero_html {
 <div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel direct: {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
 <div class="proof">
 <div><strong>&plusmn; 30 min*</strong><span>vaak snel ter plaatse</span></div>
-<div><strong>vanaf &euro;{{PRICE}}</strong><span>vaste prijs vooraf</span></div>
+<div><strong>Prijs vooraf</strong><span>afgesproken voor vertrek</span></div>
 <div><strong>24/7</strong><span>ook &rsquo;s nachts en in het weekend</span></div>
 </div>
 <div class="review-slider" aria-label="Google reviews">$slides</div>
@@ -211,7 +211,7 @@ H
 my $USPS = <<'H';
 <section class="usp-band"><div class="container usp-grid">
 <div><strong>Snel bij u</strong><span>Bij spoed vaak binnen 30 minuten ter plaatse.</span></div>
-<div><strong>Scherpe vaste prijs</strong><span>Vanaf &euro;{{PRICE}}. U hoort de prijs vooraf, geen verrassingen.</span></div>
+<div><strong>Scherpe vaste prijs</strong><span>U hoort de prijs vooraf, voordat we vertrekken. Geen verrassingen.</span></div>
 <div><strong>Geen abonnement</strong><span>Geen lidmaatschap of pechhulppas nodig. U betaalt per rit.</span></div>
 <div><strong>U kiest de bestemming</strong><span>Uw garage, uw huis, de dealer of een schadebedrijf.</span></div>
 </div></section>
@@ -273,7 +273,7 @@ sub svc_links {
 
 sub price_card {
   my $what = shift;
-  qq{<div class="price-card"><span>$what</span><strong>vanaf &euro;{{PRICE}}</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>};
+  qq{<div class="price-card"><span>$what</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>};
 }
 
 # ---------------------------------------------------------------- templates
@@ -302,7 +302,7 @@ sub city_faq {
   my $n = $p->{label};
   return (
     ["Hoe snel is de sleepdienst in $n er?", "Bij spoed zijn we vaak binnen 30 minuten bij u, afhankelijk van waar u staat en het verkeer. Bij het bellen hoort u hoe snel we er kunnen zijn."],
-    ["Wat kost een sleepdienst in $n?", "Een korte rit begint vanaf €$PRICE. De vaste prijs hangt af van de afstand, het voertuig en het tijdstip, en u hoort hem vooraf."],
+    ["Wat kost een sleepdienst in $n?", "De vaste prijs hangt af van de afstand, het voertuig en het tijdstip, en u hoort hem vooraf."],
     ["Heb ik een abonnement nodig?", "Nee. U betaalt per rit, zonder lidmaatschap of pechhulppas."],
     ["Waar brengen jullie mijn auto naartoe?", "Waar u wilt: uw eigen garage, uw huis, de dealer of een schadebedrijf."],
   );
@@ -340,7 +340,7 @@ sub crumbs {
 sub business_ld {
   my $p = shift;
   my $area = ($p->{kind} // '') eq 'city' ? '{"@type":"City","name":"' . jstr($p->{label}) . '"}' : '{"@type":"Country","name":"Nederland"}';
-  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"vanaf €$PRICE","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
+  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"€€","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
 my $LOGO = '<a class="brand" href="{{R}}" aria-label="Sleepdienst Faster, naar de homepage"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
@@ -396,7 +396,7 @@ $robots
 $biz$crumb_ld$faq_ld
 </head>
 <body>
-<div class="topbar"><div class="container topbar-inner"><span><b>24/7 bereikbaar</b> &middot; ook &rsquo;s nachts en in het weekend</span><span class="topbar-right">Vaste prijs vooraf &middot; vanaf &euro;{{PRICE}} &middot; geen abonnement</span></div></div>
+<div class="topbar"><div class="container topbar-inner"><span><b>24/7 bereikbaar</b> &middot; ook &rsquo;s nachts en in het weekend</span><span class="topbar-right">Vaste prijs vooraf &middot; geen abonnement</span></div></div>
 <header class="site-header"><div class="container nav-wrap">
 $LOGO
 <nav class="main-nav" id="main-nav" aria-label="Hoofdmenu">$nav</nav>

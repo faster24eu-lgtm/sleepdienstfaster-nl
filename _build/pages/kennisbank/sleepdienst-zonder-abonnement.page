@@ -21,15 +21,15 @@ lead: <p>U heeft geen pechhulpabonnement nodig om een sleepdienst te bellen. Vee
 </table></div>
 <h2>En als u pech heeft zonder lidmaatschap?</h2>
 <p>Bent u geen lid en belt u toch de Wegenwacht, dan betaalt u volgens Pechwijzer.nl (prijspeil juli 2026) een eenmalige toeslag van &euro;175 en moet u daarnaast meteen een jaarpakket afsluiten. In het eerste jaar komt u dan op ongeveer &euro;250 tot &euro;300, voor één keer pech.</p>
-<p>Bij een sleepdienst die per rit werkt, zoals Faster, betaalt u alleen de rit. Een korte rit begint vanaf &euro;{{PRICE}}. U hoort de vaste prijs vooraf en u zit nergens aan vast.</p>
+<p>Bij een sleepdienst die per rit werkt, zoals Faster, betaalt u alleen de rit. U hoort de vaste prijs vooraf en u zit nergens aan vast.</p>
 <h2>Rekenvoorbeeld</h2>
 <p>Stel, u heeft gemiddeld eens in de drie jaar pech waarbij de auto weg moet:</p>
 <div class="table-wrap"><table>
 <tr><th></th><th>In drie jaar</th></tr>
 <tr><td>Wegenwacht Nederland Standaard, drie jaar lang</td><td>ongeveer &euro;367</td></tr>
-<tr><td>Eén korte rit bij Faster, zonder abonnement</td><td>vanaf &euro;{{PRICE}}</td></tr>
+<tr><td>Eén korte rit bij Faster, zonder abonnement</td><td>prijs vooraf, per rit</td></tr>
 </table></div>
-<p>Een langere rit kost meer dan &euro;{{PRICE}}, en een abonnement geeft u meer dan alleen slepen. Maar wie zelden pech heeft, is met losse ritten vaak goedkoper uit.</p>
+<p>Een lange rit kost meer, en een abonnement geeft u meer dan alleen slepen. Maar wie zelden pech heeft, is met losse ritten vaak goedkoper uit.</p>
 <h2>Wanneer is een abonnement wel slim?</h2>
 <ul>
 <li>Uw auto is oud of onbetrouwbaar en u verwacht vaker pech.</li>

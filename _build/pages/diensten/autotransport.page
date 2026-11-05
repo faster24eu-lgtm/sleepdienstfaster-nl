@@ -1,5 +1,5 @@
 title: Autotransport op een plateau, ook als de auto niet rijdt | Faster
-description: Auto gekocht, verkocht, naar de sloop of naar de APK? Faster vervoert uw auto op een plateauwagen, ook zonder APK of kenteken. Vaste prijs vooraf, vanaf €125.
+description: Auto gekocht, verkocht, naar de sloop of naar de APK? Faster vervoert uw auto op een plateauwagen, ook zonder APK of kenteken. Vaste prijs vooraf.
 label: Autotransport
 kind: dienst
 order: 7
@@ -24,7 +24,7 @@ lead: <p>Niet elke rit is spoed. Soms moet een auto gewoon van A naar B: een occ
 <h2>Verhuizing</h2>
 <p>Verhuist u naar een andere stad of provincie en heeft u een auto die niet rijdt, of een tweede auto zonder bestuurder? Wij brengen hem naar uw nieuwe adres.</p>
 <h2>Wat kost autotransport?</h2>
-<p>Een korte rit begint vanaf &euro;{{PRICE}}. De prijs hangt vooral af van de afstand, het voertuig en of de auto nog rolt en stuurt. Bij een geplande rit kiest u samen met ons het moment. U hoort de prijs altijd vooraf, en dat is de prijs die u betaalt. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
+<p>De prijs hangt vooral af van de afstand, het voertuig en of de auto nog rolt en stuurt. Bij een geplande rit kiest u samen met ons het moment. U hoort de prijs altijd vooraf, en dat is de prijs die u betaalt. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 <h2>Zo vraagt u een prijs</h2>
 <p>Stuur een WhatsApp of vul het formulier in met:</p>
 <ul>
@@ -45,4 +45,4 @@ A: Ja. Zeg vooraf of de banden lek zijn, de remmen vastzitten of het stuur vastz
 V: Kan ik een tijd afspreken?
 A: Ja. Bij autotransport kiest u samen met ons een moment dat u uitkomt. Moet het snel, bel dan, dan kijken we wat er kan.
 V: Wat kost een auto naar de sloop brengen?
-A: Dat hangt af van de afstand naar het demontagebedrijf. U hoort de vaste prijs vooraf. Een korte rit begint vanaf €125.
+A: Dat hangt af van de afstand naar het demontagebedrijf. U hoort de vaste prijs vooraf.

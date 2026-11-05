@@ -1,12 +1,12 @@
-title: Sleepdienst 24/7 in heel Nederland | Vanaf €125 | Faster
-description: Auto stuk of pech onderweg? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7 in heel Nederland, vaste prijs vooraf vanaf €125, geen abonnement nodig.
+title: Sleepdienst 24/7 in heel Nederland, prijs vooraf | Faster
+description: Auto stuk of pech onderweg? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7 in heel Nederland, vaste prijs vooraf, geen abonnement nodig.
 label: Home
 template: raw
 eyebrow: Sleepdienst &middot; pechhulp &middot; heel Nederland
 h1: Sleepdienst nodig?
 h1b: Wij zijn er snel.
 sub: Auto stuk of pech onderweg? Wij staan 24/7 voor u klaar.
-intro: Niemand staat graag stil langs de weg. Faster haalt uw auto of bestelbus op en brengt hem naar uw garage, naar huis of naar elk ander adres. Bij spoed zijn we vaak binnen 30 minuten bij u, en u hoort vooraf een vaste, scherpe prijs, vanaf &euro;125. Geen abonnement, geen verrassingen achteraf.
+intro: Niemand staat graag stil langs de weg. Faster haalt uw auto of bestelbus op en brengt hem naar uw garage, naar huis of naar elk ander adres. Bij spoed zijn we vaak binnen 30 minuten bij u, en u hoort vooraf een vaste, scherpe prijs. Geen abonnement, geen verrassingen achteraf.
 reviews: 2
 ===MAIN===
 {{HERO}}
@@ -20,12 +20,12 @@ reviews: 2
 <span class="eyebrow">Waarom Faster?</span>
 <h2>Een sleepdienst die doet wat hij belooft</h2>
 <p><strong>Snel bij u.</strong> Stilstaan langs de weg is vervelend en soms gevaarlijk. Daarom rijden we bij spoed meteen. Vaak zijn we binnen 30 minuten ter plaatse.</p>
-<p><strong>Scherpe, vaste prijs.</strong> Veel sleepdiensten noemen pas een bedrag als de wagen er al staat. Bij ons hoort u de prijs aan de telefoon of in WhatsApp, voordat er iemand vertrekt. Een korte rit begint vanaf &euro;{{PRICE}}. Hoe de prijs is opgebouwd, leest u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
+<p><strong>Scherpe, vaste prijs.</strong> Veel sleepdiensten noemen pas een bedrag als de wagen er al staat. Bij ons hoort u de prijs aan de telefoon of in WhatsApp, voordat er iemand vertrekt. Hoe de prijs is opgebouwd, leest u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 <p><strong>Geen abonnement nodig.</strong> Geen lidmaatschap, geen pechhulppas. U betaalt per rit, alleen als u ons nodig heeft.</p>
 <p><strong>U kiest waar de auto naartoe gaat.</strong> Naar uw eigen garage, naar huis, naar de dealer of naar een schadebedrijf. Wij slepen niet automatisch naar een terrein waar u daarna opnieuw voor moet betalen.</p>
 <p><strong>Auto&rsquo;s, bestelbussen en elektrische auto&rsquo;s.</strong> Alles gaat bij ons op het plateau. Niets sleept over de weg, dus geen extra schade aan de versnellingsbak of de elektromotor.</p>
 </div><aside class="side">
-<div class="price-card"><span>Sleepdienst</span><strong>vanaf &euro;{{PRICE}}</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Sleepdienst</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
 {{GALLERY}}
 {{REVIEWS}}
@@ -43,7 +43,7 @@ reviews: 2
 V: Hoe snel is de sleepdienst bij mij?
 A: Bij spoed zijn we vaak binnen 30 minuten ter plaatse. Dat hangt af van waar u staat en van het verkeer. Bij het bellen hoort u hoe snel we er kunnen zijn.
 V: Wat kost een sleepdienst bij Faster?
-A: Een korte rit begint vanaf €125, inclusief btw. De precieze prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort de prijs altijd vooraf, voordat de sleepwagen vertrekt.
+A: De precieze prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort de prijs altijd vooraf, voordat de sleepwagen vertrekt.
 V: Heb ik een abonnement of lidmaatschap nodig?
 A: Nee. U betaalt per rit. U belt ons alleen als u ons nodig heeft, zonder pechhulppas of contract.
 V: Waar brengen jullie mijn auto naartoe?

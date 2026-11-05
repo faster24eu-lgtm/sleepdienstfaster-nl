@@ -20,7 +20,7 @@ lead: <p>Een elektrische auto sleept u niet aan een touw of een stang. De wielen
 <h2>Na een ongeval</h2>
 <p>Heeft de onderkant of de accu van de auto een klap gehad, rook of een vreemde geur? Ga op afstand staan en bel 112. Een beschadigde accu kan later nog warm worden. Zeg het ons ook als de auto al stilstaat: dan zetten we hem niet in een afgesloten ruimte.</p>
 </div><aside class="side">
-<div class="price-card"><span>Elektrische auto</span><strong>vanaf &euro;{{PRICE}}</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Elektrische auto</span><strong>Prijs vooraf</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
 ===FAQ===
 V: Mag je een elektrische auto slepen met een touw?
