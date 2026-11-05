@@ -1,7 +1,7 @@
 label: Schiedam
 kind: city
 province: Zuid-Holland
-near: rotterdam, den-haag, barendrecht
+near: rotterdam, den-haag, barendrecht, vlaardingen, botlek-maasvlakte
 reviews: 2
 h1b: bij Kethelplein en de A20, prijs vooraf.
 sub: Pech in Schiedam of op de A4 of A20? Bel nu. 24/7, vaste prijs vooraf, geen abonnement.
@@ -19,3 +19,9 @@ V: Ik heb pech op de A4 vlak voor de Beneluxtunnel.
 A: Staat u op de vluchtstrook, bel ons met het hectometerpaaltje. Op een rijstrook of in de tunnel eerst 112.
 V: Slepen jullie ook in Vlaardingen?
 A: Ja.
+===PECH===
+<p>In Groenoord, Nieuwland en Woudhoek kan starthulp meestal in de straat. Op de smalle kades langs de havens is het vaak beter om de auto meteen op te laden. Bel met uw exacte plek, dan weten we wat er nodig is.</p>
+===TRANSPORT===
+<p>Op bedrijventerrein Spaland en in Vijfsluizen rijden veel bestelbussen. Die gaan op verzoek naar uw eigen werkplaats. Ook een auto die niet door de apk is, wordt hier op afspraak opgehaald en weggebracht.</p>
+===TRUCK===
+<p>Een vrachtwagen die vastloopt op de A20 of de A4 bij Kethelplein blokkeert al snel een hele rijstrook. Dan gaat de melding via 112 of Rijkswaterstaat. Staat de truck op een terrein in Schiedam of Vlaardingen? Bel ons, dan regelen vaste partners met zwaar materieel de berging. Meer over <a href="{{R}}diensten/vrachtwagen-slepen/">vrachtwagen slepen</a>.</p>

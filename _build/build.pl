@@ -59,7 +59,7 @@ my @NAV = (
   ['Over ons',            'over-ons/'],
   ['Contact',             'contact/'],
 );
-my @FOOT_CITIES = qw(rotterdam amsterdam den-haag utrecht eindhoven breda tilburg den-bosch dordrecht haarlem leiden zwolle);
+my @FOOT_CITIES = qw(rotterdam amsterdam utrecht den-haag amersfoort barendrecht roermond almere breda eindhoven dordrecht haarlem leiden zwolle);
 my @FOOT_INFO = (['Tarieven','tarieven/'],['Kennisbank','kennisbank/'],['Over ons','over-ons/'],['Contact','contact/'],['Privacy','privacy/']);
 
 # Real Google reviews of Faster: [name, text, tag]
@@ -114,10 +114,11 @@ sub city_seo {
   my $p = shift;
   my $n = $p->{label};
   my $t = $p->{tlabel} // $n;
-  my $title = "Sleepdienst $t 24/7 | Snel ter plaatse, prijs vooraf";
-  $title = "Sleepdienst $t 24/7 | Prijs vooraf" if length $title > 62;
+  # Competitors in Google all name takeldienst and pechhulp with the town (2026-11-05 research).
+  my $title = "Sleepdienst $t 24/7 | Takeldienst en pechhulp";
+  $title = "Sleepdienst $t 24/7 | Pechhulp" if length $title > 62;
   $p->{title} //= $title;
-  $p->{description} //= "Auto stuk in $n? Sleepdienst Faster is vaak binnen 30 minuten bij u. 24/7, vaste prijs vooraf, geen abonnement. Bel of WhatsApp nu.";
+  $p->{description} //= "Sleepdienst, takeldienst of pechhulp in $n nodig? Faster is vaak binnen 30 minuten bij u. 24/7, prijs vooraf, geen abonnement. Bel of WhatsApp nu.";
   $p->{h1}  //= "Sleepdienst $n";
   $p->{h1b} //= 'binnen 30 minuten*, prijs vooraf.';
   $p->{eyebrow} //= "24/7 &middot; geen abonnement &middot; prijs vooraf";
@@ -201,7 +202,7 @@ sub hero_html {
 </div>
 <div class="review-slider" aria-label="Google reviews">$slides</div>
 </div>
-<figure class="hero-media"><img src="{{R}}assets/img/$img" alt="$alt" width="1600" height="1200" loading="eager" fetchpriority="high"><figcaption>Eigen materieel &middot; echte opdrachten</figcaption></figure>
+<figure class="hero-media"><img src="{{R}}assets/img/$img" alt="$alt" width="1600" height="1200" loading="eager" fetchpriority="high"><figcaption>Echte opdrachten, geen stockfoto&rsquo;s</figcaption></figure>
 </div>
 <div class="container"><p class="footnote">* Bij dringende oproepen vaak mogelijk, afhankelijk van uw locatie en het verkeer. U hoort bij het bellen hoe snel we er kunnen zijn.</p></div>
 </section>
@@ -227,7 +228,7 @@ my $STEPS = <<'H';
 H
 
 my $GALLERY = <<'H';
-<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk</span><h2>Geen stockfoto&rsquo;s, eigen sleepwagens</h2></div><p>Dit is ons materieel en dit zijn echte opdrachten.</p></div>
+<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk</span><h2>Geen stockfoto&rsquo;s, echte opdrachten</h2></div><p>Zo gaat het er in de praktijk aan toe.</p></div>
 <div class="gallery">
 <figure class="g-large"><img src="{{R}}assets/img/faster-road-transport.jpg" alt="Gele sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel" width="1600" height="1200" loading="lazy"><figcaption>Twee voertuigen in één rit</figcaption></figure>
 <figure><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken" width="1288" height="966" loading="lazy"><figcaption>Bestelbus opladen</figcaption></figure>
@@ -286,11 +287,17 @@ sub city_main {
     $near = '<div class="near"><strong>Ook in de buurt:</strong> ' . join('', @l) . qq{<a href="{{R}}sleepdienst/">Alle plaatsen &rarr;</a></div>} if @l;
   }
   my $pc = price_card("Sleepdienst $n");
+  my $pech = $p->{pech} ? "<h2>Pechhulp in $n</h2>$p->{pech}" : '';
+  my $trans = $p->{transport} ? "<h2>Takeldienst en autotransport in $n</h2>$p->{transport}" : '';
+  my $truck = $p->{truck} ? "<h2>Vrachtwagen met pech in $n</h2>$p->{truck}" : '';
   return <<"H";
 {{HERO}}
 <section class="section"><div class="container two-col"><div class="prose">
 <h2>Sleepdienst $n: wegen en knelpunten</h2>$p->{roads}
 <h2>Auto slepen in $n: goed om te weten</h2>$p->{local}
+$pech
+$trans
+$truck
 $near
 <p class="svc-links"><strong>Wat wij doen in $n:</strong> {{SVCLINKS}}</p>
 </div><aside class="side">$pc</aside></div></section>
@@ -356,12 +363,19 @@ for my $out (sort keys %P) {
            : $p->{template} eq 'raw'  ? $p->{main}
            : page_main($p);
   my @faq = faq_items($p->{faq});
+  # Town pages: the two questions Google shows for every town ("Wat kost...", "Is er een 24/7...").
+  if (($p->{kind} // '') eq 'city') {
+    my $n = $p->{label};
+    push @faq, ["Wat kost een sleepdienst in $n?", "Dat hangt af van de afstand, het voertuig, de plek en het tijdstip. U hoort de prijs vooraf aan de telefoon, en pas als u akkoord bent, komt de sleepwagen."],
+               ["Is er ook &rsquo;s nachts een takeldienst in $n?", "Ja. U kunt 24 uur per dag bellen, ook in het weekend en op feestdagen, en u heeft geen abonnement nodig."],
+               ["Zoekt u een goedkope sleepdienst in $n?", "Vraag altijd de prijs voordat de sleepwagen vertrekt, en vraag of er extra kosten bij kunnen komen. Bij ons hoort u de prijs vooraf en betaalt u alleen wat is afgesproken."];
+  }
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
 
   my ($crumb_html, $crumb_ld) = crumbs($p);
   my $faq_ld = @faq ? '<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' . join(',', map { '{"@type":"Question","name":"' . jstr($_->[0]) . '","acceptedAnswer":{"@type":"Answer","text":"' . jstr($_->[1]) . '"}}' } @faq) . ']}</script>' : '';
-  my $biz = ($p->{url} eq "" || $p->{url} eq "contact/") ? business_ld($p) : '';
+  my $biz = ($p->{url} eq "" || $p->{url} eq "contact/" || ($p->{kind} // '') eq 'city') ? business_ld($p) : '';
   my $robots = $PREVIEW || ($p->{robots} // '') eq 'noindex' ? '<meta name="robots" content="noindex, nofollow">' : '';
   my $canon = "$BASE/$p->{url}";
   my $title = esc($p->{title});

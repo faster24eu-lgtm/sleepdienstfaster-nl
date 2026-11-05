@@ -1,7 +1,7 @@
 label: Rotterdam
 kind: city
 province: Zuid-Holland
-near: den-haag, dordrecht, breda, barendrecht, schiedam
+near: den-haag, dordrecht, breda, barendrecht, schiedam, botlek-maasvlakte, vlaardingen
 reviews: 1
 ===ROADS===
 <p>Rotterdam heeft een ring van vier snelwegen: de A20 aan de noordkant, de A16 aan de oostkant met de Van Brienenoordbrug, de A15 aan de zuidkant en de A4 aan de westkant. De drukke knooppunten zijn het Terbregseplein (A16/A20), het Kleinpolderplein (A13/A20), het Kethelplein (A4/A20), het Beneluxplein (A4/A15), het Vaanplein (A15/A29) en knooppunt Ridderkerk (A15/A16).</p>
@@ -24,3 +24,9 @@ V: Komen jullie ook naar Rotterdam-Zuid, Hoogvliet en Spijkenisse?
 A: Ja. Wij halen auto's op in heel Rotterdam en de gemeenten eromheen, aan beide kanten van de Maas.
 V: Wat kost een sleepdienst in Rotterdam?
 A: De vaste prijs hoort u aan de telefoon voordat we vertrekken. Die hangt af van de plek, de afstand en het type voertuig.
+===PECH===
+<p>In Rotterdam-Zuid, Hoogvliet, Prins Alexander, Kralingen en Delfshaven is starthulp of een bandenwissel vaak meteen mogelijk. Ook uit Capelle aan den IJssel, Krimpen en Rhoon kunt u bellen. Lukt het niet ter plaatse, dan gaat de auto mee, zonder dat u ergens lid van hoeft te zijn.</p>
+===TRANSPORT===
+<p>Bent u gestrand en moet de auto naar huis, ook als dat ver weg is? Dan brengen we hem thuis, en u hoort de prijs vooraf. Op de Van Brienenoordbrug, de A13, de A16 en de A20 is de vluchtstrook de plek om te wachten, achter de vangrail.</p>
+===TRUCK===
+<p>Veel vrachtwagens stranden hier op de A15 en in het havengebied. Op de pagina <a href="{{R}}sleepdienst/botlek-maasvlakte/">Maasvlakte en Botlek</a> leest u hoe dat werkt met terminals en toegangscontrole. Vaste partners met zwaar materieel doen de berging, en u houdt één nummer.</p>

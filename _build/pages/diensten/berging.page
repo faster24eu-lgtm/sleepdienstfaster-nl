@@ -1,0 +1,43 @@
+title: Bergingsbedrijf nodig? Autoberging 24/7, prijs vooraf | Faster
+description: Auto of bestelbus geborgen na pech of een ongeval? Faster regelt 24/7 een berging in heel Nederland, met de prijs vooraf en zonder abonnement. Bel of WhatsApp.
+label: Berging
+kind: dienst
+order: 3
+card: Auto in de berm, de sloot of na een ongeval? Wij regelen de berging, 24/7, met de prijs vooraf.
+crumbs: Diensten|diensten/
+h1: Bergingsbedrijf nodig?
+h1b: Autoberging in heel Nederland, 24/7
+lead: <p>Een auto die in de berm, in een sloot of na een aanrijding vastzit, kan niet zomaar op de sleepwagen rijden. Dan is er een berging nodig. U belt één nummer, wij regelen het materieel en u hoort de prijs voordat er iemand vertrekt.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Wat is het verschil tussen slepen en bergen?</h2>
+<p>Slepen is een auto ophalen die op de weg of een parkeerplaats staat. Bergen is een voertuig terugbrengen op een plek waar het weer kan worden geladen: uit de berm, een greppel of een parkeergarage, of na een ongeval met veel schade. Daarvoor is vaak een lier nodig, en soms meer dan één wagen.</p>
+<p>U hoeft dat verschil niet zelf te weten. Vertel wat er is gebeurd, en wij kijken welk materieel er nodig is.</p>
+<h2>Wanneer belt u een bergingsbedrijf?</h2>
+<ul>
+<li><strong>Na een aanrijding</strong> als de auto niet meer veilig kan rijden. Lees ook wat u moet doen <a href="{{R}}kennisbank/na-een-aanrijding/">na een aanrijding</a>.</li>
+<li><strong>Auto in de berm of de sloot.</strong> Zit er nog iemand in de auto of is er water bij? Bel dan altijd eerst 112.</li>
+<li><strong>Auto vast</strong> in modder, zand of een smalle parkeergarage.</li>
+<li><strong>Bestelbus met lading</strong> die eerst moet worden gezekerd of overgeladen.</li>
+<li><strong>Vrachtwagen of bus vanaf 3,5 ton.</strong> Daarvoor werken we met vaste partners, zie <a href="{{R}}diensten/vrachtwagen-slepen/">vrachtwagen sleepdienst</a>.</li>
+</ul>
+<h2>Op de snelweg gelden andere regels</h2>
+<p>Staat u op een rijstrook van de snelweg, bel dan eerst 112 of Rijkswaterstaat (0800-8002). Bij een ongeval kan de politie of de wegbeheerder een aangewezen berger sturen. Daar kiest u dan niet zelf in. Is de auto eenmaal veilig weggehaald, dan kunnen wij hem verder brengen naar uw garage. Lees meer over <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>.</p>
+<h2>En de verzekering?</h2>
+<p>Bel bij schade ook uw autoverzekeraar. Sommige verzekeringen vergoeden berging en vervoer, soms alleen als zij dat zelf regelen. Vraag het na voordat u akkoord gaat. Bewaar de factuur, dan kunt u die indienen.</p>
+<h2>Hoe gaat het in zijn werk?</h2>
+<ol>
+<li>U belt of stuurt uw locatie via WhatsApp, met een foto als dat veilig kan.</li>
+<li>U hoort welk materieel er nodig is en wat het kost.</li>
+<li>Als u akkoord bent, komt de hulp. De auto gaat naar uw garage, een schadebedrijf of een ander adres.</li>
+</ol>
+</div><aside class="side">
+<div class="price-card"><span>Berging</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Wat kost een bergingsbedrijf?
+A: Dat hangt af van de plek, het voertuig, de tijd en het materieel dat nodig is. Omdat elke berging anders is, hoort u de prijs vooraf aan de telefoon.
+V: Is mijn auto verzekerd bij een berging?
+A: Vraag uw autoverzekeraar wat er wordt vergoed. Sommige polissen dekken de kosten, soms alleen als zij het zelf regelen.
+V: Kan de berging ook &rsquo;s nachts?
+A: Ja, u kunt 24 uur per dag bellen, ook in het weekend.

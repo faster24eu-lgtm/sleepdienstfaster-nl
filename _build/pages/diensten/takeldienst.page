@@ -1,0 +1,40 @@
+title: Takeldienst 24/7 in heel Nederland, prijs vooraf | Faster
+description: Takeldienst nodig bij pech of schade? Faster regelt 24/7 een takelwagen voor uw auto of bestelbus. Prijs vooraf, geen abonnement. Bel of WhatsApp nu.
+label: Takeldienst
+kind: dienst
+order: 4
+card: Een takelwagen voor uw auto of bestelbus, ook als hij niet meer rijdt of stuurt.
+crumbs: Diensten|diensten/
+h1: Takeldienst
+h1b: dag en nacht, in heel Nederland
+lead: <p>Takelen, slepen of oprijden: op de weg maakt het voor u weinig uit. De auto moet weg en u wilt weten wat het kost. Bel ons, dan regelen we een takelwagen en hoort u de prijs voordat er iemand vertrekt.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Wanneer heeft u een takeldienst nodig?</h2>
+<ul>
+<li>De motor start niet en starthulp werkt niet.</li>
+<li>De auto rijdt niet meer na een aanrijding.</li>
+<li>De koppeling, de versnellingsbak of de besturing is kapot.</li>
+<li>U heeft geen reservewiel en de band is onherstelbaar.</li>
+<li>U heeft <a href="{{R}}kennisbank/verkeerd-getankt/">verkeerd getankt</a> en de auto moet naar een garage.</li>
+</ul>
+<h2>Takelen of op het plateau?</h2>
+<p>Bij takelen hangen de voor- of achterwielen in de lucht en rijden de andere over de weg. Op een plateau staat de hele auto op de wagen. Een auto met automaat, vierwielaandrijving of een elektrische motor gaat bij voorkeur op het plateau, omdat rollende wielen de aandrijving kunnen beschadigen. Lees meer over <a href="{{R}}diensten/elektrische-auto-slepen/">elektrische auto slepen</a>.</p>
+<h2>Wat vertelt u als u belt?</h2>
+<ol>
+<li>Waar de auto staat: adres, herkenningspunt of hectometerpaaltje.</li>
+<li>Merk, model en wat er aan de hand is.</li>
+<li>Of de wielen nog draaien en de auto nog stuurt.</li>
+<li>Waar de auto naartoe moet.</li>
+</ol>
+<p>Dan hoort u meteen de prijs. Wilt u liever eerst vergelijken? Ook goed: u zit nergens aan vast tot u akkoord gaat.</p>
+<h2>Waar komt de takeldienst?</h2>
+<p>In heel Nederland, met eigen pagina&rsquo;s voor plaatsen als <a href="{{R}}sleepdienst/rotterdam/">Rotterdam</a>, <a href="{{R}}sleepdienst/amsterdam/">Amsterdam</a>, <a href="{{R}}sleepdienst/utrecht/">Utrecht</a> en <a href="{{R}}sleepdienst/amersfoort/">Amersfoort</a>. Alle plaatsen staan op de pagina <a href="{{R}}sleepdienst/">werkgebied</a>.</p>
+</div><aside class="side">
+<div class="price-card"><span>Takeldienst</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Wat is het verschil tussen een takeldienst en een sleepdienst?
+A: In de praktijk bedoelen mensen hetzelfde: een wagen die uw auto ophaalt en wegbrengt. Takeldienst is vooral een Vlaams woord, sleepdienst hoort u vaker in Nederland.
+V: Rijd ik mee in de takelwagen?
+A: Meestal kan dat. Zeg het bij het bellen, zeker als u met meer mensen bent.

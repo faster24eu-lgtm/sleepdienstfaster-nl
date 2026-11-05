@@ -1,0 +1,35 @@
+title: Sleepdienst in de buurt: bel en u hoort hoe snel | Faster
+description: Sleepdienst in de buurt nodig? Deel uw locatie, dan regelt Faster de dichtstbijzijnde sleepwagen. 24/7 in heel Nederland, prijs vooraf, geen abonnement.
+label: Sleepdienst in de buurt
+kind: dienst
+order: 6
+card: Deel uw locatie, en u hoort hoe snel er een sleepwagen bij u kan zijn.
+crumbs: Diensten|diensten/
+h1: Sleepdienst in de buurt
+h1b: bel of deel uw locatie
+lead: <p>U staat stil en u wilt niet zoeken naar wie er in deze plaats rijdt. Dat hoeft ook niet. Bel ons of stuur uw locatie via WhatsApp, dan regelen we de dichtstbijzijnde sleepwagen en hoort u hoe snel die er kan zijn.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Zo vinden we u snel</h2>
+<ol>
+<li><strong>Op de snelweg:</strong> geef de weg, de rijrichting en het hectometerpaaltje door.</li>
+<li><strong>In de stad of het dorp:</strong> noem het adres of een herkenningspunt.</li>
+<li><strong>Op WhatsApp:</strong> deel uw live locatie. Dan zien we precies waar u staat.</li>
+</ol>
+<p>Staat u op een gevaarlijke plek? Zet eerst de alarmlichten aan, wacht achter de vangrail en bel bij gevaar 112.</p>
+<h2>Hoe snel is de sleepdienst er?</h2>
+<p>Bij spoed vaak binnen 30 minuten. Dat hangt af van waar u staat en van het verkeer. In een grote stad gaat het meestal sneller dan op het platteland. U hoort aan de telefoon wat er op dit moment kan, en dan beslist u of u akkoord gaat.</p>
+<h2>Sleepdienst per regio</h2>
+<p><strong>Randstad:</strong> <a href="{{R}}sleepdienst/rotterdam/">Rotterdam</a>, <a href="{{R}}sleepdienst/amsterdam/">Amsterdam</a>, <a href="{{R}}sleepdienst/den-haag/">Den Haag</a>, <a href="{{R}}sleepdienst/utrecht/">Utrecht</a>, <a href="{{R}}sleepdienst/leiden/">Leiden</a>, <a href="{{R}}sleepdienst/haarlem/">Haarlem</a>, <a href="{{R}}sleepdienst/dordrecht/">Dordrecht</a>.</p>
+<p><strong>Midden en oost:</strong> <a href="{{R}}sleepdienst/amersfoort/">Amersfoort</a>, <a href="{{R}}sleepdienst/arnhem/">Arnhem</a>, <a href="{{R}}sleepdienst/nijmegen/">Nijmegen</a>, <a href="{{R}}sleepdienst/apeldoorn/">Apeldoorn</a>, <a href="{{R}}sleepdienst/zwolle/">Zwolle</a>, <a href="{{R}}sleepdienst/enschede/">Enschede</a>.</p>
+<p><strong>Zuid:</strong> <a href="{{R}}sleepdienst/eindhoven/">Eindhoven</a>, <a href="{{R}}sleepdienst/breda/">Breda</a>, <a href="{{R}}sleepdienst/tilburg/">Tilburg</a>, <a href="{{R}}sleepdienst/den-bosch/">Den Bosch</a>, <a href="{{R}}sleepdienst/roermond/">Roermond</a>, <a href="{{R}}sleepdienst/venlo/">Venlo</a>, <a href="{{R}}sleepdienst/maastricht/">Maastricht</a>.</p>
+<p><strong>Noord en Flevoland:</strong> <a href="{{R}}sleepdienst/groningen/">Groningen</a>, <a href="{{R}}sleepdienst/leeuwarden/">Leeuwarden</a>, <a href="{{R}}sleepdienst/almere/">Almere</a>, <a href="{{R}}sleepdienst/lelystad/">Lelystad</a>.</p>
+<p>Staat uw plaats er niet bij? Bel gerust: we rijden in heel Nederland.</p>
+</div><aside class="side">
+<div class="price-card"><span>Sleepdienst in de buurt</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Hoe weet ik welke sleepdienst er in mijn buurt rijdt?
+A: Dat hoeft u niet te weten. Geef uw locatie door, dan regelen wij een sleepwagen die zo dicht mogelijk bij u is.
+V: Is er een 24/7 sleepdienst?
+A: Ja. U kunt dag en nacht bellen, ook in het weekend en op feestdagen.

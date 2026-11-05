@@ -1,0 +1,34 @@
+title: Autoambulance: uw auto veilig op de wagen, 24/7 | Faster
+description: Autoambulance nodig? Faster regelt 24/7 een wagen met plateau voor uw auto, ook voor automaten en elektrische auto&#39;s. Prijs vooraf, geen abonnement.
+label: Autoambulance
+kind: dienst
+order: 5
+card: Een wagen met plateau: uw hele auto staat op de wagen en de wielen raken de weg niet.
+crumbs: Diensten|diensten/
+h1: Autoambulance
+h1b: uw hele auto op het plateau
+lead: <p>Een autoambulance is een wagen met een plateau. Uw auto staat er helemaal op, dus de wielen rollen niet mee over de weg. Dat is de veiligste manier om een auto te vervoeren die niet meer rijdt, en vaak de enige goede voor automaten en elektrische auto&rsquo;s.</p>
+===MAIN===
+<section class="section"><div class="container two-col"><div class="prose">
+<h2>Wanneer kiest u voor een autoambulance?</h2>
+<ul>
+<li><strong>Automaat of vierwielaandrijving.</strong> Bij rollende wielen kan de aandrijving schade oplopen.</li>
+<li><strong>Elektrische auto of hybride.</strong> Zie <a href="{{R}}diensten/elektrische-auto-slepen/">elektrische auto slepen</a>.</li>
+<li><strong>Lage sportauto of oldtimer</strong> die voorzichtig moet worden geladen.</li>
+<li><strong>Auto na een aanrijding</strong> met schade aan wielen of ophanging.</li>
+<li><strong>Auto zonder apk of kenteken</strong> die niet zelf de weg op mag, bijvoorbeeld na aankoop. Zie ook <a href="{{R}}diensten/autotransport/">autotransport</a>.</li>
+</ul>
+<h2>Spoed of op afspraak</h2>
+<p>Staat u stil langs de weg, dan belt u en komt er zo snel mogelijk een wagen. Moet een auto op een vaste dag worden vervoerd, bijvoorbeeld van de verkoper naar uw huis, dan spreken we een tijd af. In beide gevallen hoort u de prijs vooraf, en u heeft geen abonnement nodig.</p>
+<h2>Waar gaat de auto naartoe?</h2>
+<p>Waar u wilt: uw garage, de dealer, een schadebedrijf of uw huis. Ook een rit naar een andere provincie kan. U mag meestal meerijden; zeg dat bij het bellen.</p>
+<h2>Wat is het verschil met een gewone sleepwagen?</h2>
+<p>Veel moderne sleepwagens hebben zelf een plateau, dus het woord maakt niet zoveel uit. Noem bij het bellen het merk, het model en de aandrijving. Dan komt er een wagen die geschikt is voor uw auto.</p>
+</div><aside class="side">
+<div class="price-card"><span>Autoambulance</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+</aside></div></section>
+===FAQ===
+V: Past mijn lage auto op het plateau?
+A: Meestal wel. Noem de auto en de bodemvrijheid, dan kijken we of er een oprijplaat nodig is.
+V: Kan een autoambulance ook een bestelbus meenemen?
+A: Ja, tot 3.500 kilo. Zwaardere voertuigen regelen we met vaste partners.

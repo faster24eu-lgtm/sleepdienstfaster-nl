@@ -1,7 +1,7 @@
 label: Nijmegen
 kind: city
 province: Gelderland
-near: arnhem, den-bosch
+near: arnhem, den-bosch, tiel
 reviews: 1
 ===ROADS===
 <p>Nijmegen ligt aan de A73 (richting Venlo en Den Bosch), de A50 (aan de westkant, over de Maas bij Ewijk en Ravenstein) en de A325 naar Arnhem. Het centrum is via drie bruggen met Nijmegen-Noord en Lent verbonden: de Waalbrug, De Oversteek en de spoorbrug met de fietsbrug De Snelbinder.</p>
@@ -16,3 +16,7 @@ V: Kunnen jullie een auto ophalen bij het Radboudumc?
 A: Ja. Geef het parkeerterrein of de parkeergarage door. Staat de auto in een garage, dan moet hij eerst naar buiten gerold worden.
 V: Komen jullie ook in Wijchen, Beuningen en Lent?
 A: Ja, in heel de regio Nijmegen.
+===PECH===
+<p>In Dukenburg, Lindenholt, Hatert, Lent en Oosterhout kan er meestal gewoon in de straat worden gewerkt. Op de steile straten in het centrum zegt u er even bij dat de auto op een helling staat. Ook uit Beuningen, Wijchen, Malden en Groesbeek kunt u bellen.</p>
+===TRANSPORT===
+<p>De Waalbrug en De Oversteek zijn de twee stadsbruggen, met vaak file in de spits. Op de A73 en de A325 gelden de regels voor de snelweg. Op Bijsterhuizen zitten veel bedrijven en garages, dus daar is de auto vaak snel afgeleverd.</p>
