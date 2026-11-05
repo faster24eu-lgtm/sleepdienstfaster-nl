@@ -21,6 +21,8 @@
 #   kind                  city | dienst | gids   (used by {{LIST:kind}})
 #   province, near        city pages: grouping, and slugs of nearby cities
 #   sitemap: no           leave out of sitemap
+#   layout: bare          MAIN is a whole HTML document (Google Ads landing page): no header,
+#                         menu or footer, only the placeholders are filled. Stays in the sitemap.
 # Sections: MAIN, FAQ ("V: ..." / "A: ..." lines), and for city pages
 # LEAD (first paragraph of the info block), ROADS, LOCAL.
 #
@@ -418,6 +420,8 @@ $main
 </html>
 H
 
+  my $bare = ($p->{layout} // '') eq 'bare';
+  $html = $p->{main} if $bare;
   for (1..3) {
     $html =~ s/\{\{HERO\}\}/hero_html($p)/ge;
     $html =~ s/\{\{LIST:(\w+)\}\}/list_html($1)/ge;
@@ -437,7 +441,7 @@ H
   $html =~ s/\{\{PRICE\}\}/$PRICE/g;
   $html =~ s/\n{2,}/\n/g;
   warn "$p->{src}: unreplaced $1\n" while $html =~ /(\{\{[A-Z_:a-z]+\}\})/g;
-  $html = link_mentions($p, $html, $R);
+  $html = link_mentions($p, $html, $R) unless $bare;
 
   make_path(dirname($out)) if $out =~ m{/};
   open my $fh, '>:encoding(UTF-8)', $out or die "$out: $!";
