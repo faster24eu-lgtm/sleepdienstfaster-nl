@@ -480,6 +480,9 @@ BEGIN { %GUIDE_PHRASES = (
   'kennisbank/auto-slepen-met-touw/'         => ['slepen met een touw', 'met een touw slepen', 'sleeptouw'],
   'kennisbank/auto-naar-garage-laten-slepen/' => ['naar de garage laten slepen', 'naar de garage slepen'],
   'kennisbank/goedkope-sleepdienst/'          => ['goedkope sleepdienst', 'sleepkosten laag'],
+  'diensten/vrachtwagen-slepen/'              => ['vrachtwagen sleepdienst', 'vrachtwagen pechhulp', 'vrachtwagen berging'],
+  'sleepdienst/botlek-maasvlakte/'            => ['Botlek', 'Maasvlakte', 'Europoort'],
+  'tarieven/'                                => ['vaste prijs vooraf', 'prijs vooraf'],
 ) }
 sub link_mentions {
   my ($p, $html, $R) = @_;

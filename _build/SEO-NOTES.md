@@ -63,3 +63,10 @@ Goal: higher CTR on city SERPs (GSC: high impressions, low clicks; many city pag
 Titles/meta pattern: `Sleepdienst <plaats> 24/7 | ±30 min, prijs vooraf` (+ unique local roads/landmarks in description). Applied to all city pages that still used default `city_seo` titles, plus earlier batch (Amsterdam, Rotterdam, Utrecht, Leiden, Den Haag, Haarlem, Eindhoven, …). Botlek page kept truck angle: `Vrachtwagen sleepdienst Botlek 24/7 | prijs vooraf`.
 
 Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. Sitemap: every URL now has `<lastmod>YYYY-MM-DD</lastmod>` (build.pl updated). Re-check CTR/positions in Search Console after ~2–3 weeks.
+
+## 2026-11-06 (night, wave A–C) – gids strengthen, linking, thin cities
+- Strengthened `/kennisbank/wat-kost-een-sleepdienst/` and `/kennisbank/sleepdienst-zonder-abonnement/` (CTR titles; honest ANWB/zonder-lid angle).
+- CTR titles + cross-links on `/diensten/elektrische-auto-slepen/` and `/diensten/bestelbus-slepen/` (pechhulp-hoek).
+- Home + Amsterdam/Rotterdam/Botlek: clearer links to Botlek, tarieven, pech-gids, wat-kost.
+- `GUIDE_PHRASES`: Botlek/Maasvlakte/Europoort, vrachtwagen sleepdienst, prijs/tarieven → more contextual internal links.
+- Local paragraph added on Zoetermeer, Apeldoorn, Enschede, Almere, Zwolle (landmarks/roads only).
