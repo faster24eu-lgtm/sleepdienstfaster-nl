@@ -86,3 +86,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – LOCAL batch Lelystad/Schiedam/Barendrecht/Delft/Nijmegen
 - LOCAL landmark para (roads/landmarks only): Lelystad (A6/Houtrib), Schiedam (Beneluxtunnel/Kethelplein), Barendrecht (Vaanplein), Delft (A13/TU), Nijmegen (Waalbrug/A73).
+
+## 2026-11-06 (night) – LOCAL remaining thin cities
+- Concrete road/landmark LOCAL added: Terneuzen (Westerscheldetunnel), Groningen (A7/A28/ring), Breda (A16/A27/CS), Arnhem (A12/A50/Mandelabrug), Dordrecht (A16/bruggen/Drechttunnel), Den Bosch (A2/A59/Paleiskwartier), Maastricht (A2-tunnel/Maasbruggen).
