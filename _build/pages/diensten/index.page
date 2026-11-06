@@ -1,8 +1,8 @@
-title: Diensten: sleepdienst, autotransport en pechhulp | Faster
-description: Auto slepen, bestelbus slepen, berging na een ongeval, elektrische auto&#39;s en autotransport door heel Nederland. Prijs vooraf, 24/7.
+title: Sleepdienst, pechhulp & autotransport | Diensten Faster
+description: Alle diensten van Faster: auto slepen, pechhulp, bestelbus, EV op plateau, berging en autotransport. 24/7, prijs vooraf, geen abonnement.
 label: Diensten
 h1: Onze diensten
-lead: <p>Faster is een sleepdienst. Wij halen auto&rsquo;s en bestelbussen op die niet meer rijden en brengen ze waar u wilt. Kan het ter plaatse snel opgelost worden, dan doen we dat ook.</p>
+lead: <p>Faster is een sleepdienst. Wij slepen auto&rsquo;s en bestelbussen, helpen bij pech ter plaatse als dat kan, en brengen elektrische auto&rsquo;s altijd op een plateauwagen. Prijs vooraf, 24/7, geen abonnement.</p>
 ===MAIN===
 <section class="section"><div class="container">{{LIST:dienst}}</div></section>
 {{STEPS}}
