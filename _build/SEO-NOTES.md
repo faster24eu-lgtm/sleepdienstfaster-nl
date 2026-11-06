@@ -80,3 +80,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - LOCAL landmarks: Zaandam, Tiel, Venlo, Rijswijk, Roermond (roads/landmarks only).
 - Light CTR: `/contact/`, `/tarieven/` lead (+ wat-kost link), `/over-ons/` lead.
 - robots.txt + sitemap present (Allow:/, sitemap URL, lastmod 2026-11-06); rebuild 0 broken links.
+
+## 2026-11-06 (night) – LOCAL batch Alkmaar/Purmerend/Veenendaal/Westland/Vlaardingen
+- LOCAL landmark para added (roads/landmarks only, no prices/reviews): Alkmaar (Boekelermeer/N9), Purmerend (A7/Beemster), Veenendaal (A12/Rhenen), Westland (N211/kassen), Vlaardingen (A20/Beneluxtunnel).
