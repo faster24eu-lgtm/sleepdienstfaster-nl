@@ -5,4 +5,7 @@ h1: Onze diensten
 lead: <p>Faster is een sleepdienst. Wij slepen auto&rsquo;s en bestelbussen, helpen bij pech ter plaatse als dat kan, en brengen elektrische auto&rsquo;s altijd op een plateauwagen. Prijs vooraf, 24/7, geen abonnement.</p>
 ===MAIN===
 <section class="section"><div class="container">{{LIST:dienst}}</div></section>
+<section class="section white"><div class="container"><div class="prose">
+<p>Sleepdienst nodig in uw stad? Bekijk <a href="{{R}}sleepdienst/">alle plaatsen</a> of ga direct naar <a href="{{R}}sleepdienst/groningen/">Groningen</a>, <a href="{{R}}sleepdienst/maastricht/">Maastricht</a>, <a href="{{R}}sleepdienst/nijmegen/">Nijmegen</a>, <a href="{{R}}sleepdienst/alkmaar/">Alkmaar</a>, <a href="{{R}}sleepdienst/terneuzen/">Terneuzen</a>, <a href="{{R}}sleepdienst/roosendaal/">Roosendaal</a>, <a href="{{R}}sleepdienst/delft/">Delft</a> of <a href="{{R}}sleepdienst/den-bosch/">Den Bosch</a>.</p>
+</div></div></section>
 {{STEPS}}
