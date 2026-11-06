@@ -136,14 +136,18 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - Breda/Bergen-op-Zoom heroes preload `faster-intervention-workshop-*.webp` (their hero image).
 
 ## 2026-11-06 (night) – MORNING 08:00 DIGEST (mention these)
-Facts only from shipped work tonight:
+Facts only from shipped work tonight — **no invented GSC numbers**:
 - **CTR titles/meta** on city + hub pages (`Sleepdienst <plaats> 24/7 | ±30 min, prijs vooraf`); descriptions with local roads/landmarks.
 - **LOCAL uniqueness** + PECH/TRANSPORT rewrites; `check_similarity.pl` max-sim down to ~31%.
 - **www → apex 301** OK; CNAME apex; canonicals apex.
-- **OG/Twitter**: `faster-road-transport.jpg` + width/height/alt (1600×1200); og:image not WebP.
-- **CWV images**: compressed JPG; WebP companions; responsive **srcset 800/1200** (+ warehouse 600); `<picture>`; LCP **preload + fetchpriority=high**.
-- **Custom 404**; sitemap with lastmod; crawl paths/footer hubs expanded.
-- **No** Faster EN mirror this wave; **no** invented GSC numbers — re-check CTR/positions in GSC after ~2–3 weeks.
+- **OG/Twitter**: `faster-road-transport.jpg` + width/height/alt (1600×1200); og:image stays full JPG (not WebP).
+- **CWV images**: compressed JPG; WebP companions; responsive **srcset 800/1200** (+ warehouse 600); `<picture>`; LCP **preload + imagesrcset + fetchpriority=high**. Local LH mobile: `/` + Amsterdam perf **100**, LCP 0.9–1.1s, CLS 0 (PSI API 429).
+- **a11y**: verified contrast (WA green `#0d6e32`, footnote/eyebrow); honeypot `aria-hidden`; brand aria-label removed; LH a11y **1.0**. Skip-link “Ga naar inhoud” → `#content`.
+- **Zonder-abonnement / pechhulp**: FAQs on bestemming kiezen + geen lock-in; pechhulp body stresses prijs vooraf + eigen bestemming (SERP pay-per-use pattern; no invented Faster prices).
+- **Custom 404**; sitemap **73** URLs with lastmod; crawl paths/footer hubs expanded.
+- **No** Faster EN mirror this wave.
+- **Regression (morning)**: sitemap crawl **73/73** HTTP 200, titles non-empty, `</body>` OK; spot-checks skip/WebP-preload/OG 200 — **no breakages**.
+- Re-check CTR/positions in GSC after ~2–3 weeks.
 
 ## 2026-11-06 (night) – CWV measured (Lighthouse mobile)
 PSI API: **HTTP 429**. Local Lighthouse 13.6 mobile simulate:
@@ -179,3 +183,6 @@ Results emphasize pay-per-use framing: Spoedsleepdienst, Sleepdienst Roermond, A
 
 ## 2026-11-06 (night) – zonder-abonnement / pechhulp strengthen
 Real gap vs SERP pay-per-use pattern: destination choice + no lock-in. Added FAQs on `/kennisbank/sleepdienst-zonder-abonnement/` (bestemming kiezen; zit ik ergens aan vast?) and `/diensten/pechhulp/` (bestemming FAQ; ANWB answer now mentions prijs vooraf + eigen bestemming + link). One body sentence on pechhulp: “kiest u zelf waar de auto heen gaat.” No invented Faster prices; no competitor attacks.
+
+## 2026-11-06 (morning) – Regression crawl
+Read-only sitemap crawl + spot-checks. Faster **73/73** HTTP 200; titles non-empty; `</body>` OK. Spot-checks: skip-link home; WebP/preload/fetchpriority home; OG JPG 200. **No breakages fixed.**
