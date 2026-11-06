@@ -114,3 +114,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – twitter:image on Faster
 - Added twitter:card=summary_large_image + twitter:image (same as og:image faster-road-transport.jpg) in build.pl and existing HTML.
+
+## 2026-11-06 (night) – www/apex OK; OG dims/alt; schema tel E.164
+- Live www→apex 301; CNAME=apex. OG width/height/alt + twitter:image:alt (1600×1200). JSON-LD telephone E.164.

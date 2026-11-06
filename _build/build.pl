@@ -347,7 +347,7 @@ sub crumbs {
 sub business_ld {
   my $p = shift;
   my $area = ($p->{kind} // '') eq 'city' ? '{"@type":"City","name":"' . jstr($p->{label}) . '"}' : '{"@type":"Country","name":"Nederland"}';
-  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"$PHONE","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"€€","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
+  return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"+3197010229095","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"€€","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
 my $LOGO = '<a class="brand" href="{{R}}" aria-label="Sleepdienst Faster, naar de homepage"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
@@ -416,8 +416,12 @@ $robots
 <meta property="og:description" content="$desc">
 <meta property="og:url" content="$canon">
 <meta property="og:image" content="$BASE/assets/img/faster-road-transport.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Sleepdienst Faster — sleepwagen onderweg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="$BASE/assets/img/faster-road-transport.jpg">
+<meta name="twitter:image:alt" content="Sleepdienst Faster — sleepwagen onderweg">
 <link rel="icon" href="{{R}}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{R}}assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="{{R}}assets/img/apple-touch-icon.png">
