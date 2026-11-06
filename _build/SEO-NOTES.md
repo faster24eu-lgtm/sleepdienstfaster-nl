@@ -83,3 +83,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – LOCAL batch Alkmaar/Purmerend/Veenendaal/Westland/Vlaardingen
 - LOCAL landmark para added (roads/landmarks only, no prices/reviews): Alkmaar (Boekelermeer/N9), Purmerend (A7/Beemster), Veenendaal (A12/Rhenen), Westland (N211/kassen), Vlaardingen (A20/Beneluxtunnel).
+
+## 2026-11-06 (night) – LOCAL batch Lelystad/Schiedam/Barendrecht/Delft/Nijmegen
+- LOCAL landmark para (roads/landmarks only): Lelystad (A6/Houtrib), Schiedam (Beneluxtunnel/Kethelplein), Barendrecht (Vaanplein), Delft (A13/TU), Nijmegen (Waalbrug/A73).
