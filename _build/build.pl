@@ -529,9 +529,10 @@ sub link_mentions {
 # ---------------------------------------------------------------- sitemap, robots
 open my $sm, '>:encoding(UTF-8)', 'sitemap.xml' or die;
 print $sm qq{<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n};
+my @t = localtime; my $TODAY = sprintf '%04d-%02d-%02d', $t[5]+1900, $t[4]+1, $t[3];
 for my $p (sort { $a->{url} cmp $b->{url} } values %P) {
   next if $p->{out} eq '404.html' || ($p->{sitemap} // '') eq 'no';
-  print $sm "  <url><loc>$BASE/$p->{url}</loc></url>\n";
+  print $sm "  <url><loc>$BASE/$p->{url}</loc><lastmod>$TODAY</lastmod></url>\n";
 }
 print $sm "</urlset>\n"; close $sm;
 
