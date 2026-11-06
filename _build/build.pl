@@ -59,7 +59,7 @@ my @NAV = (
   ['Over ons',            'over-ons/'],
   ['Contact',             'contact/'],
 );
-my @FOOT_CITIES = qw(rotterdam amsterdam utrecht den-haag amersfoort barendrecht roermond almere breda eindhoven dordrecht haarlem leiden zwolle);
+my @FOOT_CITIES = qw(rotterdam amsterdam utrecht den-haag amersfoort barendrecht roermond almere breda eindhoven dordrecht haarlem leiden zwolle groningen maastricht nijmegen alkmaar terneuzen den-bosch delft);
 my @FOOT_INFO = (['Tarieven','tarieven/'],['Kennisbank','kennisbank/'],['Over ons','over-ons/'],['Contact','contact/'],['Privacy','privacy/']);
 
 # Real Google reviews of Faster: [name, text, tag]

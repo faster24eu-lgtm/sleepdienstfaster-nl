@@ -93,3 +93,8 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 ## 2026-11-06 (night ~03:15) – LOCAL thin finish + section fix
 - LOCAL road/landmark added: Roosendaal (A17/A58/Outlet), Eindhoven (A2/A67/Airport), Den Haag (A12/A4/Scheveningen), Amsterdam (A10/Coentunnel), Utrecht (A2/A12/Rijnsweerd).
 - Moved misplaced landmark paras into LOCAL block: Westland, Vlaardingen, Delft, Veenendaal (sources+HTML).
+
+## 2026-11-06 (night ~03:30) – indexing: similarity + crawl paths
+- Ran `check_similarity.pl`: worst cluster Tilburg↔Zwolle was ~47% max-sim / ~20% unique. Rewrote LOCAL/FAQ/PECH/TRANSPORT for Tilburg, Zwolle, Groningen (+ light Breda/Maastricht). Result: all city max-sim ≤36%, no pair ≥40%.
+- Crawl paths: expanded `@FOOT_CITIES` (+Groningen, Maastricht, Nijmegen, Alkmaar, Terneuzen, Den Bosch, Delft); home werkgebied prose; kennisbank + diensten hub body links to underlinked cities; Terneuzen added to near of Bergen-op-Zoom/Roosendaal/Breda; Maastricht to Roermond/Venlo/Den Bosch near.
+- Technical: no noindex/canonical-to-home on cities; robots Allow:/ + sitemap; sitemap 73 URLs / 40 cities; html lang=nl; unique canonicals. Build 0 broken links.

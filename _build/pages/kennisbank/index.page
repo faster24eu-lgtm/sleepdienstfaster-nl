@@ -5,3 +5,7 @@ h1: Kennisbank
 lead: <p>Korte, praktische uitleg voor als u pech heeft, of wilt weten waar u aan toe bent.</p>
 ===MAIN===
 <section class="section"><div class="container">{{LIST:gids}}</div></section>
+<section class="section white"><div class="container"><div class="prose">
+<p>Pech in een specifieke stad? Ga naar <a href="{{R}}sleepdienst/">alle plaatsen</a>, of bel direct voor <a href="{{R}}sleepdienst/groningen/">Groningen</a>, <a href="{{R}}sleepdienst/maastricht/">Maastricht</a>, <a href="{{R}}sleepdienst/nijmegen/">Nijmegen</a>, <a href="{{R}}sleepdienst/alkmaar/">Alkmaar</a>, <a href="{{R}}sleepdienst/terneuzen/">Terneuzen</a>, <a href="{{R}}sleepdienst/delft/">Delft</a> of <a href="{{R}}sleepdienst/den-bosch/">Den Bosch</a>.</p>
+<p>Handige gidsen: <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>, <a href="{{R}}kennisbank/accu-leeg/">accu leeg</a>, <a href="{{R}}kennisbank/sleepdienst-zonder-abonnement/">zonder abonnement</a> en <a href="{{R}}kennisbank/wat-kost-een-sleepdienst/">wat kost een sleepdienst</a>.</p>
+</div></div></section>
