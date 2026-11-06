@@ -150,3 +150,6 @@ PSI API: **HTTP 429**. Local Lighthouse 13.6 mobile simulate:
 - `/`: perf **100**, LCP **1.1s**, CLS **0**, TBT **10ms**
 - `/sleepdienst/amsterdam/`: perf **100**, LCP **0.9s**, CLS **0**, TBT **0ms**
 No further image/CSS/JS surgery — already WebP+srcset+LCP preload; CSS ~15KB, JS ~0.7KB defer. Unsized images: none.
+
+## 2026-11-06 (night) – a11y (verified contrast)
+LH a11y fails verified: WhatsApp #25D366+white = 1.98 → --green:#148f45 (white≈4.16); footnote/footer #777→#595959; eyebrow --accent-ink:#6b5400. Honeypot aria-hidden=true. Brand logo aria-label removed (name from visible SLEEPDIENST FASTER).

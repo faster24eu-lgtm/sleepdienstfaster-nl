@@ -274,7 +274,7 @@ sub form_html {
 <input type="hidden" name="_subject" value="Aanvraag sleepdienstfaster.nl">
 <input type="hidden" name="_next" value="$BASE/bedankt/">
 <input type="hidden" name="_captcha" value="false">
-<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <label>Naam*<input name="naam" required autocomplete="name"></label>
 <label>Telefoonnummer*<input name="telefoon" type="tel" required autocomplete="tel"></label>
 <label>Waar staat de auto? (adres, plaats of hectometerpaaltje)*<input name="ophaallocatie" required></label>
@@ -369,7 +369,7 @@ sub business_ld {
   return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"+3197010229095","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"€€","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
-my $LOGO = '<a class="brand" href="{{R}}" aria-label="Sleepdienst Faster, naar de homepage"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
+my $LOGO = '<a class="brand" href="{{R}}"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
 
 my $year = 1900 + (localtime)[5];
 my @written;
