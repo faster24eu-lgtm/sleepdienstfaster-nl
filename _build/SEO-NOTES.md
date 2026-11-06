@@ -129,3 +129,18 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – responsive srcset (800/1200)
 - Added width variants: road/intervention `-800`/`-1200` JPG+WebP; warehouse `-600` (orig 738px, no upscale). `<picture>` srcset+sizes on hero/gallery. og:image remains full JPG.
+
+## 2026-11-06 (night) – LCP / CWV preload + fetchpriority
+- Home + city heroes: `loading="eager" fetchpriority="high" decoding="async"` on LCP `<img>` (gallery stays `loading="lazy" decoding="async"`).
+- `<link rel="preload" as="image" type="image/webp" imagesrcset=… imagesizes=…>` for the hero WebP (800/1200/full) so mobile can pick 800w; desktop not forced to 800. **og:image stays full JPG.**
+- Breda/Bergen-op-Zoom heroes preload `faster-intervention-workshop-*.webp` (their hero image).
+
+## 2026-11-06 (night) – MORNING 08:00 DIGEST (mention these)
+Facts only from shipped work tonight:
+- **CTR titles/meta** on city + hub pages (`Sleepdienst <plaats> 24/7 | ±30 min, prijs vooraf`); descriptions with local roads/landmarks.
+- **LOCAL uniqueness** + PECH/TRANSPORT rewrites; `check_similarity.pl` max-sim down to ~31%.
+- **www → apex 301** OK; CNAME apex; canonicals apex.
+- **OG/Twitter**: `faster-road-transport.jpg` + width/height/alt (1600×1200); og:image not WebP.
+- **CWV images**: compressed JPG; WebP companions; responsive **srcset 800/1200** (+ warehouse 600); `<picture>`; LCP **preload + fetchpriority=high**.
+- **Custom 404**; sitemap with lastmod; crawl paths/footer hubs expanded.
+- **No** Faster EN mirror this wave; **no** invented GSC numbers — re-check CTR/positions in GSC after ~2–3 weeks.

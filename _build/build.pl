@@ -188,7 +188,9 @@ sub picture_img {
   my ($base) = $file =~ /^(.+)\.jpe?g$/i;
   $base //= $file;
   my $webp = "$base.webp";
-  my $extra = $loading eq 'eager' ? ' loading="eager" fetchpriority="high"' : ' loading="lazy"';
+  my $extra = $loading eq 'eager'
+    ? ' loading="eager" fetchpriority="high" decoding="async"'
+    : ' loading="lazy" decoding="async"';
   # Hero sits in a two-col grid on desktop; gallery tiles are smaller.
   my $sizes = $loading eq 'eager'
     ? '(max-width: 720px) 100vw, (max-width: 1100px) 55vw, 640px'
@@ -415,6 +417,19 @@ for my $out (sort keys %P) {
   my $foot_dien = join '', map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) } grep { ($_->{kind} // '') eq 'dienst' } values %P;
   my $foot_info = join '', map { qq{<a href="{{R}}$_->[1]">$_->[0]</a>} } @FOOT_INFO;
 
+  # LCP preload for home + city heroes (imagesrcset picks 800/1200/full; og:image stays JPG).
+  my $lcp_preload = '';
+  if (($p->{template} // '') eq 'city' || (($p->{main} // '') =~ /\{\{HERO\}\}/)) {
+    my $img = $p->{img} // 'faster-road-transport.jpg';
+    my ($base) = $img =~ /^(.+)\.jpe?g$/i;
+    $base //= $img;
+    my $w = $base eq 'faster-warehouse' ? 738 : ($base eq 'faster-intervention-workshop' ? 1288 : 1600);
+    my @vw = $base eq 'faster-warehouse' ? (600) : (800, 1200);
+    my $ss = join ', ', (map { "{{R}}assets/img/$base-$_.webp ${_}w" } @vw), "{{R}}assets/img/$base.webp ${w}w";
+    my $sz = '(max-width: 720px) 100vw, (max-width: 1100px) 55vw, 640px';
+    $lcp_preload = qq{<link rel="preload" as="image" type="image/webp" imagesrcset="$ss" imagesizes="$sz">\n};
+  }
+
   my $html = <<"H";
 <!doctype html>
 <html lang="nl">
@@ -425,7 +440,7 @@ for my $out (sort keys %P) {
 <meta name="description" content="$desc">
 $robots
 <link rel="canonical" href="$canon">
-<meta name="theme-color" content="#f6c400">
+$lcp_preload<meta name="theme-color" content="#f6c400">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:site_name" content="$NAME">
