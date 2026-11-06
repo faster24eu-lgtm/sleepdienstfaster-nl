@@ -181,6 +181,15 @@ sub reviews_html {
   $h . '</div></div></section>';
 }
 
+
+# <picture> with WebP + JPG fallback for on-page images (og:image stays JPG).
+sub picture_img {
+  my ($file, $alt, $w, $h, $loading) = @_;
+  my $webp = $file; $webp =~ s/\.jpe?g$/.webp/i;
+  my $extra = $loading eq 'eager' ? ' loading="eager" fetchpriority="high"' : ' loading="lazy"';
+  return qq{<picture><source type="image/webp" srcset="{{R}}assets/img/$webp"><img src="{{R}}assets/img/$file" alt="$alt" width="$w" height="$h"$extra></picture>};
+}
+
 sub hero_html {
   my $p = shift;
   my $img = $p->{img} // 'faster-road-transport.jpg';
@@ -188,8 +197,8 @@ sub hero_html {
   my $h1b = $p->{h1b} ? qq{<br><span>$p->{h1b}</span>} : '';
   my @idx = ($p->{kind} // "") eq "city" ? map { (($p->{reviews} // 0) + $_) % @REVIEWS } 0..2 : 0..$#REVIEWS;
   my $slides = join "", map { review_card($REVIEWS[$idx[$_]], $_ == 0 ? " is-active" : "") } 0..$#idx;
-  return <<"H";
-<section class="hero"><div class="container hero-grid">
+  my $pic = picture_img($img, $alt, 1600, 1200, 'eager');
+  return qq{<section class="hero"><div class="container hero-grid">
 <div class="hero-copy"><span class="eyebrow">$p->{eyebrow}</span>
 <h1>$p->{h1}$h1b</h1>
 <p class="hero-sub">$p->{sub}</p>
@@ -202,11 +211,11 @@ sub hero_html {
 </div>
 <div class="review-slider" aria-label="Google reviews">$slides</div>
 </div>
-<figure class="hero-media"><img src="{{R}}assets/img/$img" alt="$alt" width="1600" height="1200" loading="eager" fetchpriority="high"><figcaption>Echte opdrachten, geen stockfoto&rsquo;s</figcaption></figure>
+<figure class="hero-media">$pic<figcaption>Echte opdrachten, geen stockfoto&rsquo;s</figcaption></figure>
 </div>
 <div class="container"><p class="footnote">* Bij dringende oproepen vaak mogelijk, afhankelijk van uw locatie en het verkeer. U hoort bij het bellen hoe snel we er kunnen zijn.</p></div>
 </section>
-H
+};
 }
 
 my $USPS = <<'H';
@@ -227,14 +236,13 @@ my $STEPS = <<'H';
 </ol></div></section>
 H
 
-my $GALLERY = <<'H';
-<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk</span><h2>Geen stockfoto&rsquo;s, echte opdrachten</h2></div><p>Zo gaat het er in de praktijk aan toe.</p></div>
+my $GALLERY = '<section class="section white"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk</span><h2>Geen stockfoto&rsquo;s, echte opdrachten</h2></div><p>Zo gaat het er in de praktijk aan toe.</p></div>
 <div class="gallery">
-<figure class="g-large"><img src="{{R}}assets/img/faster-road-transport.jpg" alt="Gele sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel" width="1600" height="1200" loading="lazy"><figcaption>Twee voertuigen in één rit</figcaption></figure>
-<figure><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken" width="1288" height="966" loading="lazy"><figcaption>Bestelbus opladen</figcaption></figure>
-<figure><img src="{{R}}assets/img/faster-warehouse.jpg" alt="Sleepwagen van Faster met een auto op het plateau in een loods" width="738" height="1156" loading="lazy"><figcaption>Veilig vastgezet</figcaption></figure>
-</div></div></section>
-H
+<figure class="g-large">' . picture_img('faster-road-transport.jpg', 'Gele sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel', 1600, 1200, 'lazy') . '<figcaption>Twee voertuigen in één rit</figcaption></figure>
+<figure>' . picture_img('faster-intervention-workshop.jpg', 'Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken', 1288, 966, 'lazy') . '<figcaption>Bestelbus opladen</figcaption></figure>
+<figure>' . picture_img('faster-warehouse.jpg', 'Sleepwagen van Faster met een auto op het plateau in een loods', 738, 1156, 'lazy') . '<figcaption>Veilig vastgezet</figcaption></figure>
+</div></div></section>';
+
 
 my $SAFETY = <<'H';
 <section class="section safety"><div class="container safety-grid">

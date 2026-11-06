@@ -122,3 +122,7 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - Compressed gallery/hero JPGs (progressive): road-transport 210→186KB (q80); intervention 141→125KB (q80); warehouse 177→119KB (q75). Dims unchanged.
 - Werkgebied hub prose: city names → internal links (Randstad/Brabant/noord-oost). Footer +6 cities (Schiedam, Zoetermeer, Vlaardingen, Venlo, Arnhem, Enschede).
 - Sitemap crawl: 73/73 HTTP 200, no soft-404s; reverse orphan crawl clean.
+
+## 2026-11-06 (night) – WebP picture/srcset; 404 polish
+- Added WebP companions (q~80–82): road 186→138KB webp; intervention 125→95KB; warehouse 119→93KB. On-page heroes/gallery use `<picture><source type=image/webp>`. **og:image / twitter:image stay JPG**.
+- 404: clearer copy + links homepage/werkgebied/contact/diensten/tarieven.
