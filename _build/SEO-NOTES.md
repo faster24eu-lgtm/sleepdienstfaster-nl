@@ -155,3 +155,24 @@ No further image/CSS/JS surgery — already WebP+srcset+LCP preload; CSS ~15KB, 
 LH a11y fails verified: WhatsApp #25D366+white = 1.98 → --green:#0d6e32 (white≈6.38; interim #148f45 was 4.16); footnote/footer #777→#595959; eyebrow --accent-ink:#6b5400. Honeypot aria-hidden=true. Brand logo aria-label removed (name from visible SLEEPDIENST FASTER).
 
 LH a11y after ship: Faster `/` **1.0**; tip `ee75fe20`.
+
+## 2026-11-06 (night) – skip-link a11y
+Added visible-on-focus skip link → `#content` (`<main id="content">`):
+- NL: “Ga naar inhoud”; Janssen EN: “Skip to content”.
+- Builders updated (`build.py` / `build-en.pl` / Faster `build.pl`); minimal `.skip-link` CSS only (navy/ink + focus ring; no brand-color retune).
+- Janssen EN pages also gained a missing `<body>` wrapper (builder had emitted head→icons without body).
+
+## 2026-11-06 (night) – SERP observation (research only, no new pages)
+Public web search snapshots (not GSC; **no claimed rank positions**):
+
+### Query: “sleepdienst Amsterdam”
+Observed organic-style results include local operators with strong local SEO pages: ABC Berging (`abcberging.nl`), Royal Sleepdienst (`royalsleepdienst.nl`, shows starttarief/km), Sleepdienstdirect, TakelZL, and marketplace `sleepdienst.nl/amsterdam/` (offerte-lead model + route price table). Common SERP/page features: **24/7**, **±30 min**, city-district lists, FAQ (“wat kost…”, verzekering), click-to-call. Content-gap ideas (for later): explicit Amsterdam stadsdeel/landmark FAQ already partly covered by Faster city pages; keep price-foraf + geen abonnement sharper than offerte aggregators.
+
+### Query: “sleepdienst Rotterdam”
+Local competitors Destan, RotterdamSleepDienst, Sleepdienst Sindy, plus `sleepdienst.nl/rotterdam/`. Pages lean on **wijk/tunnel/brug** (A16, A20, Brienenoord, Maastunnel), **30 min**, **geen abonnement**, published from-price (€75-ish). Maps/Places-style entities also surface (Destan, Karas, Spoed Auto Sleep). Gap ideas: Janssen already strong on Rijnmond hubs — keep haven/tunnel entities; avoid thin new town pages.
+
+### Query: “vrachtwagen pechhulp Botlek”
+SERP skews to **trailer/workshop B2B** (Botlek Trailer Service, TIP Group 24h / pechhulp for trailers) rather than passenger-car tow brands. Gap: Janssen/Faster truck/haven pages should keep **truck + Botlek/Maasvlakte** wording distinct from trailer-lease workshop intent; optional clarify “trekker/oplegger vs bestelbus” in FAQ later (no new URL this wave).
+
+### Query: “sleepdienst zonder abonnement”
+Results emphasize pay-per-use framing: Spoedsleepdienst, Sleepdienst Roermond, AKCA, **sleepdienstfaster.nl** (observed among listed results), NH Sleepdienst. Shared copy patterns: geen lidmaatschap, prijs vooraf, 24/7, ±30 min, WhatsApp/bel CTA. Gap: keep dedicated “zonder abonnement” intent in titles/FAQ already shipped — don’t spawn duplicate URLs; reinforce vs ANWB-style membership mental model in existing copy only if editing later.

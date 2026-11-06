@@ -461,6 +461,7 @@ $lcp_preload<meta name="theme-color" content="#f6c400">
 $biz$crumb_ld$faq_ld
 </head>
 <body>
+<a class="skip-link" href="#content">Ga naar inhoud</a>
 <div class="topbar"><div class="container topbar-inner"><span><b>24/7 bereikbaar</b> &middot; ook &rsquo;s nachts en in het weekend</span><span class="topbar-right">Vaste prijs vooraf &middot; geen abonnement</span></div></div>
 <header class="site-header"><div class="container nav-wrap">
 $LOGO
@@ -468,7 +469,7 @@ $LOGO
 <div class="nav-actions"><a class="btn btn-wa btn-small" href="{{WA_HREF}}">WhatsApp</a><a class="btn btn-call btn-small" href="{{PHONE_HREF}}">Bel 24/7</a><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button></div>
 </div></header>
 $crumb_html
-<main>
+<main id="content">
 $main
 </main>
 <footer class="site-footer"><div class="container footer-grid">
