@@ -144,3 +144,9 @@ Facts only from shipped work tonight:
 - **CWV images**: compressed JPG; WebP companions; responsive **srcset 800/1200** (+ warehouse 600); `<picture>`; LCP **preload + fetchpriority=high**.
 - **Custom 404**; sitemap with lastmod; crawl paths/footer hubs expanded.
 - **No** Faster EN mirror this wave; **no** invented GSC numbers — re-check CTR/positions in GSC after ~2–3 weeks.
+
+## 2026-11-06 (night) – CWV measured (Lighthouse mobile)
+PSI API: **HTTP 429**. Local Lighthouse 13.6 mobile simulate:
+- `/`: perf **100**, LCP **1.1s**, CLS **0**, TBT **10ms**
+- `/sleepdienst/amsterdam/`: perf **100**, LCP **0.9s**, CLS **0**, TBT **0ms**
+No further image/CSS/JS surgery — already WebP+srcset+LCP preload; CSS ~15KB, JS ~0.7KB defer. Unsized images: none.
