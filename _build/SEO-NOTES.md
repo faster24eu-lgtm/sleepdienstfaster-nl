@@ -111,3 +111,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – city FAQ Wat-kost rotate; max-sim 33%→31%
 - Shared auto-FAQ "Wat kost een sleepdienst in …?" now rotates 3 short no-price answers by slug length+checksum (alongside existing goedkope rotate). Re-ran check_similarity.pl: global max-sim 31% (haarlem↔amersfoort); amersfoort↔apeldoorn 30%.
+
+## 2026-11-06 (night) – twitter:image on Faster
+- Added twitter:card=summary_large_image + twitter:image (same as og:image faster-road-transport.jpg) in build.pl and existing HTML.

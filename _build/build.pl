@@ -416,6 +416,8 @@ $robots
 <meta property="og:description" content="$desc">
 <meta property="og:url" content="$canon">
 <meta property="og:image" content="$BASE/assets/img/faster-road-transport.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="$BASE/assets/img/faster-road-transport.jpg">
 <link rel="icon" href="{{R}}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{R}}assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="{{R}}assets/img/apple-touch-icon.png">
