@@ -56,3 +56,10 @@ Keyword Planner NL (monthly): pechhulp 4,400; autoambulance 2,900; sleepdienst 2
 Google.nl, 5 Nov: maps pack on nearly every local search. Organic: Top Sleepdienst (78 town pages, ~2,100 words each), Takeldienst Nederland (389 pages, ~630 words), Sleepdienst XL (115 pages, ~1,400), Destan, plus exact-match domains (sleepdienstroermond.nl, sleepdienstutrecht.nl). All name sleepdienst, takeldienst, pechhulp and autotransport per town. Automeister openly says it brokers ("bemiddelen") and ranks.
 Changes: town pages get PECH, TRANSPORT and (where searched) TRUCK sections plus two town FAQs; titles name takeldienst and pechhulp. New: /sleepdienst/ botlek-maasvlakte, vlaardingen, delft, rijswijk, westland, veenendaal, tiel; /diensten/ berging, takeldienst, autoambulance, sleepdienst-in-de-buurt. Truck page retitled for "vrachtwagen berging" with a section naming searched places. Footer links now follow search volume. "Eigen sleepwagens/materieel" wording removed.
 Delft was deleted on 2026-10-28 for low volume; restored because Search Console still shows searches and it links Den Haag to Rotterdam. Re-check from ~2026-11-26: positions per page, indexing of the new pages.
+
+## 2026-11-06 (night) – CTR titles/meta wave + sitemap lastmod
+Goal: higher CTR on city SERPs (GSC: high impressions, low clicks; many city pages at ~pos 40–50). No invented metrics.
+
+Titles/meta pattern: `Sleepdienst <plaats> 24/7 | ±30 min, prijs vooraf` (+ unique local roads/landmarks in description). Applied to all city pages that still used default `city_seo` titles, plus earlier batch (Amsterdam, Rotterdam, Utrecht, Leiden, Den Haag, Haarlem, Eindhoven, …). Botlek page kept truck angle: `Vrachtwagen sleepdienst Botlek 24/7 | prijs vooraf`.
+
+Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. Sitemap: every URL now has `<lastmod>YYYY-MM-DD</lastmod>` (build.pl updated). Re-check CTR/positions in Search Console after ~2–3 weeks.
