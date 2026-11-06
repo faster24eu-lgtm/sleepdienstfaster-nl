@@ -70,3 +70,8 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - Home + Amsterdam/Rotterdam/Botlek: clearer links to Botlek, tarieven, pech-gids, wat-kost.
 - `GUIDE_PHRASES`: Botlek/Maasvlakte/Europoort, vrachtwagen sleepdienst, prijs/tarieven → more contextual internal links.
 - Local paragraph added on Zoetermeer, Apeldoorn, Enschede, Almere, Zwolle (landmarks/roads only).
+
+## 2026-11-06 (night) – pechhulp CTR, 5 cities LOCAL, diensten index
+- `/diensten/pechhulp/`: CTR title/meta/lead + FAQ ANWB/kosten + link wat-kost.
+- `/diensten/`: sharper title/description/lead (list hub).
+- LOCAL landmark para: Tilburg, Leiden, Leeuwarden, Amersfoort, Haarlem (roads/landmarks only).
