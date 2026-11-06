@@ -126,3 +126,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 ## 2026-11-06 (night) – WebP picture/srcset; 404 polish
 - Added WebP companions (q~80–82): road 186→138KB webp; intervention 125→95KB; warehouse 119→93KB. On-page heroes/gallery use `<picture><source type=image/webp>`. **og:image / twitter:image stay JPG**.
 - 404: clearer copy + links homepage/werkgebied/contact/diensten/tarieven.
+
+## 2026-11-06 (night) – responsive srcset (800/1200)
+- Added width variants: road/intervention `-800`/`-1200` JPG+WebP; warehouse `-600` (orig 738px, no upscale). `<picture>` srcset+sizes on hero/gallery. og:image remains full JPG.

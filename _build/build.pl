@@ -185,9 +185,18 @@ sub reviews_html {
 # <picture> with WebP + JPG fallback for on-page images (og:image stays JPG).
 sub picture_img {
   my ($file, $alt, $w, $h, $loading) = @_;
-  my $webp = $file; $webp =~ s/\.jpe?g$/.webp/i;
+  my ($base) = $file =~ /^(.+)\.jpe?g$/i;
+  $base //= $file;
+  my $webp = "$base.webp";
   my $extra = $loading eq 'eager' ? ' loading="eager" fetchpriority="high"' : ' loading="lazy"';
-  return qq{<picture><source type="image/webp" srcset="{{R}}assets/img/$webp"><img src="{{R}}assets/img/$file" alt="$alt" width="$w" height="$h"$extra></picture>};
+  # Hero sits in a two-col grid on desktop; gallery tiles are smaller.
+  my $sizes = $loading eq 'eager'
+    ? '(max-width: 720px) 100vw, (max-width: 1100px) 55vw, 640px'
+    : '(max-width: 720px) 100vw, (max-width: 1100px) 45vw, 420px';
+  my @vw = $base eq 'faster-warehouse' ? (600) : (800, 1200);
+  my $webp_ss = join ', ', (map { "{{R}}assets/img/$base-$_.webp ${_}w" } @vw), "{{R}}assets/img/$webp ${w}w";
+  my $jpg_ss  = join ', ', (map { "{{R}}assets/img/$base-$_.jpg ${_}w" } @vw), "{{R}}assets/img/$file ${w}w";
+  return qq{<picture><source type="image/webp" srcset="$webp_ss" sizes="$sizes"><img src="{{R}}assets/img/$file" srcset="$jpg_ss" sizes="$sizes" alt="$alt" width="$w" height="$h"$extra></picture>};
 }
 
 sub hero_html {
