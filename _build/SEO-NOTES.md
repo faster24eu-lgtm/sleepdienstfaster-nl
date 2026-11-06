@@ -104,3 +104,7 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - Rewrote PECH with local angle for mid-sim cities: Den Bosch, Arnhem, Amersfoort, Apeldoorn, Leiden, Zoetermeer, Nijmegen, Enschede, Dordrecht, Roosendaal, Leeuwarden, Haarlem, Alkmaar (skipped already-shipped Tilburg/Zwolle/Groningen/Breda/Maastricht).
 - Near-inbound: Leeuwarden 1→5, Lelystad 2→6, Purmerend 1→6 (plus Enschede/Apeldoorn cross-links).
 - `check_similarity.pl` after: max-sim **33%** (was 36%).
+
+## 2026-11-06 (night ~03:35) – EN Pernis/Europoort sync + TRANSPORT mid-sim
+- Janssen EN: synced `/en/sleepdienst-pernis/` and `/en/sleepdienst-europoort/` to distinct NL angles; fixed Delfshaven EN road Dutch leak (“Verbindingen”→“Links”).
+- Faster: TRANSPORT uniqueness pass on Dordrecht/Roosendaal, Den Bosch/Arnhem, Nijmegen/Zwolle, Amersfoort/Apeldoorn, Leiden/Zoetermeer, Alkmaar. `check_similarity.pl` max-sim still **33%** (shared hero/FAQ chrome floors further drops).
