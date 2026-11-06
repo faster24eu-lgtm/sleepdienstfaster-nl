@@ -1,5 +1,5 @@
-title: Elektrische auto slepen: mag dat met een touw? | Faster
-description: Nee, niet over een echte afstand: de motor wekt stroom op als de wielen draaien. Een EV of hybride gaat daarom op een plateauwagen. 24/7, prijs vooraf.
+title: Elektrische auto slepen op plateau | 24/7 Faster
+description: Elektrische auto of hybride slepen? Altijd op een plateauwagen, niet aan de kabel. 24/7, vaste prijs vooraf, geen abonnement. Bel of WhatsApp.
 label: Elektrische auto slepen
 kind: dienst
 order: 6
@@ -24,6 +24,7 @@ lead: <p>Een elektrische auto sleept u niet aan een touw of een stang. De wielen
 </div><aside class="side">
 <div class="price-card"><span>Elektrische auto</span><strong>Prijs vooraf</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
+<p>Heeft u een bestelbus of camper? Zie ook <a href="{{R}}diensten/bestelbus-slepen/">bestelbus slepen</a> en <a href="{{R}}diensten/pechhulp/">pechhulp</a>.</p>
 ===FAQ===
 V: Mag een elektrische auto met een touw gesleept worden?
 A: Nee, niet over een echte afstand. De aangedreven wielen mogen niet over de weg rollen. Daarom zetten wij de auto altijd volledig op het plateau.
