@@ -366,9 +366,9 @@ for my $out (sort keys %P) {
   # Town pages: the two questions Google shows for every town ("Wat kost...", "Is er een 24/7...").
   if (($p->{kind} // '') eq 'city') {
     my $n = $p->{label};
-    push @faq, ["Wat kost een sleepdienst in $n?", "Dat hangt af van de afstand, het voertuig, de plek en het tijdstip. U hoort de prijs vooraf aan de telefoon, en pas als u akkoord bent, komt de sleepwagen."],
-               ["Is er ook &rsquo;s nachts een takeldienst in $n?", "Ja. U kunt 24 uur per dag bellen, ook in het weekend en op feestdagen, en u heeft geen abonnement nodig."],
-               ["Zoekt u een goedkope sleepdienst in $n?", "Vraag altijd de prijs voordat de sleepwagen vertrekt, en vraag of er extra kosten bij kunnen komen. Bij ons hoort u de prijs vooraf en betaalt u alleen wat is afgesproken."];
+    push @faq, ["Wat kost een sleepdienst in $n?", "U hoort de vaste prijs aan de telefoon voor we rijden; die hangt af van afstand, voertuig en tijdstip."],
+               ["Is er ook &rsquo;s nachts een takeldienst in $n?", "Ja, dag en nacht, ook in het weekend. Geen abonnement nodig."],
+               ["Zoekt u een goedkope sleepdienst in $n?", "Vergelijk altijd de prijs vooraf. Bij ons betaalt u alleen wat is afgesproken."],;
   }
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';

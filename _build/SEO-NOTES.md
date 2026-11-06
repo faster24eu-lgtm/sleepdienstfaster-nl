@@ -98,3 +98,9 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - Ran `check_similarity.pl`: worst cluster Tilburg↔Zwolle was ~47% max-sim / ~20% unique. Rewrote LOCAL/FAQ/PECH/TRANSPORT for Tilburg, Zwolle, Groningen (+ light Breda/Maastricht). Result: all city max-sim ≤36%, no pair ≥40%.
 - Crawl paths: expanded `@FOOT_CITIES` (+Groningen, Maastricht, Nijmegen, Alkmaar, Terneuzen, Den Bosch, Delft); home werkgebied prose; kennisbank + diensten hub body links to underlinked cities; Terneuzen added to near of Bergen-op-Zoom/Roosendaal/Breda; Maastricht to Roermond/Venlo/Den Bosch near.
 - Technical: no noindex/canonical-to-home on cities; robots Allow:/ + sitemap; sitemap 73 URLs / 40 cities; html lang=nl; unique canonicals. Build 0 broken links.
+
+## 2026-11-06 (night ~03:30) – mid-sim PECH + near-graph
+- Compacted shared city auto-FAQ answers in `build.pl` (masked city name = pure shared shingles).
+- Rewrote PECH with local angle for mid-sim cities: Den Bosch, Arnhem, Amersfoort, Apeldoorn, Leiden, Zoetermeer, Nijmegen, Enschede, Dordrecht, Roosendaal, Leeuwarden, Haarlem, Alkmaar (skipped already-shipped Tilburg/Zwolle/Groningen/Breda/Maastricht).
+- Near-inbound: Leeuwarden 1→5, Lelystad 2→6, Purmerend 1→6 (plus Enschede/Apeldoorn cross-links).
+- `check_similarity.pl` after: max-sim **33%** (was 36%).
