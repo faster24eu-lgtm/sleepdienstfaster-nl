@@ -117,3 +117,8 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – www/apex OK; OG dims/alt; schema tel E.164
 - Live www→apex 301; CNAME=apex. OG width/height/alt + twitter:image:alt (1600×1200). JSON-LD telephone E.164.
+
+## 2026-11-06 (night) – image weight; hub city links; footer crawl
+- Compressed gallery/hero JPGs (progressive): road-transport 210→186KB (q80); intervention 141→125KB (q80); warehouse 177→119KB (q75). Dims unchanged.
+- Werkgebied hub prose: city names → internal links (Randstad/Brabant/noord-oost). Footer +6 cities (Schiedam, Zoetermeer, Vlaardingen, Venlo, Arnhem, Enschede).
+- Sitemap crawl: 73/73 HTTP 200, no soft-404s; reverse orphan crawl clean.
