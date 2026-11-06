@@ -89,3 +89,7 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 
 ## 2026-11-06 (night) – LOCAL remaining thin cities
 - Concrete road/landmark LOCAL added: Terneuzen (Westerscheldetunnel), Groningen (A7/A28/ring), Breda (A16/A27/CS), Arnhem (A12/A50/Mandelabrug), Dordrecht (A16/bruggen/Drechttunnel), Den Bosch (A2/A59/Paleiskwartier), Maastricht (A2-tunnel/Maasbruggen).
+
+## 2026-11-06 (night ~03:15) – LOCAL thin finish + section fix
+- LOCAL road/landmark added: Roosendaal (A17/A58/Outlet), Eindhoven (A2/A67/Airport), Den Haag (A12/A4/Scheveningen), Amsterdam (A10/Coentunnel), Utrecht (A2/A12/Rijnsweerd).
+- Moved misplaced landmark paras into LOCAL block: Westland, Vlaardingen, Delft, Veenendaal (sources+HTML).
