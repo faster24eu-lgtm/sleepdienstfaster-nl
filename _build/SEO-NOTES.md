@@ -108,3 +108,6 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 ## 2026-11-06 (night ~03:35) – EN Pernis/Europoort sync + TRANSPORT mid-sim
 - Janssen EN: synced `/en/sleepdienst-pernis/` and `/en/sleepdienst-europoort/` to distinct NL angles; fixed Delfshaven EN road Dutch leak (“Verbindingen”→“Links”).
 - Faster: TRANSPORT uniqueness pass on Dordrecht/Roosendaal, Den Bosch/Arnhem, Nijmegen/Zwolle, Amersfoort/Apeldoorn, Leiden/Zoetermeer, Alkmaar. `check_similarity.pl` max-sim still **33%** (shared hero/FAQ chrome floors further drops).
+
+## 2026-11-06 (night) – city FAQ Wat-kost rotate; max-sim 33%→31%
+- Shared auto-FAQ "Wat kost een sleepdienst in …?" now rotates 3 short no-price answers by slug length+checksum (alongside existing goedkope rotate). Re-ran check_similarity.pl: global max-sim 31% (haarlem↔amersfoort); amersfoort↔apeldoorn 30%.

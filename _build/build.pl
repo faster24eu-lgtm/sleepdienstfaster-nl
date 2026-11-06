@@ -366,9 +366,22 @@ for my $out (sort keys %P) {
   # Town pages: the two questions Google shows for every town ("Wat kost...", "Is er een 24/7...").
   if (($p->{kind} // '') eq 'city') {
     my $n = $p->{label};
-    push @faq, ["Wat kost een sleepdienst in $n?", "U hoort de vaste prijs aan de telefoon voor we rijden; die hangt af van afstand, voertuig en tijdstip."],
+    my @cheap = (
+      "Bel voor een prijsopgave: u hoort het bedrag voordat de wagen rijdt.",
+      "Wij werken zonder abonnement; de ritprijs hoort u vooraf en die staat vast.",
+      "Vergelijk gerust. U betaalt bij ons alleen de afgesproken rit, zonder verrassingen achteraf.",
+    );
+    my @cost = (
+      "U hoort de vaste prijs aan de telefoon voor we rijden; die hangt af van afstand, voertuig en tijdstip.",
+      "Bel: we noemen het bedrag vooraf. Afstand, type auto en tijdstip bepalen de rit.",
+      "Geen verrassing achteraf: de sleepprijs hoort u voordat de wagen vertrekt.",
+    );
+    my $slug = $p->{slug} // $n;
+    my $ci = unpack("%32W*", $slug) % 3;
+    my $ki = (length($slug) + unpack("%32W*", $slug)) % 3;
+    push @faq, ["Wat kost een sleepdienst in $n?", $cost[$ki]],
                ["Is er ook &rsquo;s nachts een takeldienst in $n?", "Ja, dag en nacht, ook in het weekend. Geen abonnement nodig."],
-               ["Zoekt u een goedkope sleepdienst in $n?", "Vergelijk altijd de prijs vooraf. Bij ons betaalt u alleen wat is afgesproken."],;
+               ["Zoekt u een goedkope sleepdienst in $n?", $cheap[$ci]];
   }
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
