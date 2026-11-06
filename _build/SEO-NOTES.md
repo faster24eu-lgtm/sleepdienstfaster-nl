@@ -152,4 +152,6 @@ PSI API: **HTTP 429**. Local Lighthouse 13.6 mobile simulate:
 No further image/CSS/JS surgery — already WebP+srcset+LCP preload; CSS ~15KB, JS ~0.7KB defer. Unsized images: none.
 
 ## 2026-11-06 (night) – a11y (verified contrast)
-LH a11y fails verified: WhatsApp #25D366+white = 1.98 → --green:#148f45 (white≈4.16); footnote/footer #777→#595959; eyebrow --accent-ink:#6b5400. Honeypot aria-hidden=true. Brand logo aria-label removed (name from visible SLEEPDIENST FASTER).
+LH a11y fails verified: WhatsApp #25D366+white = 1.98 → --green:#0d6e32 (white≈6.38; interim #148f45 was 4.16); footnote/footer #777→#595959; eyebrow --accent-ink:#6b5400. Honeypot aria-hidden=true. Brand logo aria-label removed (name from visible SLEEPDIENST FASTER).
+
+LH a11y after ship: Faster `/` **1.0**; tip `ee75fe20`.
