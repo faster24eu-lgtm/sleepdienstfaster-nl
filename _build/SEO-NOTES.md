@@ -176,3 +176,6 @@ SERP skews to **trailer/workshop B2B** (Botlek Trailer Service, TIP Group 24h / 
 
 ### Query: “sleepdienst zonder abonnement”
 Results emphasize pay-per-use framing: Spoedsleepdienst, Sleepdienst Roermond, AKCA, **sleepdienstfaster.nl** (observed among listed results), NH Sleepdienst. Shared copy patterns: geen lidmaatschap, prijs vooraf, 24/7, ±30 min, WhatsApp/bel CTA. Gap: keep dedicated “zonder abonnement” intent in titles/FAQ already shipped — don’t spawn duplicate URLs; reinforce vs ANWB-style membership mental model in existing copy only if editing later.
+
+## 2026-11-06 (night) – zonder-abonnement / pechhulp strengthen
+Real gap vs SERP pay-per-use pattern: destination choice + no lock-in. Added FAQs on `/kennisbank/sleepdienst-zonder-abonnement/` (bestemming kiezen; zit ik ergens aan vast?) and `/diensten/pechhulp/` (bestemming FAQ; ANWB answer now mentions prijs vooraf + eigen bestemming + link). One body sentence on pechhulp: “kiest u zelf waar de auto heen gaat.” No invented Faster prices; no competitor attacks.
