@@ -75,3 +75,8 @@ Also: home/tarieven/pech-op-de-snelweg/autotransport titles earlier same night. 
 - `/diensten/pechhulp/`: CTR title/meta/lead + FAQ ANWB/kosten + link wat-kost.
 - `/diensten/`: sharper title/description/lead (list hub).
 - LOCAL landmark para: Tilburg, Leiden, Leeuwarden, Amersfoort, Haarlem (roads/landmarks only).
+
+## 2026-11-06 (night, late) – LOCAL batch 2 + polish
+- LOCAL landmarks: Zaandam, Tiel, Venlo, Rijswijk, Roermond (roads/landmarks only).
+- Light CTR: `/contact/`, `/tarieven/` lead (+ wat-kost link), `/over-ons/` lead.
+- robots.txt + sitemap present (Allow:/, sitemap URL, lastmod 2026-11-06); rebuild 0 broken links.
