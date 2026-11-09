@@ -205,7 +205,7 @@ sub hero_html {
   my $p = shift;
   my $img = $p->{img} // 'faster-road-transport.jpg';
   my $alt = $p->{imgalt} // 'Sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel';
-  my $h1b = $p->{h1b} ? qq{<br><span>$p->{h1b}</span>} : '';
+  my $h1b = $p->{h1b} ? qq{ <br><span>$p->{h1b}</span>} : '';  # space keeps the words apart in the text ("nodig? Wij")
   my @idx = ($p->{kind} // "") eq "city" ? map { (($p->{reviews} // 0) + $_) % @REVIEWS } 0..2 : 0..$#REVIEWS;
   my $slides = join "", map { review_card($REVIEWS[$idx[$_]], $_ == 0 ? " is-active" : "") } 0..$#idx;
   my $pic = picture_img($img, $alt, 1600, 1200, 'eager');
