@@ -43,7 +43,7 @@ binmode STDOUT, ":encoding(UTF-8)";
 my $PREVIEW    = 0;
 my $BASE       = 'https://sleepdienstfaster.nl';
 my $NAME       = 'Sleepdienst Faster';
-my $PHONE      = '+31 97 010229095';
+my $PHONE      = '097 010 229 095';
 my $PHONE_HREF = 'tel:+3197010229095';
 my $WA_NUM     = '3197010229095';
 my $WA_TEXT    = 'Hallo%20Faster%2C%20ik%20heb%20een%20sleepdienst%20nodig.%20Mijn%20locatie%3A%20';
@@ -288,7 +288,7 @@ H
 }
 
 sub svc_links {
-  join " &middot; ", map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) } grep { ($_->{kind} // "") eq "dienst" } values %P;
+  join " &middot; ", map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) || $a->{url} cmp $b->{url} } grep { ($_->{kind} // "") eq "dienst" } values %P;
 }
 
 sub price_card {
@@ -369,7 +369,7 @@ sub business_ld {
   return qq{<script type="application/ld+json">{"\@context":"https://schema.org","\@type":"AutomotiveBusiness","name":"$NAME","url":"$BASE/","telephone":"+3197010229095","image":"$BASE/assets/img/faster-road-transport.jpg","priceRange":"€€","openingHours":"Mo-Su 00:00-23:59","areaServed":$area}</script>};
 }
 
-my $LOGO = '<a class="brand" href="{{R}}"><img src="{{R}}assets/img/faster-truck.png" alt="" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
+my $LOGO = '<a class="brand" href="{{R}}"><img src="{{R}}assets/img/faster-truck.png" alt="Sleepdienst Faster logo" width="145" height="48"><span class="brand-text"><small>SLEEPDIENST</small><strong>FASTER</strong></span></a>';
 
 my $year = 1900 + (localtime)[5];
 my @written;
@@ -414,7 +414,7 @@ for my $out (sort keys %P) {
   my $desc = esc($p->{description});
   my $nav = nav_html($p);
   my $foot_cities = join '', map { my $q = $BYSLUG{"sleepdienst/$_"}; $q ? qq{<a href="{{R}}$q->{url}">$q->{label}</a>} : () } @FOOT_CITIES;
-  my $foot_dien = join '', map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) } grep { ($_->{kind} // '') eq 'dienst' } values %P;
+  my $foot_dien = join '', map { qq{<a href="{{R}}$_->{url}">$_->{label}</a>} } sort { ($a->{order} // 50) <=> ($b->{order} // 50) || $a->{url} cmp $b->{url} } grep { ($_->{kind} // '') eq 'dienst' } values %P;
   my $foot_info = join '', map { qq{<a href="{{R}}$_->[1]">$_->[0]</a>} } @FOOT_INFO;
 
   # LCP preload for home + city heroes (imagesrcset picks 800/1200/full; og:image stays JPG).
