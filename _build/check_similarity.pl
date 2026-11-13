@@ -7,7 +7,7 @@ my @f = grep { !/sleepdienst\/index/ } glob 'sleepdienst/*/index.html';
 my (%sh, %words);
 for my $f (@f) {
   open my $h, '<:utf8', $f or die; local $/; my $t = <$h>;
-  ($t) = $t =~ m{<main>(.*)</main>}s;
+  ($t) = $t =~ m{<main[^>]*>(.*)</main>}s;
   $t =~ s/<script.*?<\/script>//gs; $t =~ s/<[^>]+>/ /g; $t =~ s/&[a-z]+;|&#\d+;/ /g;
   my @w = map { lc } $t =~ /(\w+)/g;
   my ($name) = $f =~ m{sleepdienst/([^/]+)/};

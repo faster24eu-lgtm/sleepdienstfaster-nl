@@ -81,6 +81,12 @@ my $root = dirname(dirname(__FILE__));
 chdir $root or die "chdir $root: $!";
 
 my %P;
+# Per-town hero line and FAQ answers, so town pages do not share template text (2026-11-13).
+my %CT;
+if (open my $ct, '<:encoding(UTF-8)', '_build/city_text.tsv') {
+  my $hdr = <$ct>; chomp $hdr; my @k = split /\t/, $hdr;
+  while (my $l = <$ct>) { $l =~ s/\r?\n$//; next unless $l =~ /\S/; my @v = split /\t/, $l; my %r; @r{@k} = @v; $CT{$r{slug}} = \%r }
+}
 find(sub {
   return unless /\.page$/;
   my $src = $File::Find::name;
@@ -98,6 +104,7 @@ find(sub {
   my %p = (src => $src, out => $out, url => $url, slug => (split m{/}, $rel)[-1]);
   for (split /\n/, shift @parts) { $p{$1} = $2 if /^(\w+):\s*(.*?)\s*$/ }
   while (@parts) { my ($k, $v) = splice @parts, 0, 2; $v =~ s/\s+$//; $p{lc $k} = $v }
+  if (($p{kind} // '') eq 'city' && (my $ct = $CT{$p{slug}})) { $p{sub} //= $ct->{sub}; $p{cost} //= $ct->{cost}; $p{night} //= $ct->{night}; $p{intro} //= '' }
   if (($p{kind} // '') eq 'city') { $p{template} //= 'city'; $p{crumbs} //= 'Werkgebied|sleepdienst/'; city_seo(\%p) }
   $p{template} //= 'page';
   for (qw(title description label)) { warn "$src: no $_\n" unless $p{$_} }
@@ -206,21 +213,24 @@ sub hero_html {
   my $img = $p->{img} // 'faster-road-transport.jpg';
   my $alt = $p->{imgalt} // 'Sleepwagen van Faster met een auto op het plateau en een bestelbus aan de takel';
   my $h1b = $p->{h1b} ? qq{ <br><span>$p->{h1b}</span>} : '';  # space keeps the words apart in the text ("nodig? Wij")
-  my @idx = ($p->{kind} // "") eq "city" ? map { (($p->{reviews} // 0) + $_) % @REVIEWS } 0..2 : 0..$#REVIEWS;
-  my $slides = join "", map { review_card($REVIEWS[$idx[$_]], $_ == 0 ? " is-active" : "") } 0..$#idx;
+  # Town pages show no review slider: the same 8 reviews on 45 pages was repeated text (2026-11-13).
+  my $is_city = ($p->{kind} // "") eq "city";
+  my $slides = $is_city ? '' : join "", map { review_card($REVIEWS[$_], $_ == 0 ? " is-active" : "") } 0..$#REVIEWS;
+  my $slider = $slides ? qq{<div class="review-slider" aria-label="Google reviews">$slides</div>} : '';
+  my $intro = ($p->{intro} // '') ne '' ? qq{<p class="hero-intro">$p->{intro}</p>} : '';
   my $pic = picture_img($img, $alt, 1600, 1200, 'eager');
   return qq{<section class="hero"><div class="container hero-grid">
 <div class="hero-copy"><span class="eyebrow">$p->{eyebrow}</span>
 <h1>$p->{h1}$h1b</h1>
 <p class="hero-sub">$p->{sub}</p>
-<p class="hero-intro">$p->{intro}</p>
+$intro
 <div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel direct: {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
 <div class="proof">
 <div><strong>&plusmn; 30 min*</strong><span>vaak snel ter plaatse</span></div>
 <div><strong>Prijs vooraf</strong><span>afgesproken voor vertrek</span></div>
 <div><strong>24/7</strong><span>ook &rsquo;s nachts en in het weekend</span></div>
 </div>
-<div class="review-slider" aria-label="Google reviews">$slides</div>
+$slider
 </div>
 <figure class="hero-media">$pic<figcaption>Echte opdrachten, geen stockfoto&rsquo;s</figcaption></figure>
 </div>
@@ -398,9 +408,9 @@ for my $out (sort keys %P) {
     my $slug = $p->{slug} // $n;
     my $ci = unpack("%32W*", $slug) % 3;
     my $ki = (length($slug) + unpack("%32W*", $slug)) % 3;
-    push @faq, ["Wat kost een sleepdienst in $n?", $cost[$ki]],
-               ["Is er ook &rsquo;s nachts een takeldienst in $n?", "Ja, dag en nacht, ook in het weekend. Geen abonnement nodig."],
-               ["Zoekt u een goedkope sleepdienst in $n?", $cheap[$ci]];
+    push @faq, ["Wat kost een sleepdienst in $n?", $p->{cost} // $cost[$ki]],
+               ["Is er ook &rsquo;s nachts een takeldienst in $n?", $p->{night} // "Ja, dag en nacht, ook in het weekend. Geen abonnement nodig."];
+    push @faq, ["Zoekt u een goedkope sleepdienst in $n?", $cheap[$ci]] unless $p->{cost};
   }
   $main .= faq_html(@faq);
   $main .= $CTA unless ($p->{cta} // '') eq 'no';
