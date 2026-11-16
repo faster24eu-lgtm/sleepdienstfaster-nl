@@ -1,12 +1,12 @@
 title: Pechhulp 24/7 zonder abonnement | prijs vooraf | Faster
-description: Pechhulp nodig? Lege accu, lekke band of startproblemen: Faster helpt ter plaatse of sleept op plateau. 24/7, vaste prijs vooraf, geen ANWB. Bel of WhatsApp.
+description: Pechhulp nodig? Lege accu, lekke band of startproblemen: Faster helpt ter plaatse of sleept op plateau. 24/7, vaste prijs vooraf, geen ANWB. Bel nu.
 label: Pechhulp
 kind: dienst
 order: 2
 card: Lege accu of lekke band? Als het ter plaatse kan, lossen we het op. Lukt dat niet, dan slepen we.
 crumbs: Diensten|diensten/
 h1: Pechhulp zonder abonnement
-lead: <p>Niet elke pech betekent dat de auto weg moet. Een lege accu of een lekke band met reservewiel lossen we vaak ter plaatse op. Lukt dat niet, dan gaat de auto meteen op het plateau&mdash;zonder abonnement, met de prijs vooraf. Bel of WhatsApp.</p>
+lead: <p>Niet elke pech betekent dat de auto weg moet. Een lege accu of een lekke band met reservewiel lossen we vaak ter plaatse op. Lukt dat niet, dan gaat de auto meteen op het plateau&mdash;zonder abonnement, met de prijs vooraf. Bel nu.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
 <h2>Geen ANWB-lid of Wegenwacht? Geen probleem</h2>
@@ -28,7 +28,7 @@ lead: <p>Niet elke pech betekent dat de auto weg moet. Een lege accu of een lekk
 <h2>Verkeerd getankt?</h2>
 <p>Start de motor niet. Heeft u de motor al gestart, zet hem dan zo snel mogelijk uit. Een auto met de verkeerde brandstof in de tank moet naar een garage die de tank kan leegmaken. Wij brengen hem erheen. Lees ook <a href="{{R}}kennisbank/verkeerd-getankt/">verkeerd getankt: wat nu?</a></p>
 </div><aside class="side">
-<div class="price-card"><span>Pechhulp</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Pechhulp</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Komen jullie ook voor alleen een lege accu?

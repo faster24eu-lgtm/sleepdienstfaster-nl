@@ -1,5 +1,5 @@
 title: Takeldienst 24/7 in heel Nederland, prijs vooraf | Faster
-description: Takeldienst nodig bij pech of schade? Faster regelt 24/7 een takelwagen voor uw auto of bestelbus. Prijs vooraf, geen abonnement. Bel of WhatsApp nu.
+description: Takeldienst nodig bij pech of schade? Faster regelt 24/7 een takelwagen voor uw auto of bestelbus. Prijs vooraf, geen abonnement. Bel nu.
 label: Takeldienst
 kind: dienst
 order: 4
@@ -29,11 +29,11 @@ lead: <p>Takelen, slepen of oprijden: op de weg maakt het voor u weinig uit. De 
 <li>Of de wielen nog draaien en de auto nog stuurt.</li>
 <li>Waar de auto naartoe moet (garage, huis, dealer, schadebedrijf).</li>
 </ol>
-<p>Dan hoort u meteen de prijs. Wilt u liever eerst vergelijken? Ook goed: u zit nergens aan vast tot u akkoord gaat. Stuur gerust een foto of uw locatie in WhatsApp.</p>
+<p>Dan hoort u meteen de prijs. Wilt u liever eerst vergelijken? Ook goed: u zit nergens aan vast tot u akkoord gaat.</p>
 <h2>Geen abonnement nodig</h2>
 <p>U betaalt per rit. Geen lidmaatschap, geen jaarcontract. U belt alleen als u ons nodig heeft.</p>
 </div><aside class="side">
-<div class="price-card"><span>Takeldienst</span><strong>Prijs vooraf</strong><p>Afgesproken voor vertrek.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Takeldienst</span><strong>Prijs vooraf</strong><p>Afgesproken voor vertrek.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Wat is het verschil tussen takelen en slepen?

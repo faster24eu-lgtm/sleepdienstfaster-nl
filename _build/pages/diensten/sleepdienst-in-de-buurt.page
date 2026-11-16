@@ -7,14 +7,13 @@ card: Deel uw locatie, en u hoort hoe snel er een sleepwagen bij u kan zijn.
 crumbs: Diensten|diensten/
 h1: Sleepdienst in de buurt
 h1b: bel of deel uw locatie
-lead: <p>U staat stil en u wilt niet zoeken naar wie er in deze plaats rijdt. Dat hoeft ook niet. Bel ons of stuur uw locatie via WhatsApp, dan regelen we de dichtstbijzijnde sleepwagen en hoort u hoe snel die er kan zijn.</p>
+lead: <p>U staat stil en u wilt niet zoeken naar wie er in deze plaats rijdt. Dat hoeft ook niet. Bel ons en zeg waar u staat, dan regelen we de dichtstbijzijnde sleepwagen en hoort u hoe snel die er kan zijn.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
 <h2>Zo vinden we u snel</h2>
 <ol>
 <li><strong>Op de snelweg:</strong> geef de weg, de rijrichting en het hectometerpaaltje door.</li>
 <li><strong>In de stad of het dorp:</strong> noem het adres of een herkenningspunt.</li>
-<li><strong>Op WhatsApp:</strong> deel uw live locatie. Dan zien we precies waar u staat.</li>
 </ol>
 <p>Staat u op een gevaarlijke plek? Zet eerst de alarmlichten aan, wacht achter de vangrail en bel bij gevaar 112.</p>
 <h2>Hoe snel is de sleepdienst er?</h2>
@@ -26,7 +25,7 @@ lead: <p>U staat stil en u wilt niet zoeken naar wie er in deze plaats rijdt. Da
 <p><strong>Noord en Flevoland:</strong> <a href="{{R}}sleepdienst/groningen/">Groningen</a>, <a href="{{R}}sleepdienst/leeuwarden/">Leeuwarden</a>, <a href="{{R}}sleepdienst/almere/">Almere</a>, <a href="{{R}}sleepdienst/lelystad/">Lelystad</a>.</p>
 <p>Staat uw plaats er niet bij? Bel gerust: we rijden in heel Nederland.</p>
 </div><aside class="side">
-<div class="price-card"><span>Sleepdienst in de buurt</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Sleepdienst in de buurt</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Hoe weet ik welke sleepdienst er in mijn buurt rijdt?

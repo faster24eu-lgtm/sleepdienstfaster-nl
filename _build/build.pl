@@ -26,7 +26,8 @@
 # Sections: MAIN, FAQ ("V: ..." / "A: ..." lines), and for city pages
 # LEAD (first paragraph of the info block), ROADS, LOCAL.
 #
-# Placeholders: {{R}} {{PHONE}} {{PHONE_HREF}} {{WA_HREF}} {{PRICE}}
+# Placeholders: {{R}} {{PHONE}} {{PHONE_HREF}} {{PRICE}}
+# No WhatsApp anywhere on this site (owner decision 2026-11-16): no buttons, links, numbers or mentions.
 # {{HERO}} {{USPS}} {{STEPS}} {{GALLERY}} {{SAFETY}} {{REVIEWS}} {{CTA}}
 # {{FORM}} {{LIST:kind}}
 use strict;
@@ -45,9 +46,6 @@ my $BASE       = 'https://sleepdienstfaster.nl';
 my $NAME       = 'Sleepdienst Faster';
 my $PHONE      = '097 010 229 095';
 my $PHONE_HREF = 'tel:+3197010229095';
-my $WA_NUM     = '3197010229095';
-my $WA_TEXT    = 'Hallo%20Faster%2C%20ik%20heb%20een%20sleepdienst%20nodig.%20Mijn%20locatie%3A%20';
-my $WA_HREF    = "https://wa.me/$WA_NUM?text=$WA_TEXT";
 my $FORM_TO    = 'faster24eu@gmail.com';     # formsubmit.co, same as takeldienstfaster.be
 my $PRICE      = '125';
 
@@ -125,7 +123,7 @@ sub city_seo {
   my $title = "Sleepdienst $t 24/7 | Takeldienst en pechhulp";
   $title = "Sleepdienst $t 24/7 | Pechhulp" if length $title > 62;
   $p->{title} //= $title;
-  $p->{description} //= "Sleepdienst, takeldienst of pechhulp in $n nodig? Faster is vaak binnen 30 minuten bij u. 24/7, prijs vooraf, geen abonnement. Bel of WhatsApp nu.";
+  $p->{description} //= "Sleepdienst, takeldienst of pechhulp in $n nodig? Faster is vaak binnen 30 minuten bij u. 24/7, prijs vooraf, geen abonnement. Bel nu.";
   $p->{h1}  //= "Sleepdienst $n";
   $p->{h1b} //= 'binnen 30 minuten*, prijs vooraf.';
   $p->{eyebrow} //= "24/7 &middot; geen abonnement &middot; prijs vooraf";
@@ -224,7 +222,7 @@ sub hero_html {
 <h1>$p->{h1}$h1b</h1>
 <p class="hero-sub">$p->{sub}</p>
 $intro
-<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel direct: {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp uw locatie</a></div>
+<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel direct: {{PHONE}}</a></div>
 <div class="proof">
 <div><strong>&plusmn; 30 min*</strong><span>vaak snel ter plaatse</span></div>
 <div><strong>Prijs vooraf</strong><span>afgesproken voor vertrek</span></div>
@@ -249,9 +247,9 @@ my $USPS = <<'H';
 H
 
 my $STEPS = <<'H';
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Zo werkt het</span><h2>In drie stappen geholpen</h2></div><p>Geen ingewikkelde procedure. Eén telefoontje of WhatsApp is genoeg.</p></div>
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Zo werkt het</span><h2>In drie stappen geholpen</h2></div><p>Geen ingewikkelde procedure. Eén telefoontje is genoeg.</p></div>
 <ol class="steps">
-<li><strong>Bel of WhatsApp</strong><span>Vertel waar de auto staat, wat er aan de hand is en waar hij naartoe moet. Deel uw locatie in WhatsApp, dan vinden we u meteen.</span></li>
+<li><strong>Bel ons</strong><span>Vertel waar de auto staat, wat er aan de hand is en waar hij naartoe moet. Noem de straat, een herkenningspunt of het hectometerpaaltje, dan vinden we u meteen.</span></li>
 <li><strong>Vaste prijs vooraf</strong><span>U hoort direct wat de rit kost. Pas als u akkoord bent, vertrekt de sleepwagen.</span></li>
 <li><strong>Wij slepen, u rijdt mee</strong><span>De auto gaat veilig op het plateau en wordt vastgezet. Wij brengen hem naar het adres dat u kiest.</span></li>
 </ol></div></section>
@@ -275,7 +273,7 @@ my $SAFETY = <<'H';
 H
 
 my $CTA = <<'H';
-<section class="cta-band"><div class="container cta-inner"><div><h2>Staat uw auto stil?</h2><p>Bel of stuur een WhatsApp met uw locatie. Dag en nacht, ook in het weekend.</p></div><div class="cta-actions"><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div></div></section>
+<section class="cta-band"><div class="container cta-inner"><div><h2>Staat uw auto stil?</h2><p>Bel ons en zeg waar u staat. Dag en nacht, ook in het weekend.</p></div><div class="cta-actions"><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div></div></section>
 H
 
 sub form_html {
@@ -292,7 +290,7 @@ sub form_html {
 <label>Merk en model<input name="voertuig"></label>
 <label>Wat is er gebeurd?<textarea name="bericht" rows="3"></textarea></label>
 <button class="btn btn-call" type="submit">Vraag een vaste prijs aan</button>
-<p class="form-note">Spoed? Bel of WhatsApp ons, dat is sneller dan het formulier.</p>
+<p class="form-note">Spoed? Bel ons, dat is sneller dan het formulier.</p>
 </form>
 H
 }
@@ -303,7 +301,7 @@ sub svc_links {
 
 sub price_card {
   my $what = shift;
-  qq{<div class="price-card"><span>$what</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>};
+  qq{<div class="price-card"><span>$what</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>};
 }
 
 # ---------------------------------------------------------------- templates
@@ -349,7 +347,7 @@ sub page_main {
   my $intro = $p->{lead} ? qq{<div class="lead">$p->{lead}</div>} : '';
   my $h1b = $p->{h1b} ? qq{ <span>$p->{h1b}</span>} : '';
   return <<"H";
-<section class="page-head"><div class="container narrow"><h1>$p->{h1}$h1b</h1>$intro<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div></div></section>
+<section class="page-head"><div class="container narrow"><h1>$p->{h1}$h1b</h1>$intro<div class="hero-actions"><a class="btn btn-call" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div></div></section>
 $p->{main}
 H
 }
@@ -476,7 +474,7 @@ $biz$crumb_ld$faq_ld
 <header class="site-header"><div class="container nav-wrap">
 $LOGO
 <nav class="main-nav" id="main-nav" aria-label="Hoofdmenu">$nav</nav>
-<div class="nav-actions"><a class="btn btn-wa btn-small" href="{{WA_HREF}}">WhatsApp</a><a class="btn btn-call btn-small" href="{{PHONE_HREF}}">Bel 24/7</a><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button></div>
+<div class="nav-actions"><a class="btn btn-call btn-small" href="{{PHONE_HREF}}">Bel 24/7</a><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button></div>
 </div></header>
 $crumb_html
 <main id="content">
@@ -485,12 +483,12 @@ $main
 <footer class="site-footer"><div class="container footer-grid">
 <div>$LOGO
 <p>Sleepdienst voor auto&rsquo;s en bestelbussen in heel Nederland. Dag en nacht bereikbaar, vaste prijs vooraf, geen abonnement.</p>
-<p><a class="foot-call" href="{{PHONE_HREF}}">{{PHONE}}</a><a href="{{WA_HREF}}">WhatsApp</a></p></div>
+<p><a class="foot-call" href="{{PHONE_HREF}}">{{PHONE}}</a></p></div>
 <div><h3>Werkgebied</h3>$foot_cities<a href="{{R}}sleepdienst/">Alle plaatsen</a></div>
 <div><h3>Diensten</h3>$foot_dien</div>
 <div><h3>Informatie</h3>$foot_info</div>
 </div><div class="container footer-bottom"><span>&copy; $year Sleepdienst Faster</span><span>Prijzen inclusief btw, tenzij anders vermeld.</span></div><div class="faster-network" style="max-width:1200px;margin:0 auto;padding:14px 20px;font-size:13px;line-height:1.6;opacity:.85;display:flex;flex-wrap:wrap;gap:4px 16px"><span>Faster in Europa:</span> <a href="https://takeldienst-depannage.com/" hreflang="nl-BE" style="color:inherit;text-decoration:underline">Belgi&euml; &ndash; Takeldienst</a> <a href="https://abschleppdienst-faster.de/" hreflang="de-DE" style="color:inherit;text-decoration:underline">Deutschland &ndash; Abschleppdienst</a> <a href="https://fasterbreakdownrecovery.co.uk/" hreflang="en-GB" style="color:inherit;text-decoration:underline">United Kingdom &ndash; Breakdown recovery</a></div></footer>
-<div class="mobile-bar"><a href="{{PHONE_HREF}}">Bel nu</a><a class="wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="mobile-bar"><a href="{{PHONE_HREF}}">Bel nu</a></div>
 <script src="{{R}}assets/js/main.js" defer></script>
 </body>
 </html>
@@ -513,7 +511,6 @@ H
   $html =~ s/\{\{R\}\}/$R/g;
   $html =~ s/\{\{PHONE_HREF\}\}/$PHONE_HREF/g;
   $html =~ s/\{\{PHONE\}\}/$PHONE/g;
-  $html =~ s/\{\{WA_HREF\}\}/$WA_HREF/g;
   $html =~ s/\{\{PRICE\}\}/$PRICE/g;
   $html =~ s/\n{2,}/\n/g;
   warn "$p->{src}: unreplaced $1\n" while $html =~ /(\{\{[A-Z_:a-z]+\}\})/g;

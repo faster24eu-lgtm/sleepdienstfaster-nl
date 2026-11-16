@@ -1,5 +1,5 @@
 title: Elektrische auto slepen op plateau | 24/7 Faster
-description: Elektrische auto of hybride slepen? Altijd op een plateauwagen, niet aan de kabel. 24/7, vaste prijs vooraf, geen abonnement. Bel of WhatsApp.
+description: Elektrische auto of hybride slepen? Altijd op een plateauwagen, niet aan de kabel. 24/7, vaste prijs vooraf, geen abonnement. Bel nu.
 label: Elektrische auto slepen
 kind: dienst
 order: 6
@@ -24,7 +24,7 @@ lead: <p>Een elektrische auto sleept u niet aan een touw of een stang. De wielen
 <h2>Stil op de snelweg</h2>
 <p>Valt een elektrische auto stil op de snelweg, dan gelden dezelfde regels als voor elke auto: eerst achter de vangrail, en staat de auto op een rijstrook, dan belt u Rijkswaterstaat of 112. Het stappenplan staat bij <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>.</p>
 </div><aside class="side">
-<div class="price-card"><span>Elektrische auto</span><strong>Prijs vooraf</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Elektrische auto</span><strong>Prijs vooraf</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 <p>Heeft u een bestelbus of camper? Zie ook <a href="{{R}}diensten/bestelbus-slepen/">bestelbus slepen</a> en <a href="{{R}}diensten/pechhulp/">pechhulp</a>.</p>
 ===FAQ===

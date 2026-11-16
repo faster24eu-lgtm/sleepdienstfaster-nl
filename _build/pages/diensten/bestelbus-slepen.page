@@ -34,7 +34,7 @@ lead: <p>Voor een ondernemer is een bus die stilstaat een verloren werkdag. Wij 
 <h2>Zakelijk: factuur op naam van uw bedrijf</h2>
 <p>Bent u ondernemer? U krijgt een factuur op naam van uw bedrijf, met de btw apart vermeld, zodat u de btw kunt terugvragen. Geef bij het bellen de bedrijfsnaam en het adres voor de factuur door. Heeft u meerdere bussen of een wagenpark? Bel ons, dan bespreken we hoe we u het beste kunnen helpen.</p>
 </div><aside class="side">
-<div class="price-card"><span>Bestelbus slepen</span><strong>Prijs vooraf</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Bestelbus slepen</span><strong>Prijs vooraf</strong><p>Plateau 8,5 meter, tot 3.500 kg. Vaste prijs vooraf.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 <figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Witte bestelbus wordt op het plateau van een sleepwagen van Faster getrokken" width="1288" height="966" loading="lazy"></figure>
 </aside></div></section>
 <h2>Pechhulp bij een bestelbus</h2>

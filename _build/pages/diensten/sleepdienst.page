@@ -27,7 +27,7 @@ lead: <p>Start uw auto niet meer, maakt hij een geluid dat niet goed is, of bran
 <h2>Wat kost het?</h2>
 <p>De prijs hangt af van de afstand, het voertuig en het tijdstip. U hoort hem vooraf. Meer uitleg vindt u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 </div><aside class="side">
-<div class="price-card"><span>Auto slepen</span><strong>Prijs vooraf</strong><p>Prijs vooraf, geen abonnement.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Auto slepen</span><strong>Prijs vooraf</strong><p>Prijs vooraf, geen abonnement.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 <figure class="hero-media"><img src="{{R}}assets/img/faster-intervention-workshop.jpg" alt="Sleepwagen van Faster laadt een witte bestelbus op het plateau" width="1288" height="966" loading="lazy"></figure>
 </aside></div></section>
 {{STEPS}}

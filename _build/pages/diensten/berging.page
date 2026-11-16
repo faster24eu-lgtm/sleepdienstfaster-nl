@@ -1,5 +1,5 @@
 title: Bergingsbedrijf nodig? Autoberging 24/7, prijs vooraf | Faster
-description: Auto of bestelbus geborgen na pech of een ongeval? Faster regelt 24/7 een berging in heel Nederland, met de prijs vooraf en zonder abonnement. Bel of WhatsApp.
+description: Auto of bestelbus geborgen na pech of een ongeval? Faster regelt 24/7 een berging in heel Nederland, met de prijs vooraf en zonder abonnement. Bel nu.
 label: Berging
 kind: dienst
 order: 3
@@ -27,12 +27,12 @@ lead: <p>Een auto die in de berm, in een sloot of na een aanrijding vastzit, kan
 <p>Bel bij schade ook uw autoverzekeraar. Sommige verzekeringen vergoeden berging en vervoer, soms alleen als zij dat zelf regelen. Vraag het na voordat u akkoord gaat. Bewaar de factuur, dan kunt u die indienen.</p>
 <h2>Hoe gaat het in zijn werk?</h2>
 <ol>
-<li>U belt of stuurt uw locatie via WhatsApp, met een foto als dat veilig kan.</li>
+<li>U belt ons en zegt waar de auto staat en wat er is gebeurd.</li>
 <li>U hoort welk materieel er nodig is en wat het kost.</li>
 <li>Als u akkoord bent, komt de hulp. De auto gaat naar uw garage, een schadebedrijf of een ander adres.</li>
 </ol>
 </div><aside class="side">
-<div class="price-card"><span>Berging</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Berging</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Wat kost een bergingsbedrijf?

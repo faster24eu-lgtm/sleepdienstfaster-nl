@@ -1,12 +1,12 @@
-title: Contact sleepdienst Faster | bel of WhatsApp 24/7
-description: Sleepdienst nodig? Bel of WhatsApp Faster 24/7 met uw locatie. Prijs vooraf, geen abonnement. Formulier voor een geplande rit.
+title: Contact sleepdienst Faster | bel 24/7
+description: Sleepdienst nodig? Bel Faster 24/7 met uw locatie. Prijs vooraf, geen abonnement. Formulier voor een geplande rit.
 label: Contact
 h1: Contact
-lead: <p>Voor spoed: bel of WhatsApp, dag en nacht. Deel uw locatie, hoor de prijs vooraf, geen abonnement. Voor een geplande rit gebruikt u het formulier.</p>
+lead: <p>Voor spoed: bel, dag en nacht. Deel uw locatie, hoor de prijs vooraf, geen abonnement. Voor een geplande rit gebruikt u het formulier.</p>
 ===MAIN===
 <section class="section"><div class="container two-col"><div class="prose">
-<h2>Bellen of WhatsApp</h2>
-<p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a> <a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></p>
-<p><strong>Uw locatie delen in WhatsApp:</strong> tik op het paperclipje of het plusje, kies &lsquo;Locatie&rsquo; en dan &lsquo;Huidige locatie verzenden&rsquo;.</p>
+<h2>Bellen</h2>
+<p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></p>
+<p><strong>Weet u niet precies waar u staat?</strong> Noem de straat, een herkenningspunt, of op de snelweg het wegnummer, de rijrichting en het hectometerpaaltje.</p>
 <p><strong>Op de snelweg?</strong> Geef het nummer van het hectometerpaaltje door: het kleine bordje langs de weg met een getal, bijvoorbeeld 45,3. Daarmee vinden we u op de meter.</p>
 </div><div><h2>Prijs aanvragen</h2>{{FORM}}</div></div></section>

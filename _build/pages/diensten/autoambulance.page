@@ -25,7 +25,7 @@ lead: <p>Een autoambulance is een wagen met een plateau. Uw auto staat er helema
 <h2>Wat is het verschil met een gewone sleepwagen?</h2>
 <p>Veel moderne sleepwagens hebben zelf een plateau, dus het woord maakt niet zoveel uit. Noem bij het bellen het merk, het model en de aandrijving. Dan komt er een wagen die geschikt is voor uw auto.</p>
 </div><aside class="side">
-<div class="price-card"><span>Autoambulance</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Autoambulance</span><strong>Bel voor de prijs</strong><p>U hoort vooraf wat het kost.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Past mijn lage auto op het plateau?

@@ -1,5 +1,5 @@
 title: Vrachtwagen berging en sleepdienst 24/7 | Faster
-description: Vrachtwagen of oplegger met pech? Faster regelt 24/7 pechhulp en berging vanaf 3,5 ton, ook in de Rotterdamse haven. Prijs vooraf. Bel of WhatsApp.
+description: Vrachtwagen of oplegger met pech? Faster regelt 24/7 pechhulp en berging vanaf 3,5 ton, ook in de Rotterdamse haven. Prijs vooraf. Bel nu.
 label: Vrachtwagen slepen
 kind: dienst
 order: 8
@@ -29,7 +29,7 @@ lead: <p>Een trekker die op een parkeerplaats niet meer start. Een oplegger met 
 
 <h2>Van telefoontje tot truck weer op weg</h2>
 <ol>
-<li><strong>Bel of stuur een WhatsApp</strong> met uw live locatie, het kenteken, merk en type, of de truck beladen is en wat er gebeurd is. Een foto zegt vaak meer dan tien minuten uitleg.</li>
+<li><strong>Bel ons</strong> met uw live locatie, het kenteken, merk en type, of de truck beladen is en wat er gebeurd is. Een foto zegt vaak meer dan tien minuten uitleg.</li>
 <li><strong>We bekijken wat nodig is.</strong> Soms volstaat hulp ter plaatse: starten, een band, een luchtleiding. Soms moet hij gesleept of opgeladen worden. Dat bepaalt welke wagen er komt.</li>
 <li><strong>Prijs vooraf.</strong> U hoort de prijs voordat er iemand vertrekt. Klopt de informatie die u doorgaf, dan blijft het bij die prijs.</li>
 <li><strong>Slepen en transport</strong> naar de plek die u kiest. We houden u en uw chauffeur op de hoogte tot de truck er staat.</li>
@@ -47,7 +47,7 @@ lead: <p>Een trekker die op een parkeerplaats niet meer start. Een oplegger met 
 <h2>Voor transportbedrijven en planners</h2>
 <p>Uw chauffeur staat langs de kant en uw planner zit met een klant die op zijn lading wacht. Met meerdere trucks kunnen we vaste afspraken maken, zodat de planner bij pech niet eerst hoeft te onderhandelen. U krijgt een factuur op naam van uw bedrijf, met de btw apart vermeld. Voor bestelbussen tot 3.500 kilo kijkt u bij <a href="{{R}}diensten/bestelbus-slepen/">bestelbus slepen</a>.</p>
 </div><aside class="side">
-<div class="price-card"><span>Vrachtwagen slepen</span><strong>prijs vooraf</strong><p>Trucks, opleggers en bussen vanaf 3,5 ton. 24/7, één nummer.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Vrachtwagen slepen</span><strong>prijs vooraf</strong><p>Trucks, opleggers en bussen vanaf 3,5 ton. 24/7, één nummer.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 ===FAQ===
 V: Slepen jullie ook vrachtwagens en bussen?

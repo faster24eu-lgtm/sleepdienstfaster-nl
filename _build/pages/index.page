@@ -1,5 +1,5 @@
 title: Sleepdienst 24/7 heel NL | ±30 min, prijs vooraf
-description: Auto pech of stilgevallen? Faster sleept 24/7 in heel Nederland. Vaak ±30 min ter plaatse, vaste prijs vooraf, geen abonnement. Bel of WhatsApp nu.
+description: Auto pech of stilgevallen? Faster sleept 24/7 in heel Nederland. Vaak ±30 min ter plaatse, vaste prijs vooraf, geen abonnement. Bel nu.
 label: Home
 template: raw
 eyebrow: Sleepdienst &middot; pechhulp &middot; heel Nederland
@@ -20,12 +20,12 @@ reviews: 2
 <span class="eyebrow">Waarom Faster?</span>
 <h2>Een sleepdienst die doet wat hij belooft</h2>
 <p><strong>Snel bij u.</strong> Stilstaan langs de weg is vervelend en soms gevaarlijk. Daarom rijden we bij spoed meteen. Vaak zijn we binnen 30 minuten ter plaatse.</p>
-<p><strong>Scherpe, vaste prijs.</strong> Veel sleepdiensten noemen pas een bedrag als de wagen er al staat. Bij ons hoort u de prijs aan de telefoon of in WhatsApp, voordat er iemand vertrekt. Hoe de prijs is opgebouwd, leest u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
+<p><strong>Scherpe, vaste prijs.</strong> Veel sleepdiensten noemen pas een bedrag als de wagen er al staat. Bij ons hoort u de prijs aan de telefoon, voordat er iemand vertrekt. Hoe de prijs is opgebouwd, leest u bij <a href="{{R}}tarieven/">tarieven</a>.</p>
 <p><strong>Geen abonnement nodig.</strong> Geen lidmaatschap, geen pechhulppas. U betaalt per rit, alleen als u ons nodig heeft.</p>
 <p><strong>U kiest waar de auto naartoe gaat.</strong> Naar uw eigen garage, naar huis, naar de dealer of naar een schadebedrijf. Wij slepen niet automatisch naar een terrein waar u daarna opnieuw voor moet betalen.</p>
 <p><strong>Auto&rsquo;s, bestelbussen en elektrische auto&rsquo;s.</strong> Alles gaat bij ons op het plateau. Niets sleept over de weg, dus geen extra schade aan de versnellingsbak of de elektromotor.</p>
 </div><aside class="side">
-<div class="price-card"><span>Sleepdienst</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
+<div class="price-card"><span>Sleepdienst</span><strong>Prijs vooraf</strong><p>Vaste prijs vooraf. Bij spoed vaak binnen 30 minuten ter plaatse.</p><a class="btn btn-dark" href="{{PHONE_HREF}}">Bel {{PHONE}}</a></div>
 </aside></div></section>
 {{GALLERY}}
 {{REVIEWS}}
@@ -37,7 +37,7 @@ reviews: 2
 <span class="eyebrow">Geen spoed?</span>
 <h2>Vraag een vaste prijs aan</h2>
 <p>Moet een auto die niet meer rijdt naar de garage, de sloop of een nieuwe eigenaar? Vul het formulier in, dan krijgt u snel een prijs.</p>
-<p>Voor spoed: bel of stuur een WhatsApp. Dat is altijd sneller.</p>
+<p>Voor spoed: bel ons. Dat is altijd sneller.</p>
 </div><div>{{FORM}}</div></div></section>
 
 <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Meer weten</span><h2>Praktische informatie</h2></div></div>
