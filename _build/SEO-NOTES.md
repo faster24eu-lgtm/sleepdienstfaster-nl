@@ -186,3 +186,12 @@ Real gap vs SERP pay-per-use pattern: destination choice + no lock-in. Added FAQ
 
 ## 2026-11-06 (morning) – Regression crawl
 Read-only sitemap crawl + spot-checks. Faster **73/73** HTTP 200; titles non-empty; `</body>` OK. Spot-checks: skip-link home; WebP/preload/fetchpriority home; OG JPG 200. **No breakages fixed.**
+
+## 2026-11-16 – small fixes during the Nov 2026 core update (no new pages, no indexing requests)
+Sister site sleepdienstjanssen.nl dropped on 9 Nov after a jump from ~15 to 118 template pages, so this round is deliberately small.
+- 404s: GSC "Not found (404)" had 4 Faster URLs. Every URL that was ever in the sitemap and no longer exists (21 towns cut on 2026-10-28, /diensten/auto-naar-belgie/, /diensten/caravan-transport/) now gets a redirect stub (canonical + meta refresh 0 + JS) to the closest live page. Map: `%REDIRECTS` in build.pl. Stubs are not in the sitemap.
+- Meta descriptions over 160 chars shortened: vrachtwagen-slepen, na-een-aanrijding, verkeerd-getankt, over-ons.
+- /sleepdienst-nodig/ (Ads landing page) had no WhatsApp: green button under the last call button + footer link. Hero and sticky bar stay call-only (call conversion tracking unchanged).
+- Pages around position 19–21: pech op de snelweg (title "wat te doen, wie bellen?", belchecklist, spitsstrook, EV/automaat, na de berging, 2 FAQ; linked from pechhulp and elektrische-auto-slepen), Botlek (title/H1/meta name "Botlek Rotterdam"; tunnels and bridges on the A15/A4, what to report incl. ADR orange plate, 2 FAQ; linked from Vlaardingen and Schiedam), Arnhem (A50 Heteren/Valburg, Pleijroute A325, parking-garage and destination FAQ).
+- Shingle similarity after the change: max 0.20 between town pages, max 0.017 vs any Janssen page.
+- Do not request indexing until the core update has finished rolling out.
