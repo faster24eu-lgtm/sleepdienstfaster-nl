@@ -21,6 +21,8 @@ lead: <p>Een elektrische auto sleept u niet aan een touw of een stang. De wielen
 <p>Heeft de onderkant of de accu van de auto een klap gehad, rook of een vreemde geur? Ga op afstand staan en bel 112. Een beschadigde accu kan later nog warm worden. Zeg het ons ook als de auto al stilstaat: dan zetten we hem niet in een afgesloten ruimte.</p>
 <h2>Hybrides en plug-in hybrides</h2>
 <p>Ook hybrides en plug-in hybrides hebben vaak aangedreven wielen die niet over de weg mogen rollen. Wij zetten ze daarom ook altijd op het plateau. Noem bij het bellen of het om een hybride gaat.</p>
+<h2>Stil op de snelweg</h2>
+<p>Valt een elektrische auto stil op de snelweg, dan gelden dezelfde regels als voor elke auto: eerst achter de vangrail, en staat de auto op een rijstrook, dan belt u Rijkswaterstaat of 112. Het stappenplan staat bij <a href="{{R}}kennisbank/pech-op-de-snelweg/">pech op de snelweg</a>.</p>
 </div><aside class="side">
 <div class="price-card"><span>Elektrische auto</span><strong>Prijs vooraf</strong><p>Altijd op het plateau, prijs vooraf.</p><a class="btn" href="{{PHONE_HREF}}">Bel {{PHONE}}</a><a class="btn btn-wa" href="{{WA_HREF}}">WhatsApp</a></div>
 </aside></div></section>
