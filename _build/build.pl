@@ -591,6 +591,46 @@ sub link_mentions {
   return $pre . $main . $post;
 }
 
+# ---------------------------------------------------------------- redirects
+# Old URLs that Google still knows (removed pages). GitHub Pages cannot send a real 301, so each
+# old path gets a tiny stub: canonical + meta refresh 0 (Google treats this as a permanent redirect)
+# + JS fallback. Not in the sitemap. Target = closest live page. (2026-11-16, GSC "Not found (404)")
+my %REDIRECTS = (
+  'diensten/auto-naar-belgie/'      => 'diensten/autotransport/',
+  'diensten/caravan-transport/'     => 'diensten/camper-caravan-transport/',
+  'sleepdienst/schiphol/'           => 'sleepdienst/schiphol-hoofddorp/',
+  'sleepdienst/assen/'              => 'sleepdienst/groningen/',
+  'sleepdienst/den-helder/'         => 'sleepdienst/alkmaar/',
+  'sleepdienst/deventer/'           => 'sleepdienst/apeldoorn/',
+  'sleepdienst/emmen/'              => 'sleepdienst/',
+  'sleepdienst/etten-leur/'         => 'sleepdienst/breda/',
+  'sleepdienst/goes/'               => 'sleepdienst/',
+  'sleepdienst/gouda/'              => 'sleepdienst/',
+  'sleepdienst/heerlen/'            => 'sleepdienst/maastricht/',
+  'sleepdienst/helmond/'            => 'sleepdienst/eindhoven/',
+  'sleepdienst/hengelo/'            => 'sleepdienst/enschede/',
+  'sleepdienst/hilversum/'          => 'sleepdienst/',
+  'sleepdienst/hulst/'              => 'sleepdienst/terneuzen/',
+  'sleepdienst/moerdijk/'           => 'sleepdienst/breda/',
+  'sleepdienst/oosterhout/'         => 'sleepdienst/breda/',
+  'sleepdienst/sittard/'            => 'sleepdienst/roermond/',
+  'sleepdienst/vlissingen-middelburg/' => 'sleepdienst/terneuzen/',
+  'sleepdienst/waalwijk/'           => 'sleepdienst/tilburg/',
+  'sleepdienst/weert/'              => 'sleepdienst/roermond/',
+  'sleepdienst/zevenbergen/'        => 'sleepdienst/roosendaal/',
+);
+for my $from (sort keys %REDIRECTS) {
+  my $to = $REDIRECTS{$from};
+  die "redirect $from: target $to is not a page\n" unless grep { $_->{url} eq $to } values %P;
+  die "redirect $from: a page already lives there\n" if grep { $_->{url} eq $from } values %P;
+  my $u = "$BASE/$to";
+  make_path($from);
+  open my $fh, '>:encoding(UTF-8)', "${from}index.html" or die;
+  print $fh qq{<!doctype html>\n<html lang="nl">\n<head>\n<meta charset="utf-8">\n<title>Doorgestuurd naar $u</title>\n<link rel="canonical" href="$u">\n<meta http-equiv="refresh" content="0; url=$u">\n<script>location.replace("$u")</script>\n</head>\n<body>\n<p>Deze pagina is verhuisd: <a href="$u">$u</a></p>\n</body>\n</html>\n};
+  close $fh;
+}
+printf "%d redirect stubs\n", scalar keys %REDIRECTS;
+
 # ---------------------------------------------------------------- sitemap, robots
 open my $sm, '>:encoding(UTF-8)', 'sitemap.xml' or die;
 print $sm qq{<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n};
